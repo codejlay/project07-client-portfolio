@@ -12,6 +12,7 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
 				<section class="about-content">
+					<div class="container">
 					<div class="title-box">
 						<div>
 							<h3>about</h3>
@@ -37,10 +38,11 @@
 					<div class="copyright">
 						<p>&copy; 2015. Design by Paul Anthony Wilson.</p>
 					</div>
-
+					</div>
 					<div class="footer-accent">
 
 					</div>
+					
 				</section>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->

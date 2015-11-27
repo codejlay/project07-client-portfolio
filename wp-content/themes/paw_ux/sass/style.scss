@@ -68,7 +68,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 html {
 	min-width: 320px;
-	max-width: 1366px;
+	// max-width: 1366px;
 	margin: 0 auto;
 }
 
@@ -85,6 +85,8 @@ section {
 
 h1, h2, h3 {
 	font-family: $font-header;
+	margin: 0;
+	font-weight: normal;
 }
 
 
@@ -98,11 +100,16 @@ h3 {
 	font-size: 1.857rem;
 }
 
+// Structure
+
+.container {
+	margin: 0 auto;
+	max-width: 1366px;
+}
 
 .site-branding {
 	background-color: $color-brand-grey-main;
-	height: 70px;
-
+	// height: 70px;
 }
 
 
@@ -120,18 +127,19 @@ h3 {
 
 	background-color: $color-brand-orange;
 	height: 70px;
-	width: 240px;
+	width: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
 
+	h1 {
+		font-size: 1.5rem;
+	}
+
 	@include bp(desktop) {
 	    
     }
-
-
-	
 
 	div {
 		margin-right: 60px;
@@ -166,20 +174,22 @@ h3 {
 .intro {
 	color: white;
 	text-align: center;
+	margin: 0 auto;
 
 	h2 {
 		padding-top: 2rem;
+		font-size: 1.5rem;
 	}
 
 	p {
-		font-size: 1.286rem;
+		font-size: 1rem;
+		padding: 0 5%;
 	}
 
 }
 
 .my-work-content {
 	background-color: white;
-	height: 250px;
 	padding-top: 2rem;
 
 

@@ -22,22 +22,24 @@
 		<div id="page" class="hfeed site">
 			<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a> -->
 
-			<header id="masthead" class="site-header" role="banner">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					
-					<div class="navigation-inner clearfix">
-						<div class="logo clearfix">
-							<div>
-								<h1>paw_ux</h1>
+			<!-- <header id="masthead" class="site-header" role="banner"> -->
+				<div class="container">
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+						
+						
+						<div class="navigation-inner clearfix">
+							<div class="logo clearfix">
+								<div>
+									<h1>paw_ux</h1>
+								</div>
+							</div>
+
+							<div class="nav-selection">
+								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 							</div>
 						</div>
-
-						<div class="nav-selection">
-							<!-- <h3>menu</h3> -->
-						</div>
-					</div>
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
+					</nav><!-- #site-navigation -->
+				</div>
+			<!-- </header>#masthead -->
 
 			<div id="content" class="site-content">

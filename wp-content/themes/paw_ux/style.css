@@ -1678,15 +1678,16 @@ object {
 /* Front page */
 html {
   min-width: 320px;
-  max-width: 1366px;
   margin: 0 auto; }
 
 body {
-  font-size: 14px;
+  font-size: 19px;
   font-family: "Open Sans", sans-serif; }
 
 h1, h2, h3 {
-  font-family: "Cantarell", sans-serif; }
+  font-family: "Cantarell", sans-serif;
+  margin: 0;
+  font-weight: normal; }
 
 h1, h2 {
   font-size: 2.143rem; }
@@ -1694,9 +1695,12 @@ h1, h2 {
 h3 {
   font-size: 1.857rem; }
 
+.container {
+  margin: 0 auto;
+  max-width: 1366px; }
+
 .site-branding {
-  background-color: #585353;
-  height: 70px; }
+  background-color: #585353; }
 
 .navigation-inner {
   background-color: #585353;
@@ -1713,7 +1717,7 @@ h3 {
   clip-path: polygon(0 1%, 100% 0, 60% 100%, 0 100%);
   background-color: #FF7703;
   height: 70px;
-  width: 240px;
+  width: 300px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1724,6 +1728,8 @@ h3 {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto; }
+  .logo h1 {
+    font-size: 1.5rem; }
   .logo div {
     margin-right: 60px;
     color: white; }
@@ -1737,15 +1743,17 @@ h3 {
 
 .intro {
   color: white;
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto; }
   .intro h2 {
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    font-size: 1.5rem; }
   .intro p {
-    font-size: 1.286rem; }
+    font-size: 1rem;
+    padding: 0 5%; }
 
 .my-work-content {
   background-color: white;
-  height: 250px;
   padding-top: 2rem; }
 
 .skills-content {
