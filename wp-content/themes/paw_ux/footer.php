@@ -14,7 +14,7 @@
 				<section class="about-content">
 					<div class="title-box">
 						<div>
-							<h2>about</h2>
+							<h3>about</h3>
 							<!-- <p>
 								Paul Anthony Wilson was born & raised in the
 								Vancouver area. He studied User Experience

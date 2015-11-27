@@ -53,6 +53,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 // CSS included in style.css.
 
 @import "normalize";
+@import "gridlex";
 @import "fonts";
 @import "typography";
 @import "elements";
@@ -64,10 +65,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
+
+html {
+	min-width: 320px;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
 body {
 	font-size: $font-base;
 	font-family: $font-text;
-	margin: 0 auto;
+	
 }
 
 section {
@@ -80,13 +88,13 @@ h1, h2, h3 {
 }
 
 
-h1 {
+h1, h2 {
 	
 	font-size: 2.143rem;
 }
 
 
-h2 {
+h3 {
 	font-size: 1.857rem;
 }
 
@@ -107,7 +115,9 @@ h2 {
 
 
 .logo {
-	
+	-webkit-clip-path: polygon(0 1%, 100% 0, 60% 100%, 0 100%);
+	clip-path: polygon(0 1%, 100% 0, 60% 100%, 0 100%);	
+
 	background-color: $color-brand-orange;
 	height: 70px;
 	width: 240px;
@@ -116,14 +126,20 @@ h2 {
 	align-items: center;
 	margin: 0 auto;
 
+	@include bp(desktop) {
+	    
+    }
 
-	-webkit-clip-path: polygon(0 1%, 100% 0, 60% 100%, 0 100%);
-	clip-path: polygon(0 1%, 100% 0, 60% 100%, 0 100%);	
+
+	
 
 	div {
 		margin-right: 60px;
 		color: white;
-		// font-size: 2rem;
+
+		@include bp(desktop) {
+    	
+    	}
 	}
 }
 
@@ -141,14 +157,18 @@ h2 {
 	// margin: 0 auto;
 	// width: 100%;
 	// padding: 5%;
+
+	@include bp(desktop) {
+		// background-color: green;
+	}
 }
 
 .intro {
 	color: white;
 	text-align: center;
 
-	h1 {
-		// margin-top: 350px;
+	h2 {
+		padding-top: 2rem;
 	}
 
 	p {
@@ -160,6 +180,7 @@ h2 {
 .my-work-content {
 	background-color: white;
 	height: 250px;
+	padding-top: 2rem;
 
 
 }
@@ -167,45 +188,53 @@ h2 {
 
 .skills-content {
 	background-color: Lightgray;
-	height: 250px;
+	padding-top: 2rem;
+	margin: 0 auto;
+	text-align: center;
 
 	button {
-		width: 275px;
-		height: 55px;
+		width: 180px;
+		height: 30px;
 		background-color: transparent;
 		box-shadow: none;
 		font-family: $font-text;
 		border: 3px solid $color-brand-orange;
-		font-size: 1.714rem;
-	}
+		font-size: .8rem;
+		margin-bottom: 2rem;
 
+		@include bp(desktop) {
+		
+		}	
+	}
 }
 
 
 
 .about-content {
-	// height: 250px;
 	background-color: $color-brand-grey-main;
+	padding-top: 2rem;
 }
 
 .title-box {
-	width: 115px;
-	height: 30px;
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+
 	background-color: $color-brand-grey-border;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
-	// margin-top: 2rem;
 	margin-bottom: 2rem;
-	// padding-top: 2rem;
-	// padding-bottom: 2rem;
 
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
-	-o-transform: skew(-30deg);
+	height: 30px;
+	width: 115px;
+	
+	@include bp(desktop) {
+	    
+    }
 
-
+	
 	div {
 		color: white;
 
@@ -213,8 +242,12 @@ h2 {
 		-moz-transform: skew(30deg);
 		-o-transform: skew(30deg);
 
-		h2 {
+		h3 {
 			font-size: .8rem;
+
+			@include bp(desktop) {
+			
+		    }
 		}
 	}
 }

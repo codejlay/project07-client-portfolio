@@ -10,3 +10,18 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+// Break points
+
+@mixin bp($point) {
+  
+  $bp-tablet: "(min-width: #{$small-screen} )";
+  $bp-desktop: "(min-width: #{$large-screen})";
+
+  @if $point == desktop {
+    @media #{$bp-desktop} { @content; }
+  }
+  @else if $point == tablet {
+    @media #{$bp-tablet} { @content; }
+  }
+}

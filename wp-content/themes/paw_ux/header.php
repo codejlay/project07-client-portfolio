@@ -26,8 +26,8 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					
-					<div class="navigation-inner">
-						<div class="logo">
+					<div class="navigation-inner clearfix">
+						<div class="logo clearfix">
 							<div>
 								<h1>paw_ux</h1>
 							</div>
