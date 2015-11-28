@@ -11,28 +11,26 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
-				<section class="about-content">
-					<div class="container">
-					<div class="title-box">
-						<div>
-							<h3>about</h3>
-							<!-- <p>
-								Paul Anthony Wilson was born & raised in the
-								Vancouver area. He studied User Experience
-								Design at RED Acadamy, and has a B.Sc. in
-								Computing Science from Simon Fraser University.
-								An avid self-taught musician, he plays bass,
-								guitar, and synthesizer amongst other
-								instruments, and produces electronic music. He
-								doesn’t usually talk about himself in the third
-								person, but finds it amusing he’s doing so here.
-							</p> -->
-						</div>
-					</div>
-
+				
 					<div class="social">
-						<i class="fa fa-envelope"><a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a></i>
-						<i class="fa fa-linkedin-square"><a href="https://ca.linkedin.com/in/pawux">LinkedIn</a></i>
+						<div class="social-01">
+							<div>
+							<i class="fa fa-envelope"></i>
+							</div>
+							<div class="social-01-inner">
+								<div>
+									<a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="social-02">
+							<i class="fa fa-linkedin-square"></i>
+						
+							<div class="social-02-inner">
+								<a href="https://ca.linkedin.com/in/pawux">LinkedIn</a>	
+							</div>
+						</div>
 					</div>
 
 					<div class="copyright">
@@ -43,7 +41,7 @@
 
 					</div>
 					
-				</section>
+				
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->

@@ -96,11 +96,24 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
-function wpb_add_google_fonts() {
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Cantarell:400italic', false );
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic', false );
-	}
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+// function wpb_add_google_fonts() {
+	
+// 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Cantarell:400italic', false );
+// 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic', false );
+
+// 	}
+// add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+
+// function load_google_fonts() {
+// 		wp_register_style('googleFontsOpenSans','https://fonts.googleapis.com/css?family=Cantarell:400italic');
+//             wp_enqueue_style( 'googleFontsCantarell'); 
+
+//             wp_register_style('googleFontsOpenSans','https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic');
+//             wp_enqueue_style( 'googleFontsOldStandardTT');
+
+// }
+// add_action('wp_print_styles', 'load_google_fonts');
 
 
 /**

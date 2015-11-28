@@ -1,6 +1,7 @@
 <?php
 /**
  * The main front-page file.
+ * Template Name: Main Page
  *
  * @package paw_ux_Theme
  */
@@ -66,6 +67,31 @@ get_header(); ?>
 				</div>
 				</div>
 				</div>
+			</section>
+
+			<section class="about-content">
+					<div class="container">
+					<div class="title-box">
+						<div>
+							<h3>about</h3>
+						
+							
+
+						</div>
+					</div>
+					<div description-area>
+
+						<?php echo esc_html(CFS()->get('about_description')); ?>
+						<div class="wrapper-image">
+							<div class="image-01">
+								<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
+							</div>
+
+							<div class="image-02">
+								<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
+							</div>
+						</div>	
+					</div>
 			</section>
 		</div>
 	</div>

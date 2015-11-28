@@ -55,6 +55,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "normalize";
 @import "gridlex";
 @import "fonts";
+@import url(https://fonts.googleapis.com/css?family=Cantarell:400italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600);
 @import "typography";
 @import "elements";
 @import "forms";
@@ -67,7 +69,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 
 html {
-	min-width: 320px;
+	// min-width: 320px;
 	// max-width: 1366px;
 	margin: 0 auto;
 }
@@ -137,17 +139,13 @@ h3 {
 		font-size: 1.5rem;
 	}
 
-	@include bp(desktop) {
-	    
-    }
+	
 
 	div {
 		margin-right: 60px;
 		color: white;
 
-		@include bp(desktop) {
-    	
-    	}
+	
 	}
 }
 
@@ -162,13 +160,6 @@ h3 {
 
 .content-area {
 	background-color: $color-brand-grey-main;
-	// margin: 0 auto;
-	// width: 100%;
-	// padding: 5%;
-
-	@include bp(desktop) {
-		// background-color: green;
-	}
 }
 
 .intro {
@@ -183,7 +174,8 @@ h3 {
 
 	p {
 		font-size: 1rem;
-		padding: 0 5%;
+		padding: 0 7.5%;
+		color: $color-brand-grey-light;
 	}
 
 }
@@ -192,12 +184,13 @@ h3 {
 	background-color: white;
 	padding-top: 2rem;
 
+	
 
 }
 
 
 .skills-content {
-	background-color: Lightgray;
+	background-color: $color-brand-grey-light;
 	padding-top: 2rem;
 	margin: 0 auto;
 	text-align: center;
@@ -212,9 +205,7 @@ h3 {
 		font-size: .8rem;
 		margin-bottom: 2rem;
 
-		@include bp(desktop) {
 		
-		}	
 	}
 }
 
@@ -224,6 +215,44 @@ h3 {
 	background-color: $color-brand-grey-main;
 	padding-top: 2rem;
 }
+
+
+.wrapper-image {
+	display: flex;
+	margin: 0 auto;
+	// margin-bottom: 2rem;
+
+	img {
+		// height: 230px;
+	}
+
+	@include bp(desktop) {
+	text-align: right;		
+	}
+}
+
+.image-01 {
+	// border-top: $color-brand-grey-border;
+	border-top: 5px solid $color-brand-grey-border; 
+	border-bottom: 5px solid $color-brand-grey-border;
+	border-left: 5px solid $color-brand-grey-border;
+}
+
+.image-02 {
+	border: 5px solid $color-brand-grey-border; 
+	display: none;
+
+	@include bp(tablet) {
+	display: inline;
+    }
+
+
+	@include bp(desktop) {
+	display: inline;
+    }
+
+}
+
 
 .title-box {
 	-webkit-transform: skew(-30deg);
@@ -241,8 +270,8 @@ h3 {
 	width: 115px;
 	
 	@include bp(desktop) {
-	    
-    }
+		// background-color: green;
+	}
 
 	
 	div {
@@ -275,6 +304,7 @@ h3 {
 	flex-direction: column;
 	// margin-left: 15%;
 	// margin-bottom: 3rem;
+	// margin-top: 3rem; 
 
 	a {
 		text-decoration: none;
@@ -283,12 +313,40 @@ h3 {
 		font-size: .6rem;
 		margin-left: .5rem;
 		// font-weight: normal;
+		// padding:.125rem; 
 	}
 
 	i {
 		font-size: 1.5rem;
 		margin-bottom: 1rem;
 	}
+}
+
+.social-01, .social-02 {
+	display: flex;
+	// width: 0 auto;
+	// justify-content: center;
+	// align-items: center;
+	// background-color: green;
+
+	a {
+		// justify-content: center;
+		// align-items: center;
+		// color: green;
+	}
+}
+
+.social-01-inner, .social-02-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// background-color: green;
+	// margin: 0 auto;
+}
+
+footer {
+	background-color: $color-brand-grey-main;
+	padding-top: 2rem;
 }
 
 .copyright {
