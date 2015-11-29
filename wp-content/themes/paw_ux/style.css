@@ -43,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
-@import url(https://fonts.googleapis.com/css?family=Cantarell:400italic);
+@import url(https://fonts.googleapis.com/css?family=Cantarell:400,400italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600);
 html {
   font-family: sans-serif;
@@ -1716,22 +1716,21 @@ h3 {
           align-items: center;
   margin: 0 auto;
   margin-bottom: 2rem;
-  height: 30px;
-  width: 115px; }
-  .title-box div {
+  height: 42px;
+  width: 161px; }
+  .title-box .title-box-inner {
     color: white;
     -webkit-transform: skew(30deg);
     -moz-transform: skew(30deg);
     -o-transform: skew(30deg); }
-    .title-box div h3 {
-      font-size: .8rem; }
+    .title-box .title-box-inner h3 {
+      font-size: 1.5rem; }
 
 .site-branding {
   background-color: #585353; }
 
 .navigation-inner {
   background-color: #585353;
-  height: 70px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1740,11 +1739,11 @@ h3 {
           justify-content: space-between; }
 
 .logo {
-  -webkit-clip-path: polygon(0 1%, 100% 0, 60% 100%, 0 100%);
-  clip-path: polygon(0 1%, 100% 0, 60% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 1%, 100% 0, 80% 100%, 0 100%);
+  clip-path: polygon(0 1%, 100% 0, 80% 100%, 0 100%);
   background-color: #FF7703;
-  height: 70px;
-  width: 300px;
+  height: 50px;
+  width: 60%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1756,13 +1755,12 @@ h3 {
           align-items: center;
   margin: 0 auto; }
   .logo h1 {
-    font-size: 1.5rem; }
-  .logo div {
-    margin-right: 60px;
-    color: white; }
+    font-size: 1.5rem;
+    color: white;
+    font-style: italic; }
 
 .nav-selection {
-  width: 100%;
+  width: 40%;
   color: white; }
 
 .content-area {
@@ -1788,6 +1786,42 @@ h3 {
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
+.work-type-blocks {
+  list-style: none;
+  margin: 0 auto;
+  margin: 0;
+  padding: 0; }
+
+.work-type-block-wrappers {
+  color: #585353; }
+
+.work-image {
+  border: 5px solid #8E8888; }
+
+.work-details {
+  padding: 0 8%; }
+
+.work-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem; }
+  .work-title p {
+    margin: 0;
+    padding-top: .5rem;
+    padding-bottom: 1rem; }
+
+.work-description p {
+  margin: 0;
+  font-size: .8rem; }
+
+.work-link a {
+  text-decoration: none;
+  color: #585353;
+  font-size: .75rem;
+  border: 2px solid #585353;
+  padding: .25rem;
+  font-family: "Cantarell", sans-serif; }
+
 .skills-content {
   background-color: #E8E3E3;
   padding-top: 2rem;
@@ -1801,21 +1835,25 @@ h3 {
       padding-right: 5rem; } }
   .skills-content .resume {
     margin: 0 auto;
-    width: 180px;
-    height: 30px;
+    height: 40px;
+    width: 225px;
     background-color: transparent;
     box-shadow: none;
     font-family: "Open Sans", sans-serif;
     border: 3px solid #FF7703;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
+    display: block; }
     .skills-content .resume .resume-inner-left {
-      width: 50%;
-      margin: 0; }
+      width: 70%;
+      float: left;
+      margin: 0;
+      padding: 2% 0 2% 2%;
+      text-align: right;
+      font-size: 1.25rem; }
     .skills-content .resume .resume-inner-right {
-      width: 50%;
-      margin: 0; }
+      width: 30%;
+      float: right;
+      margin: 0;
+      padding: 4% 2% 10% 0; }
     .skills-content .resume a {
       text-decoration: none;
       color: #585353;
@@ -1879,7 +1917,8 @@ h3 {
 
 .about-description p {
   color: #E8E3E3;
-  padding: 0 8%; }
+  padding: 0 8%;
+  font-size: .8rem; }
 
 .wrapper-image {
   display: -webkit-flex;
@@ -1890,11 +1929,6 @@ h3 {
     .wrapper-image {
       text-align: right;
       width: 50%; } }
-
-.image-01 {
-  border-top: 5px solid #8E8888;
-  border-bottom: 5px solid #8E8888;
-  border-left: 5px solid #8E8888; }
 
 .image-02 {
   border: 5px solid #8E8888;
@@ -1918,13 +1952,14 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column; }
   .social a {
+    height: 30px;
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     color: white;
     font-size: .6rem;
     margin-left: .5rem; }
   .social i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem; }
 
 .social-01, .social-02 {
@@ -1939,8 +1974,6 @@ h3 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .social-01-inner a, .social-02-inner a {
-    height: 25px; }
 
 .social-02-inner a {
   margin-left: .75rem; }
@@ -1951,7 +1984,7 @@ footer {
 
 .copyright {
   color: white;
-  font-size: .5rem; }
+  font-size: .6rem; }
 
 .footer-accent {
   height: 10px;

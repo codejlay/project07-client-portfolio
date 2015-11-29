@@ -93,3 +93,4 @@ function paw_ux_cpt_skills() {
 
 }
 add_action( 'init', 'paw_ux_cpt_skills', 0 );
+

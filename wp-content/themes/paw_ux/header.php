@@ -25,11 +25,9 @@
 			<!-- <header id="masthead" class="site-header" role="banner"> -->
 				<div class="container">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
-						
-						
 						<div class="navigation-inner clearfix">
 							<div class="logo clearfix">
-								<div>
+								<div class="logo-inner">
 									<h1>paw_ux</h1>
 								</div>
 							</div>

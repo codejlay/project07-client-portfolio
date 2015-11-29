@@ -22,29 +22,39 @@ get_header(); ?>
 			<section class="my-work-content">
 				<div class="container">
 					<div class="title-box">
-						<div>
+						<div class="title-box-inner">
 							<h3>my_work</h3>
 						</div>
 					</div>
 
-					<?php 
-					$query = new WP_Query( array( 'post_type' => 'project' ) ); ?>
-
-
-					<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-					<p><?php echo get_the_post_thumbnail(get_the_id(), 'large') ?></p>
-					<p><?php echo get_the_title(get_the_ID()); ?></p>  
-					<p><?php echo ( CFS()->get('project_description')); ?></p> 
-					<p><?php echo ( CFS()->get('case_study')); ?></p>
-
-				<?php endwhile; endif; wp_reset_postdata(); ?>
+					<ul class="work-type-blocks">
+						<?php $query = new WP_Query( array( 'post_type' => 'project' ) ); ?>
+						<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
+							<li class="work-type-block-wrappers">
+								<div class="work-image">
+									<?php echo get_the_post_thumbnail(get_the_id(), 'large') ?>
+								</div>
+								<div class="work-details">
+									<div class="work-title">
+										<p><?php echo get_the_title(get_the_ID()); ?></p>
+									</div>  
+									<div class="work-description">
+										<p><?php echo ( CFS()->get('project_description')); ?></p> 
+									</div>
+									<div class="work-link">
+										<p><?php echo ( CFS()->get('case_study')); ?></p>
+									</div>
+								</div>
+							</li>
+						<?php endwhile; endif; wp_reset_postdata(); ?>
+					</ul>
 			</div>
 		</section>
 
 		<section class="skills-content">
 			<div class="container">
 				<div class="title-box">
-					<div>
+					<div class="title-box-inner">
 						<h3>skills</h3>
 					</div>
 				</div>
@@ -87,7 +97,7 @@ get_header(); ?>
 <section class="about-content">
 	<div class="container">
 		<div class="title-box">
-			<div>
+			<div class="title-box-inner">
 				<h3>about</h3>
 			</div>
 		</div>
@@ -98,6 +108,19 @@ get_header(); ?>
 			</div>
 
 			<div class="wrapper-image">
+			<!-- 	<div class="image-container">
+					<div class="skew-container">
+						<div class="skew-right">
+							<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
+							<div class="slicer-right">
+								<div class="image-01">
+									<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
 				<div class="image-01">
 					<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
 					<!-- <?php echo esc_html(CFS()->get('about_primary_image')); ?> -->
@@ -116,3 +139,16 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 
+<!-- <div class="container">
+	<div class="skew-container">
+		<div class="skew-left">
+			<div class="slicer-left">
+			</div>
+		</div>
+
+		<div class="skew-right">
+			<div class="slicer-right">
+			</div>
+		</div>
+	</div>
+</div> -->
