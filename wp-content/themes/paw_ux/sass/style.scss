@@ -74,16 +74,19 @@ html {
 	margin: 0 auto;
 }
 
+
 body {
 	font-size: $font-base;
 	font-family: $font-text;
 	
 }
 
+
 section {
 	// margin-top: 3rem;
 	// margin-bottom: 3rem;
 }
+
 
 h1, h2, h3 {
 	font-family: $font-header;
@@ -102,12 +105,55 @@ h3 {
 	font-size: 1.857rem;
 }
 
+
 // Structure
 
 .container {
 	margin: 0 auto;
 	max-width: 1366px;
 }
+
+
+// Slant Element
+
+.title-box {
+	-webkit-transform: skew(-30deg);
+	-moz-transform: skew(-30deg);
+	-o-transform: skew(-30deg);
+
+	background-color: $color-brand-grey-border;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+
+	height: 30px;
+	width: 115px;
+	
+	@include bp(desktop) {
+	}
+
+	
+	div {
+		color: white;
+
+		-webkit-transform: skew(30deg);
+		-moz-transform: skew(30deg);
+		-o-transform: skew(30deg);
+
+		h3 {
+			font-size: .8rem;
+
+			@include bp(desktop) {
+			
+		    }
+		}
+	}
+}
+
+
+// Header Section
 
 .site-branding {
 	background-color: $color-brand-grey-main;
@@ -139,28 +185,25 @@ h3 {
 		font-size: 1.5rem;
 	}
 
-	
-
 	div {
 		margin-right: 60px;
 		color: white;
-
-	
 	}
 }
 
 
 .nav-selection {
-	// background-color: green;
 	width: 100%;
 	color: white;
-
 }
 
 
 .content-area {
 	background-color: $color-brand-grey-main;
 }
+
+
+// Landing Section
 
 .intro {
 	color: white;
@@ -180,63 +223,204 @@ h3 {
 
 }
 
-.my-work-content {
-	background-color: white;
-	padding-top: 2rem;
 
-	
+.homepage-image {
+	margin-bottom: 3rem;
 
 }
 
 
+.my-work-content {
+	background-color: white;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+
+// Skills Section
+
 .skills-content {
 	background-color: $color-brand-grey-light;
 	padding-top: 2rem;
+	padding-bottom: 2rem;
+	
 	margin: 0 auto;
 	text-align: center;
+	
+	color: $color-brand-grey-main;
 
-	button {
+	@include bp(desktop) {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+
+	.resume {
+		margin: 0 auto;
 		width: 180px;
 		height: 30px;
 		background-color: transparent;
 		box-shadow: none;
 		font-family: $font-text;
 		border: 3px solid $color-brand-orange;
-		font-size: .8rem;
-		margin-bottom: 2rem;
-
 		
+		display: flex;
+		// justify-content: space-between;
+		// flex: 1;
+		
+		.resume-inner-left {
+			width: 50%;
+			// float: left;
+			// background-color: green;
+			margin: 0;
+		}
+
+		.resume-inner-right {
+			width: 50%;
+			// float: right;
+			margin: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-brand-grey-main;
+			// background-color: green;
+			// margin: 0 auto;
+			// width: 50%;
+			margin: 0;
+			font-family: $font-text;
+			font-weight: bold;
+			font-size: .8rem;
+		}
+
+		img {
+				height: 20px;
+				// border: 5px solid black;
+				// margin: 0;
+				// width: 50%;
+			}
+
+		button {
+			// width: 180px;
+			// height: 30px;
+			// background-color: transparent;
+			// box-shadow: none;
+			// font-family: $font-text;
+			// border: 3px solid $color-brand-orange;
+			// font-size: .8rem;
+			// margin-bottom: 2rem;
+			// display: flex;
+			// flex: 1;
+
+			// img {
+			// 	height: 10px;
+			// 	// border: 5px solid black;
+			// 	margin: 0;
+			// }
+		}	
 	}
 }
 
 
+.skill-type-blocks {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	
+
+	@include bp(desktop) {
+		// margin: 0 0 3rem 0;
+	display: flex;
+	justify-content: space-between;
+	}
+}
+
+
+.skill-type-block-wrappers {
+	margin: 0 auto;
+	text-align: center;
+
+	.skills-image {
+		// margin: 0 auto;
+		margin-bottom: 0;
+	}
+
+	.skills-title {
+		font-size: 1.684rem;
+		font-family: $font-text;
+		font-weight: bold;
+		margin-bottom: 0;
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.skills-description {
+		text-align: left;
+		padding: 0 8%;
+		
+		@include bp(desktop) {
+			padding: 0;
+			margin: 0 5%;
+		}
+
+		p {
+			margin: 0;
+			padding-top: .5rem;
+			padding-bottom: 2rem;
+		}
+	}
+}
+
+
+// About Section
 
 .about-content {
 	background-color: $color-brand-grey-main;
 	padding-top: 2rem;
 }
 
+.about-container {
+
+	@include bp(desktop) {
+	display: flex;		
+	}
+}
+
+.about-description {
+	
+	@include bp(desktop) {
+		width: 50%;		
+	}
+
+	p {
+		color: $color-brand-grey-light;
+		padding: 0 8%;
+	}
+}
+
 
 .wrapper-image {
 	display: flex;
 	margin: 0 auto;
-	// margin-bottom: 2rem;
 
 	img {
 		// height: 230px;
 	}
 
 	@include bp(desktop) {
-	text-align: right;		
+		text-align: right;	
+		width: 50%;
 	}
 }
 
+
 .image-01 {
-	// border-top: $color-brand-grey-border;
 	border-top: 5px solid $color-brand-grey-border; 
 	border-bottom: 5px solid $color-brand-grey-border;
 	border-left: 5px solid $color-brand-grey-border;
 }
+
 
 .image-02 {
 	border: 5px solid $color-brand-grey-border; 
@@ -246,49 +430,9 @@ h3 {
 	display: inline;
     }
 
-
 	@include bp(desktop) {
 	display: inline;
     }
-
-}
-
-
-.title-box {
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
-	-o-transform: skew(-30deg);
-
-	background-color: $color-brand-grey-border;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
-	margin-bottom: 2rem;
-
-	height: 30px;
-	width: 115px;
-	
-	@include bp(desktop) {
-		// background-color: green;
-	}
-
-	
-	div {
-		color: white;
-
-		-webkit-transform: skew(30deg);
-		-moz-transform: skew(30deg);
-		-o-transform: skew(30deg);
-
-		h3 {
-			font-size: .8rem;
-
-			@include bp(desktop) {
-			
-		    }
-		}
-	}
 }
 
 
@@ -298,13 +442,11 @@ h3 {
 	margin-left: 30%;
 }
 
+
 .social {
 	color: white;
 	display: flex;
 	flex-direction: column;
-	// margin-left: 15%;
-	// margin-bottom: 3rem;
-	// margin-top: 3rem; 
 
 	a {
 		text-decoration: none;
@@ -312,8 +454,6 @@ h3 {
 		color: white;
 		font-size: .6rem;
 		margin-left: .5rem;
-		// font-weight: normal;
-		// padding:.125rem; 
 	}
 
 	i {
@@ -322,37 +462,38 @@ h3 {
 	}
 }
 
+
 .social-01, .social-02 {
 	display: flex;
-	// width: 0 auto;
-	// justify-content: center;
-	// align-items: center;
-	// background-color: green;
-
-	a {
-		// justify-content: center;
-		// align-items: center;
-		// color: green;
-	}
 }
+
 
 .social-01-inner, .social-02-inner {
 	display: flex;
-	justify-content: center;
 	align-items: center;
-	// background-color: green;
-	// margin: 0 auto;
+
+	a {
+		height: 25px;
+	}	
 }
+
+
+.social-02-inner a {
+	margin-left: .75rem;
+}
+
 
 footer {
 	background-color: $color-brand-grey-main;
 	padding-top: 2rem;
 }
 
+
 .copyright {
 	color: white;
 	font-size: .5rem;
 }
+
 
 .footer-accent {
 	height: 10px;

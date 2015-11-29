@@ -1700,6 +1700,32 @@ h3 {
   margin: 0 auto;
   max-width: 1366px; }
 
+.title-box {
+  -webkit-transform: skew(-30deg);
+  -moz-transform: skew(-30deg);
+  -o-transform: skew(-30deg);
+  background-color: #8E8888;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  height: 30px;
+  width: 115px; }
+  .title-box div {
+    color: white;
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    -o-transform: skew(30deg); }
+    .title-box div h3 {
+      font-size: .8rem; }
+
 .site-branding {
   background-color: #585353; }
 
@@ -1752,30 +1778,108 @@ h3 {
   .intro p {
     font-size: 1rem;
     padding: 0 7.5%;
-    color: #e8e3e3; }
+    color: #E8E3E3; }
+
+.homepage-image {
+  margin-bottom: 3rem; }
 
 .my-work-content {
   background-color: white;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .skills-content {
-  background-color: #e8e3e3;
+  background-color: #E8E3E3;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   margin: 0 auto;
-  text-align: center; }
-  .skills-content button {
+  text-align: center;
+  color: #585353; }
+  @media (min-width: 1000px) {
+    .skills-content {
+      padding-left: 5rem;
+      padding-right: 5rem; } }
+  .skills-content .resume {
+    margin: 0 auto;
     width: 180px;
     height: 30px;
     background-color: transparent;
     box-shadow: none;
     font-family: "Open Sans", sans-serif;
     border: 3px solid #FF7703;
-    font-size: .8rem;
-    margin-bottom: 2rem; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .skills-content .resume .resume-inner-left {
+      width: 50%;
+      margin: 0; }
+    .skills-content .resume .resume-inner-right {
+      width: 50%;
+      margin: 0; }
+    .skills-content .resume a {
+      text-decoration: none;
+      color: #585353;
+      margin: 0;
+      font-family: "Open Sans", sans-serif;
+      font-weight: bold;
+      font-size: .8rem; }
+    .skills-content .resume img {
+      height: 20px; }
+
+.skill-type-blocks {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none; }
+  @media (min-width: 1000px) {
+    .skill-type-blocks {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+
+.skill-type-block-wrappers {
+  margin: 0 auto;
+  text-align: center; }
+  .skill-type-block-wrappers .skills-image {
+    margin-bottom: 0; }
+  .skill-type-block-wrappers .skills-title {
+    font-size: 1.684rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 0; }
+    .skill-type-block-wrappers .skills-title p {
+      margin: 0; }
+  .skill-type-block-wrappers .skills-description {
+    text-align: left;
+    padding: 0 8%; }
+    @media (min-width: 1000px) {
+      .skill-type-block-wrappers .skills-description {
+        padding: 0;
+        margin: 0 5%; } }
+    .skill-type-block-wrappers .skills-description p {
+      margin: 0;
+      padding-top: .5rem;
+      padding-bottom: 2rem; }
 
 .about-content {
   background-color: #585353;
   padding-top: 2rem; }
+
+@media (min-width: 1000px) {
+  .about-container {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+@media (min-width: 1000px) {
+  .about-description {
+    width: 50%; } }
+
+.about-description p {
+  color: #E8E3E3;
+  padding: 0 8%; }
 
 .wrapper-image {
   display: -webkit-flex;
@@ -1784,7 +1888,8 @@ h3 {
   margin: 0 auto; }
   @media (min-width: 1000px) {
     .wrapper-image {
-      text-align: right; } }
+      text-align: right;
+      width: 50%; } }
 
 .image-01 {
   border-top: 5px solid #8E8888;
@@ -1800,32 +1905,6 @@ h3 {
   @media (min-width: 1000px) {
     .image-02 {
       display: inline; } }
-
-.title-box {
-  -webkit-transform: skew(-30deg);
-  -moz-transform: skew(-30deg);
-  -o-transform: skew(-30deg);
-  background-color: #8E8888;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-  height: 30px;
-  width: 115px; }
-  .title-box div {
-    color: white;
-    -webkit-transform: skew(30deg);
-    -moz-transform: skew(30deg);
-    -o-transform: skew(30deg); }
-    .title-box div h3 {
-      font-size: .8rem; }
 
 .social, .copyright {
   margin-left: 30%; }
@@ -1857,12 +1936,14 @@ h3 {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .social-01-inner a, .social-02-inner a {
+    height: 25px; }
+
+.social-02-inner a {
+  margin-left: .75rem; }
 
 footer {
   background-color: #585353;

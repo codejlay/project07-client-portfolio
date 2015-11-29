@@ -9,24 +9,21 @@
 
 	</div><!-- #content -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<div class="site-info">
-				
+			<footer id="colophon" class="site-footer" role="contentinfo">
+				<div class="site-info">
+					
 					<div class="social">
 						<div class="social-01">
-							<div>
 							<i class="fa fa-envelope"></i>
-							</div>
+
 							<div class="social-01-inner">
-								<div>
-									<a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a>
-								</div>
+								<a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a>
 							</div>
 						</div>
 						
 						<div class="social-02">
 							<i class="fa fa-linkedin-square"></i>
-						
+							
 							<div class="social-02-inner">
 								<a href="https://ca.linkedin.com/in/pawux">LinkedIn</a>	
 							</div>
@@ -36,11 +33,11 @@
 					<div class="copyright">
 						<p>&copy; 2015. Design by Paul Anthony Wilson.</p>
 					</div>
-					</div>
-					<div class="footer-accent">
+				</div>
+				<div class="footer-accent">
 
-					</div>
-					
+				</div>
+				
 				
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
