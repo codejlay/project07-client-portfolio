@@ -30,7 +30,7 @@ get_header(); ?>
 					<ul class="work-type-blocks">
 						<?php $query = new WP_Query( array( 'post_type' => 'project' ) ); ?>
 						<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-							<li class="work-type-block-wrappers">
+							<li class="work-type-block-wrappers <?php echo (++$j % 2 == 0) ? 'evenpost' : 'oddpost'; ?>">
 								<div class="work-image">
 									<?php echo get_the_post_thumbnail(get_the_id(), 'large') ?>
 								</div>
