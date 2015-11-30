@@ -13,19 +13,21 @@
 				<div class="site-info">
 					
 					<div class="social">
-						<div class="social-01">
-							<i class="fa fa-envelope"></i>
+						<div class="social-inner">
+							<div class="social-01">
+								<i class="fa fa-envelope"></i>
 
-							<div class="social-01-inner">
-								<a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a>
+								<div class="social-01-inner">
+									<a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a>
+								</div>
 							</div>
-						</div>
-						
-						<div class="social-02">
-							<i class="fa fa-linkedin-square"></i>
 							
-							<div class="social-02-inner">
-								<a href="https://ca.linkedin.com/in/pawux">LinkedIn</a>	
+							<div class="social-02">
+								<i class="fa fa-linkedin-square"></i>
+								
+								<div class="social-02-inner">
+									<a href="https://ca.linkedin.com/in/pawux">LinkedIn</a>	
+								</div>
 							</div>
 						</div>
 					</div>

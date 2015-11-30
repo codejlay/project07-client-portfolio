@@ -90,6 +90,7 @@ section {
 
 h1, h2, h3 {
 	font-family: $font-header;
+	font-style: italic;
 	margin: 0;
 	font-weight: normal;
 }
@@ -157,15 +158,23 @@ h3 {
 
 .site-branding {
 	background-color: $color-brand-grey-main;
-	// height: 70px;
 }
 
 
 .navigation-inner {
 	background-color: $color-brand-grey-main;
-	// height: 70px;
 	display: flex;
 	justify-content: space-between;
+	margin: 0 auto;
+}
+
+
+.logo-wrapper {
+	// width: 60%;
+
+	@include bp(desktop) {
+		text-align: left;		
+	}
 }
 
 
@@ -175,7 +184,7 @@ h3 {
 
 	background-color: $color-brand-orange;
 	height: 50px;
-	width: 60%;
+	width: 200px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -184,14 +193,35 @@ h3 {
 	h1 {
 		font-size: 1.5rem;
 		color: white;
-		font-style: italic;
+		// font-style: italic;
+	}
+
+	@include bp(desktop) {
+			
 	}
 }
 
 
+.nav-wrapper {
+	// width: 40%;
+	display: flex;
+	align-items: center;
+}
+
+
 .nav-selection {
-	width: 40%;
-	color: white;
+	a {
+		text-decoration: none;
+		color: white;
+		font-family: $font-text;
+		font-style: italic;
+		font-size: 1.263rem;
+		margin: 0 2rem;
+
+	}
+	@include bp(desktop) {
+			
+	}
 }
 
 
@@ -205,26 +235,66 @@ h3 {
 .intro {
 	color: white;
 	text-align: center;
-	margin: 0 auto;
+	// margin: 0 auto;
+}
+
+.intro-details {
+	@include bp(desktop) {
+			// display: block;
+			// margin: 0 auto;
+			// background-color: green;
+			// display: flex;
+		}
+}
 
 
-	h2 {
+.intro-details-inner {
+	@include bp(desktop) {
+			// width: 50%;
+			// display: flex;
+			// margin: 0 auto;
+			// flex-direction: column;
+			// background-color: green;
+			// float: left;
+		}
+
+	.intro-name h2 {
+		// text-align: center;
 		padding-top: 2rem;
 		font-size: 1.5rem;
+
+		@include bp(desktop) {
+			font-size: 2.105rem;
+		}
 	}
 
-	p {
+	.intro-description p {
+		// text-align: center;
 		font-size: 1rem;
 		padding: 0 7.5%;
-		color: $color-brand-grey-light;
-	}
+		color: $color-brand-grey-text;
+		// color: green;
 
+		@include bp(desktop) {
+			font-size: 1.263rem;
+		}
+	}
 }
 
 
 .homepage-image {
+	margin: 0;
 	margin-bottom: 3rem;
 
+	@include bp(desktop) {
+			// width: 50%;
+			// border: red 5px solid;
+			// float: right;
+		}
+
+	img {
+		// border: blue 5px solid;
+	}
 }
 
 
@@ -262,7 +332,7 @@ h3 {
 
 .oddpost {
 	// background-color: green;
-	.work-image {
+	.work-image img {
 		border-top: 5px solid $color-brand-grey-border;
 		border-right: 5px solid $color-brand-grey-border;
 		border-bottom: 5px solid $color-brand-grey-border;
@@ -283,7 +353,7 @@ h3 {
 
 .evenpost {
 	// background-color: red;
-	.work-image {
+	.work-image img {
 		border-top: 5px solid $color-brand-grey-border;
 		border-left: 5px solid $color-brand-grey-border;
 		border-bottom: 5px solid $color-brand-grey-border;
@@ -305,7 +375,7 @@ h3 {
 .work-image {
 
 	@include bp(desktop) {
-	width: 40%;
+		width: 40%;
 	}
 }
 
@@ -315,9 +385,8 @@ h3 {
 	padding: 0 8%;
 
 	@include bp(desktop) {
-	width: 60%;
-	// border: 5px solid $color-brand-grey-border;
-	padding: 2% 5%;
+		width: 60%;
+		padding: 2% 5%;
 	}
 }
 
@@ -326,6 +395,10 @@ h3 {
 	font-family: $font-text;
 	font-weight: bold;
 	font-size: 1.2rem;
+
+	// @include bp(desktop) {
+	// 	font-size: 1.684rem;
+	// }
 	
 	p {
 		margin: 0;
@@ -333,10 +406,9 @@ h3 {
 		padding-bottom: 1rem;
 
 		@include bp(desktop) {
-		padding-top: 0;
-		padding-bottom: 1rem;
+			padding-top: 0;
+			padding-bottom: 1rem;
 		}
-
 	}
 }
 
@@ -346,6 +418,10 @@ h3 {
 	p {
 		margin: 0 0 1rem 0;
 		font-size: .8rem;
+
+		// @include bp(desktop) {
+		// 	font-size: 1rem;
+		// }
 	}
 }
 
@@ -363,6 +439,11 @@ h3 {
 		border: 2px solid $color-brand-grey-main;
 		padding: .25rem;
 		font-family: $font-header;
+
+		// @include bp(desktop) {
+		// 	font-size: 1rem;
+		// 	padding: .5rem;
+		// }
 	}
 }
 
@@ -394,9 +475,13 @@ h3 {
 		border: 3px solid $color-brand-orange;
 		
 		display: block;
-		// justify-content: space-between;
-		// flex: 1;
-		
+
+		@include bp(desktop) {
+			height: 55px;
+			width: 275px;
+		}
+
+
 		.resume-inner-left {
 			width: 70%;
 			float: left;
@@ -405,6 +490,11 @@ h3 {
 			padding: 2% 0 2% 2%;
 			text-align: right;
 			font-size: 1.25rem;
+
+			@include bp(desktop) {
+				padding-top: 4%;
+				width: 60%;
+			}
 		}
 
 		.resume-inner-right {
@@ -413,8 +503,9 @@ h3 {
 			margin: 0;
 			padding: 4% 2% 10% 0;
 			// text-align: left;
-
-
+			@include bp(desktop) {
+				width: 40%;
+			}
 		}
 
 		a {
@@ -427,13 +518,19 @@ h3 {
 			font-family: $font-text;
 			font-weight: bold;
 			font-size: .8rem;
+
+			@include bp(desktop) {
+				font-size: 1.684rem;
+			}
 		}
 
 		img {
 				height: 20px;
-				// border: 5px solid black;
-				// margin: 0;
-				// width: 50%;
+				
+				@include bp(desktop) {
+					height: 30px;
+					// padding-right: 5%;
+				}
 			}
 
 		button {
@@ -465,9 +562,8 @@ h3 {
 	
 
 	@include bp(desktop) {
-		// margin: 0 0 3rem 0;
-	display: flex;
-	justify-content: space-between;
+		display: flex;
+		justify-content: space-between;
 	}
 }
 
@@ -477,7 +573,6 @@ h3 {
 	text-align: center;
 
 	.skills-image {
-		// margin: 0 auto;
 		margin-bottom: 0;
 	}
 
@@ -520,7 +615,7 @@ h3 {
 .about-container {
 
 	@include bp(desktop) {
-	display: flex;		
+		display: flex;		
 	}
 }
 
@@ -534,6 +629,11 @@ h3 {
 		color: $color-brand-grey-light;
 		padding: 0 8%;
 		font-size: .8rem;
+
+		@include bp(desktop) {
+			font-size: 1rem;
+			padding-top: 2rem;	
+		}
 	}
 }
 
@@ -615,26 +715,45 @@ h3 {
 	display: none;
 
 	@include bp(tablet) {
-	display: inline;
+		display: inline;
     }
 
 	@include bp(desktop) {
-	display: inline;
+		display: inline;
     }
 }
 
 
 // footer
 
-.social, .copyright {
-	margin-left: 30%;
+.social {
+	// display: flex;
+	// justify-content: center;
+	margin-left: 3.8rem;
+
+	@include bp(desktop) {
+		margin: 0;
+		display: flex;
+		justify-content: center;
+    }
 }
 
 
-.social {
+.social-inner {
+	// margin-left: 3.8rem;
+	// text-align: center;
+	// margin: 0 auto;
 	color: white;
 	display: flex;
 	flex-direction: column;
+	// justify-content: center;
+
+	@include bp(desktop) {
+		flex-direction: row;
+		justify-content: space-around;
+
+    }
+
 
 	a {
 		height: 30px;
@@ -643,17 +762,37 @@ h3 {
 		color: white;
 		font-size: .6rem;
 		margin-left: .5rem;
+
+		@include bp(desktop) {
+			font-size: 1rem;
+			height: 38px;
+    	}
 	}
 
 	i {
 		font-size: 2rem;
 		margin-bottom: 1rem;
+
+		@include bp(desktop) {
+			font-size: 2.4rem;
+    	}
 	}
 }
 
 
 .social-01, .social-02 {
 	display: flex;
+
+	@include bp(desktop) {
+		font-size: 1rem;
+    }
+}
+
+
+.social-01 {
+	@include bp(desktop) {
+		margin-right: 5rem;
+    }
 }
 
 
@@ -685,12 +824,24 @@ h3 {
 footer {
 	background-color: $color-brand-grey-main;
 	padding-top: 2rem;
+
+	@include bp(desktop) {
+		padding-top: 5rem;
+	}
 }
 
 
 .copyright {
 	color: white;
 	font-size: .6rem;
+	margin: 0 auto;
+	text-align: center;
+
+	@include bp(desktop) {
+		// text-align: center;
+		font-size: 0.8421rem;
+		// margin: 0 auto;
+    }
 }
 
 
