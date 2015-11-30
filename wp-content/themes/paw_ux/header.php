@@ -23,8 +23,9 @@
 			<!-- <a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a> -->
 
 			<!-- <header id="masthead" class="site-header" role="banner"> -->
-				<div class="container">
-					<nav id="site-navigation" class="main-navigation" role="navigation">
+				
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<div class="container">
 						<div class="navigation-inner">
 							<div class="logo-wrapper">
 								<div class="logo">
@@ -40,8 +41,9 @@
 								</div>
 							</div>
 						</div>
-					</nav><!-- #site-navigation -->
-				</div>
+					</div>
+				</nav><!-- #site-navigation -->
+				
 			<!-- </header>#masthead -->
 
 			<div id="content" class="site-content">

@@ -111,7 +111,7 @@ h3 {
 
 .container {
 	margin: 0 auto;
-	max-width: 1366px;
+	// max-width: 1366px;
 }
 
 
@@ -133,6 +133,7 @@ h3 {
 	width: 161px;
 	
 	@include bp(desktop) {
+		margin-bottom: 3rem;
 	}
 
 	
@@ -156,7 +157,7 @@ h3 {
 
 // Header Section
 
-.site-branding {
+.main-navigation {
 	background-color: $color-brand-grey-main;
 }
 
@@ -236,6 +237,7 @@ h3 {
 	color: white;
 	text-align: center;
 	// margin: 0 auto;
+	// height: 100vh;
 }
 
 .intro-details {
@@ -243,7 +245,9 @@ h3 {
 			// display: block;
 			// margin: 0 auto;
 			// background-color: green;
-			// display: flex;
+			display: flex;
+			// padding: 0 10rem;
+			padding: 5rem;
 		}
 }
 
@@ -251,11 +255,13 @@ h3 {
 .intro-details-inner {
 	@include bp(desktop) {
 			// width: 50%;
-			// display: flex;
+			display: flex;
 			// margin: 0 auto;
 			// flex-direction: column;
 			// background-color: green;
 			// float: left;
+			align-items: center;
+			flex-direction: column;
 		}
 
 	.intro-name h2 {
@@ -265,6 +271,7 @@ h3 {
 
 		@include bp(desktop) {
 			font-size: 2.105rem;
+			padding-top: 6rem;
 		}
 	}
 
@@ -290,6 +297,7 @@ h3 {
 			// width: 50%;
 			// border: red 5px solid;
 			// float: right;
+			// padding-top: 10rem;
 		}
 
 	img {
@@ -615,7 +623,8 @@ h3 {
 .about-container {
 
 	@include bp(desktop) {
-		display: flex;		
+		display: flex;	
+		justify-content: space-between;	
 	}
 }
 
@@ -640,7 +649,9 @@ h3 {
 
 .wrapper-image {
 	display: flex;
-	margin: 0 auto;
+	// margin: 0 auto;
+	// justify-content: space-between;
+	text-align: right;
 
 	img {
 		// height: 230px;
@@ -648,7 +659,7 @@ h3 {
 
 	@include bp(desktop) {
 		text-align: right;	
-		width: 50%;
+		// width: 50%;
 	}
 }
 
@@ -704,6 +715,10 @@ h3 {
 // mack end
 
 .image-01 {
+	img {
+		border: 5px solid $color-brand-grey-border;
+	}
+
 	// border-top: 5px solid $color-brand-grey-border; 
 	// border-bottom: 5px solid $color-brand-grey-border;
 	// border-left: 5px solid $color-brand-grey-border;
@@ -711,8 +726,12 @@ h3 {
 
 
 .image-02 {
-	border: 5px solid $color-brand-grey-border; 
+	
 	display: none;
+
+	img {
+		border: 5px solid $color-brand-grey-border; 
+	}
 
 	@include bp(tablet) {
 		display: inline;
