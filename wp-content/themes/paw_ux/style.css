@@ -1729,17 +1729,19 @@ h3 {
       font-size: 1.5rem; }
 
 .main-navigation {
-  background-color: #585353; }
+  background-color: rgba(88, 83, 83, 0.5);
+  position: fixed;
+  z-index: 1; }
 
 .navigation-inner {
-  background-color: #585353;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 1rem; }
 
 @media (min-width: 1000px) {
   .logo-wrapper {
@@ -2136,8 +2138,45 @@ h3 {
     .wrapper-image {
       text-align: right; } }
 
-.image-01 img {
-  border: 5px solid #8E8888; }
+* {
+  box-sizing: border-box; }
+
+.image-container {
+  position: relative;
+  width: 100%; }
+
+.skew-container {
+  position: relative;
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.skew-left, .skew-right {
+  position: relative;
+  height: 200px;
+  width: 50%; }
+
+.skew-left {
+  float: left;
+  background-image: url("http://49.media.tumblr.com/8eba08290c3fdc1e9b9f3ab36ec9b828/tumblr_mwwadwYqkB1rmgz8no1_400.gif"); }
+
+.skew-right {
+  float: right;
+  background-image: url("http://batchat.podbean.com/mf/web/f5pjug/Batman_102813_1600.jpg"); }
+
+.slicer-left, .slicer-right {
+  -webkit-transform: skew(-25deg);
+          transform: skew(-25deg);
+  width: 200px;
+  height: 100%;
+  background: white;
+  position: absolute; }
+
+.slicer-right {
+  left: -55px; }
+
+.slicer-left {
+  right: -55px; }
 
 .image-02 {
   display: none; }

@@ -168,7 +168,6 @@ get_header(); ?>
 
 						<div class="image-01">
 							<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
-							<!-- <?php echo esc_html(CFS()->get('about_primary_image')); ?> -->
 						</div>
 
 						<div class="image-02">
