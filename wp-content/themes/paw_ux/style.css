@@ -1786,14 +1786,15 @@ h3 {
 
 .intro {
   color: white;
-  text-align: center; }
+  text-align: center;
+  height: 100vh; }
 
 @media (min-width: 1000px) {
   .intro-details {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 5rem; } }
+    padding: 10rem 5rem 5rem 5rem; } }
 
 @media (min-width: 1000px) {
   .intro-details-inner {
@@ -1826,6 +1827,9 @@ h3 {
 .homepage-image {
   margin: 0;
   margin-bottom: 3rem; }
+
+.chevron-scroll {
+  color: white; }
 
 .my-work-content {
   background-color: white;
@@ -2004,7 +2008,8 @@ h3 {
 
 .skill-type-block-wrappers {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 3rem; }
   .skill-type-block-wrappers .skills-image {
     margin-bottom: 0; }
   .skill-type-block-wrappers .skills-title {
@@ -2024,7 +2029,77 @@ h3 {
     .skill-type-block-wrappers .skills-description p {
       margin: 0;
       padding-top: .5rem;
-      padding-bottom: 2rem; }
+      font-size: .8rem; }
+      @media (min-width: 1000px) {
+        .skill-type-block-wrappers .skills-description p {
+          font-size: 1rem; } }
+
+.software {
+  font-size: 1.684rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 2rem;
+  padding: 0 8%; }
+  .software p {
+    margin: 0 0 1rem; }
+
+.software-details {
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.design-wrapper, .prototyping-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.design-wrapper {
+  margin-bottom: .5rem; }
+  @media (min-width: 1000px) {
+    .design-wrapper {
+      margin-bottom: 0; } }
+
+.design-title, .prototyping-title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: .8rem; }
+  @media (min-width: 1000px) {
+    .design-title, .prototyping-title {
+      font-size: 1rem; } }
+
+.design-description, .prototyping-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: .8rem;
+  font-weight: normal;
+  text-align: left; }
+  @media (min-width: 1000px) {
+    .design-description, .prototyping-description {
+      font-size: 1rem; } }
+
+.design-description {
+  margin-left: 3.4rem; }
+  @media (min-width: 1000px) {
+    .design-description {
+      margin-left: 5.4rem; } }
+
+.prototyping-description {
+  margin-left: 1rem; }
+  @media (min-width: 1000px) {
+    .prototyping-description {
+      margin-left: 3rem; } }
 
 .about-content {
   background-color: #585353;

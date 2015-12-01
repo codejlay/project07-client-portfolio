@@ -28,6 +28,10 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+
+			<div class="chevron-scroll">
+				<i class="fa fa-chevron-down"></i>
+			</div>
 		</section>
 			<section class="my-work-content">
 				<div class="container">
@@ -90,6 +94,34 @@ get_header(); ?>
 					<?php endwhile; endif; wp_reset_postdata(); ?>
 				</ul>
 
+
+				<div class="software">
+					<p><?php echo $cfs->get('software_title'); ?></p>
+					<div class="software-details">
+						
+					
+						<div class="design-wrapper">
+							<div class="design-title">
+								<?php echo $cfs->get('design_title'); ?>
+							</div>
+
+							<div class="design-description">
+								<?php echo $cfs->get('design_description'); ?>
+							</div>
+						</div>
+						
+						<div class="prototyping-wrapper">
+							<div class="prototyping-title">
+								<?php echo $cfs->get('prototyping_title'); ?>
+							</div>
+
+							<div class="prototyping-description">
+								<?php echo $cfs->get('prototyping_description'); ?>
+							</div>
+							</div>
+						</div>
+					
+					</div>
 				<div class="resume">
 				<!-- <button> -->
 					<a href="#" onClick="window.open('http://www.redacademy.com', '_blank')">
@@ -142,6 +174,7 @@ get_header(); ?>
 						<div class="image-02">
 							<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
 							<!-- <?php echo esc_html(CFS()->get('about_secondary_image')); ?> -->
+							<!-- <p><?php echo $cfs->get('about_secondary_image'); ?></p> -->
 						</div>
 					</div>	
 				</div>
