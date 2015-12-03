@@ -161,7 +161,7 @@ get_header(); ?>
 						<p><?php echo esc_html(CFS()->get('about_description')); ?></p>
 					</div>
 
-					<!-- <div class="wrapper-image">	 -->
+					<div class="wrapper-image">	
 						<div class="image-container">
 							<div class="skew-container">
 								<div class="image-01 skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
@@ -170,13 +170,12 @@ get_header(); ?>
 									</div>
 								</div>
 							</div>
-							<div class="image-02">
-								<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
-							</div>
 						</div>
 
-						
-					<!-- </div>	 -->
+						<div class="image-02">
+							<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
+						</div>
+					</div>	
 				</div>
 			</div>
 		</section>
@@ -186,10 +185,7 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 
-<!-- !!!***TEST AREA***!!! -->
-
-
-<!-- <div class="image-container">
+<div class="image-container">
 	<div class="skew-container">
 		<div class="skew-left">
 			<div class="slicer-left">
@@ -201,9 +197,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</div> -->
-
-
+</div>
 
  <!--  $gallery_images = CFS()->get('gallery_images');
   foreach ($gallery_images as $image) {
