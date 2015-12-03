@@ -1696,6 +1696,12 @@ h1, h2 {
 h3 {
   font-size: 1.857rem; }
 
+a {
+  outline: 0;
+  text-decoration: none;
+  border: 0;
+  outline: none; }
+
 .container {
   margin: 0 auto; }
 
@@ -1729,7 +1735,7 @@ h3 {
       font-size: 1.5rem; }
 
 .main-navigation {
-  background-color: rgba(88, 83, 83, 0.5);
+  background-color: #585353;
   position: fixed;
   z-index: 1; }
 
@@ -1783,20 +1789,24 @@ h3 {
   font-size: 1.263rem;
   margin: 0 2rem; }
 
+.responsive-menu {
+  padding-top: 4rem; }
+
 .content-area {
   background-color: #585353; }
 
 .intro {
   color: white;
   text-align: center;
-  height: 100vh; }
+  height: 100vh;
+  padding-top: 3rem; }
 
 @media (min-width: 1000px) {
   .intro-details {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 10rem 5rem 5rem 5rem; } }
+    padding: 10rem 5rem 3rem 5rem; } }
 
 @media (min-width: 1000px) {
   .intro-details-inner {
@@ -1824,14 +1834,23 @@ h3 {
   color: #E8DCDC; }
   @media (min-width: 1000px) {
     .intro-details-inner .intro-description p {
-      font-size: 1.263rem; } }
+      font-size: 1.263rem;
+      padding: 0 10rem; } }
 
 .homepage-image {
   margin: 0;
   margin-bottom: 3rem; }
+  @media (min-width: 1000px) {
+    .homepage-image {
+      margin-bottom: 0; } }
 
 .chevron-scroll {
-  color: white; }
+  font-size: 2rem; }
+  .chevron-scroll a {
+    color: white;
+    text-decoration: none; }
+  .chevron-scroll a:hover {
+    color: #FF7703; }
 
 .my-work-content {
   background-color: white;
@@ -1859,12 +1878,14 @@ h3 {
     .work-type-block-wrappers {
       display: -webkit-flex;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      height: 230px; } }
 
 .oddpost .work-image img {
   border-top: 5px solid #8E8888;
   border-right: 5px solid #8E8888;
-  border-bottom: 5px solid #8E8888; }
+  border-bottom: 5px solid #8E8888;
+  height: 100%; }
 
 @media (min-width: 1000px) {
   .oddpost {
@@ -1883,7 +1904,8 @@ h3 {
 .evenpost .work-image img {
   border-top: 5px solid #8E8888;
   border-left: 5px solid #8E8888;
-  border-bottom: 5px solid #8E8888; }
+  border-bottom: 5px solid #8E8888;
+  height: 100%; }
 
 @media (min-width: 1000px) {
   .evenpost {
@@ -1898,7 +1920,8 @@ h3 {
 
 @media (min-width: 1000px) {
   .work-image {
-    width: 40%; } }
+    width: 40%;
+    height: 100%; } }
 
 .work-details {
   margin: 0 auto;
@@ -2092,7 +2115,7 @@ h3 {
       font-size: 1rem; } }
 
 .design-description {
-  margin-left: 3.4rem; }
+  margin-left: 2.95rem; }
   @media (min-width: 1000px) {
     .design-description {
       margin-left: 5.4rem; } }
@@ -2154,7 +2177,8 @@ h3 {
 .skew-left, .skew-right {
   position: relative;
   height: 200px;
-  width: 50%; }
+  width: 50%;
+  border-top: 5px solid white; }
 
 .skew-left {
   float: left;
@@ -2162,7 +2186,7 @@ h3 {
 
 .skew-right {
   float: right;
-  background-image: url("http://batchat.podbean.com/mf/web/f5pjug/Batman_102813_1600.jpg"); }
+  border: 5px solid green; }
 
 .slicer-left, .slicer-right {
   -webkit-transform: skew(-25deg);
@@ -2173,7 +2197,10 @@ h3 {
   position: absolute; }
 
 .slicer-right {
-  left: -55px; }
+  left: -55px;
+  top: -5px;
+  height: 105%;
+  border-right: 5px solid green; }
 
 .slicer-left {
   right: -55px; }

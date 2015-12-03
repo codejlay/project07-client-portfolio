@@ -30,10 +30,13 @@ get_header(); ?>
 			</div>
 
 			<div class="chevron-scroll">
-				<i class="fa fa-chevron-down"></i>
+				<div class="chevron-scroll-inner">
+					<a href="#my_work"><i class="fa fa-chevron-down"></i></a>
+				</div>
 			</div>
 		</section>
-			<section class="my-work-content">
+			<section class="my-work-content" id="my_work">
+
 				<div class="container">
 					<div class="title-box">
 						<div class="title-box-inner">
@@ -42,7 +45,10 @@ get_header(); ?>
 					</div>
 
 					<ul class="work-type-blocks">
-						<?php $query = new WP_Query( array( 'post_type' => 'project' ) ); ?>
+						<?php
+							$j = 0; 
+							$query = new WP_Query( array( 'post_type' => 'project' ) ); 
+						?>
 						<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
 							<li class="work-type-block-wrappers <?php echo (++$j % 2 == 0) ? 'evenpost' : 'oddpost'; ?>">
 								<div class="work-image">
@@ -67,7 +73,8 @@ get_header(); ?>
 				</div>
 			</section>
 
-		<section class="skills-content">
+		<section class="skills-content" id="skills">
+			
 			<div class="container">
 				<div class="title-box">
 					<div class="title-box-inner">
@@ -76,7 +83,9 @@ get_header(); ?>
 				</div>
 				
 				<ul class="skill-type-blocks">
-					<?php $query = new WP_Query( array( 'post_type' => 'skill' ) ); ?>
+					<?php 
+						$query = new WP_Query( array( 'post_type' => 'skill' ) ); 
+					?>
 					<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
 					<li class="skill-type-block-wrappers">
 						<div class="skills-image">
@@ -139,7 +148,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="about-content">
+		<section class="about-content" id="about">
 			<div class="container">
 				<div class="title-box">
 					<div class="title-box-inner">
@@ -185,17 +194,18 @@ get_header(); ?>
 <?php get_footer(); ?>
 
 
-<!-- <div class="container">
+<div class="image-container">
 	<div class="skew-container">
 		<div class="skew-left">
 			<div class="slicer-left">
 			</div>
 		</div>
-
-		<div class="skew-right">
+		
+		<div class="skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_bass.png); background-repeat:no-repeat; background-size:cover;">
 			<div class="slicer-right">
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 
+<?php echo get_the_post_thumbnail(get_the_id(), 'large') ?>

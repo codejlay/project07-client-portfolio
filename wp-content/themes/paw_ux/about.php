@@ -5,6 +5,5 @@
  * @package paw_ux_Theme
  */
 ?>
-<?php echo esc_html(CFS()->get('about_description')); ?>
 
 <?php wp_about(); ?>
