@@ -81,6 +81,7 @@ body {
 	
 }
 
+
 section {
 }
 
@@ -380,55 +381,13 @@ a {
 
 	@include bp(desktop) {
 		display: flex;
-		// height: 230px;
+		height: 230px;
 	}
 }
 
 
 .oddpost {
 	// background-color: green;
-	height: 200px;
-	@include bp(desktop) {
-	width: 50%;
-	display: flex;
-	flex-direction: row-reverse;
-
-	.work-image-container {
-		position:relative;
-		width: 40%;
-		// display: flex;
-		height: 200px;
-	}
-
-	.work-skew-container {
-		position:relative;
-		// width:75%;
-		// margin:0 auto;
-		margin: 0;
-		overflow:hidden;
-	}
-
-	.work-skew {
-		position:relative;
-	    height:200px;
-	    width:100%;
-	    border-top: 5px solid $color-brand-grey-border;
-	    border-bottom: 5px solid $color-brand-grey-border;
-	    float:left;
-	}
-
-	.work-slicer {
-		transform: skew(-25deg);
-		  width:115px;
-		  height:100%;
-		  background: white;
-		  position:absolute;
-		  right:-55px;
-		  top:-5px;
-		  height: 105%;
-		  border-left: 5px solid $color-brand-grey-border; 
-	}
-
 	.work-image img {
 		border-top: 5px solid $color-brand-grey-border;
 		border-right: 5px solid $color-brand-grey-border;
@@ -438,6 +397,11 @@ a {
 		height: 100%;
 		// width: 100%;
 	}
+
+	@include bp(desktop) {
+	width: 50%;
+	display: flex;
+	flex-direction: row-reverse;
 
 		.work-details {
 			border-top: 5px solid $color-brand-grey-border;
@@ -449,56 +413,17 @@ a {
 
 .evenpost {
 	// background-color: red;
-	height: 200px;
-	@include bp(desktop) {
-		width: 50%;
-		display: flex;
-
-	.work-image-container {
-		position:relative;
-		width:40%;
-		// display: flex;
-		height: 200px;
-	}
-
-	.work-skew-container {
-		position:relative;
-		// width:75%;
-		// margin:0 auto;
-		margin: 0;
-		overflow:hidden;
-	}
-
-	.work-skew {
-		position:relative;
-	    height:200px;
-	    width:100%;
-	    border-top: 5px solid $color-brand-grey-border;
-	    border-bottom: 5px solid $color-brand-grey-border;
-	    float:right;
-	    margin: 0;
-	}
-
-	.work-slicer {
-		transform: skew(-25deg);
-		  width:115px;
-		  height:100%;
-		  background: white;
-		  position:absolute;
-		  left:-55px;
-		  top:-5px;
-		  height: 105%;
-		  border-right: 5px solid $color-brand-grey-border; 
-		  // margin: 0;
-	}
-
 	.work-image img {
 		border-top: 5px solid $color-brand-grey-border;
 		border-left: 5px solid $color-brand-grey-border;
 		border-bottom: 5px solid $color-brand-grey-border;
 		height: 100%;
-
 	}
+
+
+	@include bp(desktop) {
+		width: 50%;
+		display: flex;
 
 		.work-details {
 			border-top: 5px solid $color-brand-grey-border;
@@ -509,10 +434,11 @@ a {
 }
 
 .work-image {
-
+	
+	
 	@include bp(desktop) {
 		width: 33%;
-		// height: 100%;
+		height: 100%;
 	}
 }
 
@@ -522,7 +448,7 @@ a {
 	padding: 0 8%;
 
 	@include bp(desktop) {
-		width: 60%;
+		width: 67%;
 		padding: 2% 5%;
 	}
 }
@@ -669,6 +595,25 @@ a {
 					// padding-right: 5%;
 				}
 			}
+
+		button {
+			// width: 180px;
+			// height: 30px;
+			// background-color: transparent;
+			// box-shadow: none;
+			// font-family: $font-text;
+			// border: 3px solid $color-brand-orange;
+			// font-size: .8rem;
+			// margin-bottom: 2rem;
+			// display: flex;
+			// flex: 1;
+
+			// img {
+			// 	height: 10px;
+			// 	// border: 5px solid black;
+			// 	margin: 0;
+			// }
+		}	
 	}
 }
 
@@ -875,15 +820,12 @@ a {
 
 .image-container {
   position:relative;
-  width:50%;
-  display: flex;
-  height: 230px;
-  text-align: right;
+  width:100%;
 }
 
 .skew-container { 
   position:relative;
-  width:100%;
+  width:75%;
   margin:0 auto;
   overflow:hidden;
 }
@@ -891,50 +833,48 @@ a {
 .skew-left, .skew-right {
   position:relative;
   height:200px;
-  width:75%;
-  border-top: 5px solid $color-brand-grey-border;
+  width:50%;
+  border-top: 5px solid white;
 }
 
 .skew-left {
   float:left;
-  // background-image:url("http://49.media.tumblr.com/8eba08290c3fdc1e9b9f3ab36ec9b828/tumblr_mwwadwYqkB1rmgz8no1_400.gif");
+  background-image:url("http://49.media.tumblr.com/8eba08290c3fdc1e9b9f3ab36ec9b828/tumblr_mwwadwYqkB1rmgz8no1_400.gif");
 }
 
 .skew-right {
   float:right;
   // background-image:url("http://batchat.podbean.com/mf/web/f5pjug/Batman_102813_1600.jpg");
-  // border: 5px solid green;
+  border: 5px solid green;
 }
 
 .slicer-left, .slicer-right {
   transform: skew(-25deg);
   width:200px;
   height:100%;
-  background: $color-brand-grey-main;
+  background:white;
   position:absolute;
 }
 
 .slicer-right {
-  left:-65px;
+  left:-55px;
   top:-5px;
   height: 105%;
-  border-right: 5px solid $color-brand-grey-border; 
+  border-right: 5px solid green; 
 }
 
 .slicer-left {
   right:-55px;
 }
 
+
+
 // mack end
 
 .image-01 {
-	height: 230px;
-	border: 5px solid $color-brand-grey-border; 
-	text-align: right;
-
+	// height: 230px;
 	img {
-		border: 5px solid $color-brand-grey-border;
-		height: 100%;
+		// border: 5px solid $color-brand-grey-border;
 	}
 
 	// border-top: 5px solid $color-brand-grey-border; 
@@ -944,13 +884,11 @@ a {
 
 
 .image-02 {
-	width: 100%;
-	height: 230px;
+	// height: 230px;
 	display: none;
 
 	img {
 		border: 5px solid $color-brand-grey-border; 
-		height: 100%;
 	}
 
 	@include bp(tablet) {

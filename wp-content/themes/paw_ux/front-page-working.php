@@ -44,25 +44,15 @@ get_header(); ?>
 						</div>
 					</div>
 
-
-
 					<ul class="work-type-blocks">
 						<?php
 							$j = 0; 
 							$query = new WP_Query( array( 'post_type' => 'project' ) ); 
 						?>
 						<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-
-
-
 							<li class="work-type-block-wrappers <?php echo (++$j % 2 == 0) ? 'evenpost' : 'oddpost'; ?>">
-								<div class="work-image-container">
-									<div class="work-skew-container">
-										<div class="work-skew" id="custom-bg" style= "background-image: url( <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url ?>); background-repeat:no-repeat; background-size:cover;">
-											<div class="work-slicer">
-											</div>	
-										</div>
-									</div>
+								<div class="work-image">
+									<?php echo get_the_post_thumbnail(get_the_id(), 'large') ?>
 								</div>
 								<div class="work-details">
 									<div class="work-title">
@@ -142,7 +132,6 @@ get_header(); ?>
 					
 					</div>
 				<div class="resume">
-				<!-- <button> -->
 					<a href="#" onClick="window.open('http://www.redacademy.com', '_blank')">
 						<div class="resume-inner-left">
 							View Resume 
@@ -152,7 +141,6 @@ get_header(); ?>
 							<img src="<?php bloginfo('template_url'); ?>/images/PDF_icon.png" alt="PDF Icon"/>
 						</div>
 					</a>
-				<!-- </button> -->
 				</div>
 				
 			</div>
@@ -171,21 +159,28 @@ get_header(); ?>
 						<p><?php echo esc_html(CFS()->get('about_description')); ?></p>
 					</div>
 
-					<!-- <div class="wrapper-image">	 -->
-						<div class="image-container">
-							<div class="skew-container">
-								<div class="image-01 skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
-									<div class="slicer-right">
+					<div class="wrapper-image">	
+						<!-- 	<div class="image-container">
+								<div class="skew-container">
+									<div class="skew-right">
+										<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
+										<div class="slicer-right">
+											<div class="image-01">
+												<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-							<div class="image-02">
-								<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
-							</div>
+							</div> -->
+
+						<div class="image-01">
+							<img src= "<?php echo get_template_directory_uri() ?>/images/pw_profile_imageJuly2015.png" alt="Paul Profile Image">
 						</div>
 
-						
-					<!-- </div>	 -->
+						<div class="image-02">
+							<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
+						</div>
+					</div>	
 				</div>
 			</div>
 		</section>
@@ -198,21 +193,19 @@ get_header(); ?>
 <!-- !!!***TEST AREA***!!! -->
 
 
-<!-- <div class="image-container">
+<div class="image-container">
 	<div class="skew-container">
 		<div class="skew-left">
 			<div class="slicer-left">
 			</div>
 		</div>
 		
-		<div class="skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
+		<div class="skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_bass.png); background-repeat:no-repeat; background-size:cover;">
 			<div class="slicer-right">
 			</div>
 		</div>
 	</div>
-</div> -->
-
-
+</div>
 
  <!--  $gallery_images = CFS()->get('gallery_images');
   foreach ($gallery_images as $image) {
