@@ -35,56 +35,51 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-			<section class="my-work-content" id="my_work">
 
-				<div class="container">
-					<div class="title-box">
-						<div class="title-box-inner">
-							<h3>my_work</h3>
-						</div>
+		<section class="my-work-content" id="my_work">
+			<div class="container">
+				<div class="title-box">
+					<div class="title-box-inner">
+						<h3>my_work</h3>
 					</div>
-
-
-
-					<ul class="work-type-blocks">
-						<?php
-							$j = 0; 
-							$query = new WP_Query( array( 'post_type' => 'project' ) ); 
-						?>
-						<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-
-
-
-							<li class="work-type-block-wrappers <?php echo (++$j % 2 == 0) ? 'evenpost' : 'oddpost'; ?>">
-								<div class="work-image-container">
-									<div class="work-skew-container">
-										<div class="work-skew" id="custom-bg" style= "background-image: url( <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url ?>); background-repeat:no-repeat; background-size:cover;">
-											<div class="work-slicer">
-											</div>	
-										</div>
-									</div>
-								</div>
-								<div class="work-details">
-									<div class="work-title">
-										<p><?php echo get_the_title(get_the_ID()); ?></p>
-									</div> 
-
-									<div class="work-description">
-										<p><?php echo ( CFS()->get('project_description')); ?></p> 
-									</div>
-
-									<div class="work-link">
-										<p><?php echo ( CFS()->get('case_study')); ?></p>
-									</div>
-								</div>
-							</li>
-						<?php endwhile; endif; wp_reset_postdata(); ?>
-					</ul>
 				</div>
-			</section>
+
+				<ul class="work-type-blocks">
+					<?php
+						$j = 0; 
+						$query = new WP_Query( array( 'post_type' => 'project' ) ); 
+					?>
+					<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
+						<li class="work-type-block-wrappers <?php echo (++$j % 2 == 0) ? 'evenpost' : 'oddpost'; ?>">
+							<div class="work-image-container">
+								<div class="work-skew-container">
+									<div class="work-skew" id="custom-bg" style= "background-image: url( <?php $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); echo $url ?>); background-repeat:no-repeat; background-size:cover;">
+										<div class="work-slicer">
+										</div>	
+									</div>
+								</div>
+							</div>
+
+							<div class="work-details">
+								<div class="work-title">
+									<p><?php echo get_the_title(get_the_ID()); ?></p>
+								</div> 
+
+								<div class="work-description">
+									<p><?php echo ( CFS()->get('project_description')); ?></p> 
+								</div>
+
+								<div class="work-link">
+									<p><?php echo ( CFS()->get('case_study')); ?></p>
+								</div>
+							</div>
+						</li>
+					<?php endwhile; endif; wp_reset_postdata(); ?>
+				</ul>
+			</div>
+		</section>
 
 		<section class="skills-content" id="skills">
-			
 			<div class="container">
 				<div class="title-box">
 					<div class="title-box-inner">
@@ -113,12 +108,9 @@ get_header(); ?>
 					<?php endwhile; endif; wp_reset_postdata(); ?>
 				</ul>
 
-
 				<div class="software">
 					<p><?php echo $cfs->get('software_title'); ?></p>
 					<div class="software-details">
-						
-					
 						<div class="design-wrapper">
 							<div class="design-title">
 								<?php echo $cfs->get('design_title'); ?>
@@ -137,24 +129,19 @@ get_header(); ?>
 							<div class="prototyping-description">
 								<?php echo $cfs->get('prototyping_description'); ?>
 							</div>
-							</div>
-						</div>
-					
+						</div>	
 					</div>
+				</div>
+
 				<div class="resume">
-				<!-- <button> -->
 					<a href="#" onClick="window.open('http://www.redacademy.com', '_blank')">
-						<div class="resume-inner-left">
-							View Resume 
-						</div>
+						<div class="resume-inner-left">View Resume</div>
 
 						<div class="resume-inner-right">
 							<img src="<?php bloginfo('template_url'); ?>/images/PDF_icon.png" alt="PDF Icon"/>
 						</div>
 					</a>
-				<!-- </button> -->
 				</div>
-				
 			</div>
 		</section>
 
@@ -170,22 +157,18 @@ get_header(); ?>
 					<div class="about-description">
 						<p><?php echo esc_html(CFS()->get('about_description')); ?></p>
 					</div>
-
-					<!-- <div class="wrapper-image">	 -->
-						<div class="image-container">
-							<div class="skew-container">
-								<div class="image-01 skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
-									<div class="slicer-right">
-									</div>
+					
+					<div class="image-container">
+						<div class="skew-container">
+							<div class="image-01 skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
+								<div class="slicer-right">
 								</div>
 							</div>
-							<div class="image-02">
-								<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
-							</div>
 						</div>
-
-						
-					<!-- </div>	 -->
+						<div class="image-02">
+							<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

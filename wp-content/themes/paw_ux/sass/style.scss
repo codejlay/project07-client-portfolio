@@ -67,7 +67,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
-
 html {
 	// min-width: 320px;
 	// max-width: 1366px;
@@ -80,6 +79,7 @@ body {
 	font-family: $font-text;
 	
 }
+
 
 section {
 }
@@ -94,7 +94,6 @@ h1, h2, h3 {
 
 
 h1, h2 {
-	
 	font-size: 2.143rem;
 }
 
@@ -103,13 +102,14 @@ h3 {
 	font-size: 1.857rem;
 }
 
+
 a {
 	outline: 0;
 	text-decoration:none;
 	border:0;
 	outline:none;
-
 }
+
 
 // Structure
 
@@ -165,34 +165,29 @@ a {
 	background-color: rgba(88, 83, 83, 1);
 	position: fixed;
 	z-index: 1;
-	// height: 20vh;
 }
 
 
 .navigation-inner {
-	// background-color: $color-brand-grey-main;
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
 	padding-bottom: 1rem;
-	// box-shadow: 3px 2px 5px;
-
 }
 
 
 // Menu Underline
-.current_page_ancestor:after, .current_page_item:after {
-    // content: "";
-    // background-color: $color-brand-orange;
-    // display: block;
-    // height: 5px;
-    // margin-top: -1px;
-    // width: 85%;
-}
+// .current_page_ancestor:after, .current_page_item:after {
+//     content: "";
+//     background-color: $color-brand-orange;
+//     display: block;
+//     height: 5px;
+//     margin-top: -1px;
+//     width: 85%;
+// }
 
 
 .logo-wrapper {
-	// width: 60%;
 
 	@include bp(desktop) {
 		text-align: left;		
@@ -201,8 +196,8 @@ a {
 
 
 .logo {
-	-webkit-clip-path: polygon(0 1%, 100% 0, 80% 100%, 0 100%);
-	clip-path: polygon(0 1%, 100% 0, 80% 100%, 0 100%);	
+	-webkit-clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);
+	clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);	
 
 	background-color: $color-brand-orange;
 	height: 50px;
@@ -215,7 +210,6 @@ a {
 	h1 {
 		font-size: 1.5rem;
 		color: white;
-		// font-style: italic;
 	}
 
 	@include bp(desktop) {
@@ -225,10 +219,8 @@ a {
 
 
 .nav-wrapper {
-	// width: 40%;
 	display: flex;
 	align-items: center;
-
 }
 
 
@@ -240,22 +232,23 @@ a {
 		font-style: italic;
 		font-size: 1.263rem;
 		margin: 0 2rem;
-
 	}
+
 	@include bp(desktop) {
 			
 	}
 }
 
+
 .admin-bar-showing {
 	// box-shadow: 5px 5px 5px;
 }
 
-.responsive-menu {
 
+.responsive-menu {
 	padding-top: 4rem;
-	// box-shadow: 5px 5px 5px;
 }
+
 
 .content-area {
 	background-color: $color-brand-grey-main;
@@ -267,38 +260,29 @@ a {
 .intro {
 	color: white;
 	text-align: center;
-	// margin: 0 auto;
 	height: 100vh;
 	padding-top: 3rem;
 }
 
+
 .intro-details {
 
 	@include bp(desktop) {
-			// display: block;
-			// margin: 0 auto;
-			// background-color: green;
-			display: flex;
-			// padding: 0 10rem;
-			padding: 10rem 5rem 3rem 5rem;
-		}
+		display: flex;
+		padding: 10rem 5rem 3rem 5rem;
+	}
 }
 
 
 .intro-details-inner {
+	
 	@include bp(desktop) {
-			// width: 50%;
 			display: flex;
-			// margin: 0 auto;
-			// flex-direction: column;
-			// background-color: green;
-			// float: left;
 			align-items: center;
 			flex-direction: column;
 		}
 
 	.intro-name h2 {
-		// text-align: center;
 		padding-top: 2rem;
 		font-size: 1.5rem;
 
@@ -309,11 +293,9 @@ a {
 	}
 
 	.intro-description p {
-		// text-align: center;
 		font-size: 1rem;
 		padding: 0 7.5%;
 		color: $color-brand-grey-text;
-		// color: green;
 
 		@include bp(desktop) {
 			font-size: 1.263rem;
@@ -328,11 +310,7 @@ a {
 	margin-bottom: 3rem;
 
 	@include bp(desktop) {
-			margin-bottom: 0;
-		}
-
-	img {
-		// border: blue 5px solid;
+		margin-bottom: 0;
 	}
 }
 
@@ -340,8 +318,6 @@ a {
 .chevron-scroll {
 	
 	font-size: 2rem;
-	// margin: 2rem 0;
-
 	a {
 		color: white;
 		text-decoration: none;
@@ -379,31 +355,20 @@ a {
 	color: $color-brand-grey-main;
 	margin-bottom: 2rem;
 	
-	// width: 370px;
-
 	@include bp(desktop) {
 		display: flex;
-		// height: 230px;
 	}
 }
 
 
-.oddpost {
-	// background-color: green;
-	// margin-right: -3rem;
-	// height: 200px;
+// Work Slant Begin
 
+.oddpost {
 	.work-image-container {
-		// position:relative;
-		// width: 100%;
-		// display: flex;
-		// height: 200px;
 		}
 
 	.work-skew-container {
 		position:relative;
-		// width:75%;
-		// margin:0 auto;
 		margin: 0;
 		overflow:hidden;
 	}
@@ -429,22 +394,6 @@ a {
 		  border-left: 5px solid $color-brand-grey-border; 
 	}
 
-	.work-image img {
-		border-top: 5px solid $color-brand-grey-border;
-		border-right: 5px solid $color-brand-grey-border;
-		border-bottom: 5px solid $color-brand-grey-border;
-		// max-width: 100%;
-		// max-height: 100%;
-		// height: 100%;
-		// width: 100%;
-	}
-
-	.work-details {
-		// border-top: 5px solid $color-brand-grey-border;
-		// border-right: 5px solid $color-brand-grey-border;
-		// border-bottom: 5px solid $color-brand-grey-border;
-	}
-
 	@include bp(desktop) {
 		width: 50%;
 		display: flex;
@@ -453,14 +402,11 @@ a {
 		.work-image-container {
 			position:relative;
 			width: 40%;
-			// display: flex;
 			height: 200px;
 		}
 
 		.work-skew-container {
 			position:relative;
-			// width:75%;
-			// margin:0 auto;
 			margin: 0;
 			overflow:hidden;
 		}
@@ -490,10 +436,7 @@ a {
 			border-top: 5px solid $color-brand-grey-border;
 			border-right: 5px solid $color-brand-grey-border;
 			border-bottom: 5px solid $color-brand-grey-border;
-			// max-width: 100%;
-			// max-height: 100%;
 			height: 100%;
-			// width: 100%;
 		}
 
 		.work-details {
@@ -505,21 +448,15 @@ a {
 }
 
 .evenpost {
-	// background-color: red;
-	// margin-left: -3rem;
-	// height: 200px;
 
 	.work-image-container {
 		position:relative;
 		width:100%;
-		// display: flex;
 		height: 200px;
 	}
 
 	.work-skew-container {
 		position:relative;
-		// width:75%;
-		// margin:0 auto;
 		margin: 0;
 		overflow:hidden;
 	}
@@ -536,29 +473,14 @@ a {
 
 	.work-slicer {
 		transform: skew(-25deg);
-		  width:115px;
-		  height:100%;
-		  background: white;
-		  position:absolute;
-		  left:-55px;
-		  top:-5px;
-		  height: 105%;
-		  border-right: 5px solid $color-brand-grey-border; 
-		  // margin: 0;
-	}
-
-	.work-image img {
-		border-top: 5px solid $color-brand-grey-border;
-		border-left: 5px solid $color-brand-grey-border;
-		border-bottom: 5px solid $color-brand-grey-border;
-		height: 100%;
-
-	}
-
-	.work-details {
-		// border-top: 5px solid $color-brand-grey-border;
-		// border-left: 5px solid $color-brand-grey-border;
-		// border-bottom: 5px solid $color-brand-grey-border;
+		width:115px;
+		height:100%;
+		background: white;
+		position:absolute;
+		left:-55px;
+		top:-5px;
+		height: 105%;
+		border-right: 5px solid $color-brand-grey-border; 
 	}
 
 	@include bp(desktop) {
@@ -568,14 +490,11 @@ a {
 		.work-image-container {
 			position:relative;
 			width:40%;
-			// display: flex;
 			height: 200px;
 		}
 
 		.work-skew-container {
 			position:relative;
-			// width:75%;
-			// margin:0 auto;
 			margin: 0;
 			overflow:hidden;
 		}
@@ -592,23 +511,14 @@ a {
 
 		.work-slicer {
 			transform: skew(-25deg);
-			  width:115px;
-			  height:100%;
-			  background: white;
-			  position:absolute;
-			  left:-55px;
-			  top:-5px;
-			  height: 105%;
-			  border-right: 5px solid $color-brand-grey-border; 
-			  // margin: 0;
-		}
-
-		.work-image img {
-			border-top: 5px solid $color-brand-grey-border;
-			border-left: 5px solid $color-brand-grey-border;
-			border-bottom: 5px solid $color-brand-grey-border;
-			height: 100%;
-
+			width:115px;
+			height:100%;
+			background: white;
+			position:absolute;
+			left:-55px;
+			top:-5px;
+			height: 105%;
+			border-right: 5px solid $color-brand-grey-border; 
 		}
 
 		.work-details {
@@ -616,14 +526,6 @@ a {
 			border-left: 5px solid $color-brand-grey-border;
 			border-bottom: 5px solid $color-brand-grey-border;
 		}
-	}
-}
-
-.work-image {
-
-	@include bp(desktop) {
-		width: 33%;
-		// height: 100%;
 	}
 }
 
@@ -638,16 +540,13 @@ a {
 	}
 }
 
+// Work Slant End
 
 .work-title {
 	font-family: $font-text;
 	font-weight: bold;
 	font-size: 1.2rem;
 
-	// @include bp(desktop) {
-	// 	font-size: 1.684rem;
-	// }
-	
 	p {
 		margin: 0;
 		padding-top: .5rem;
@@ -662,20 +561,14 @@ a {
 
 
 .work-description {
-	
 	p {
 		margin: 0 0 1rem 0;
 		font-size: .8rem;
-
-		// @include bp(desktop) {
-		// 	font-size: 1rem;
-		// }
 	}
 }
 
 
 .work-link {
-
 	p {
 		margin: 0;
 	}
@@ -687,11 +580,6 @@ a {
 		border: 2px solid $color-brand-grey-main;
 		padding: .25rem;
 		font-family: $font-header;
-
-		// @include bp(desktop) {
-		// 	font-size: 1rem;
-		// 	padding: .5rem;
-		// }
 	}
 }
 
@@ -702,10 +590,8 @@ a {
 	background-color: $color-brand-grey-light;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
-	
 	margin: 0 auto;
 	text-align: center;
-	
 	color: $color-brand-grey-main;
 
 	@include bp(desktop) {
@@ -721,7 +607,6 @@ a {
 		box-shadow: none;
 		font-family: $font-text;
 		border: 3px solid $color-brand-orange;
-		
 		display: block;
 
 		@include bp(desktop) {
@@ -733,7 +618,6 @@ a {
 		.resume-inner-left {
 			width: 70%;
 			float: left;
-			// background-color: green;
 			margin: 0;
 			padding: 2% 0 2% 2%;
 			text-align: right;
@@ -750,7 +634,7 @@ a {
 			float: right;
 			margin: 0;
 			padding: 4% 2% 10% 0;
-			// text-align: left;
+
 			@include bp(desktop) {
 				width: 40%;
 			}
@@ -759,9 +643,6 @@ a {
 		a {
 			text-decoration: none;
 			color: $color-brand-grey-main;
-			// background-color: green;
-			// margin: 0 auto;
-			// width: 50%;
 			margin: 0;
 			font-family: $font-text;
 			font-weight: bold;
@@ -773,13 +654,12 @@ a {
 		}
 
 		img {
-				height: 20px;
+			height: 20px;
 				
-				@include bp(desktop) {
-					height: 30px;
-					// padding-right: 5%;
-				}
+			@include bp(desktop) {
+				height: 30px;
 			}
+		}
 	}
 }
 
@@ -853,6 +733,7 @@ a {
 	}
 }
 
+
 .software-details {
 	margin: 0 auto;
 	display: flex;
@@ -860,35 +741,31 @@ a {
 	justify-content:center;
 }
 
+
 .design-wrapper, .prototyping-wrapper {
 	display: flex;
-	// font-family: $font-text;
-	// font-weight: bold;
-	// font-size: 1rem;
-	// text-align: left;
-	// width: 50%;
 }
+
 
 .design-wrapper {
 	margin-bottom: .5rem;
+	
 	@include bp(desktop) {
-			margin-bottom: 0;
-		}	
+		margin-bottom: 0;
+	}	
 }
 
+
 .design-title, .prototyping-title {
-	// display: flex;
 	font-family: $font-text;
 	font-weight: bold;
 	font-size: .8rem;
 
-	// text-align: left;
-	// width: 50%;
-
 	@include bp(desktop) {
-			font-size: 1rem;
-		}	
+		font-size: 1rem;
+	}	
 }
+
 
 .design-description, .prototyping-description {
 	font-family: $font-text;
@@ -898,37 +775,28 @@ a {
 
 
 	@include bp(desktop) {
-			font-size: 1rem;
-		}	
+		font-size: 1rem;
+	}	
 }
+
 
 .design-description {
 	margin-left: 2.95rem;
-	// background-color: green;
 
 	@include bp(desktop) {
-			margin-left: 5.4rem;
-		}	
-	
-
+		margin-left: 5.4rem;
+	}	
 }
+
 
 .prototyping-description {
 	margin-left: 1rem;
-	// background-color: blue;
-	@include bp(desktop) {
-			margin-left: 3rem;
-		}	
 	
-	// background-color: green;
+	@include bp(desktop) {
+		margin-left: 3rem;
+	}	
 }
-// .prototyping-wrapper {
-// 	font-family: $font-text;
-// 	font-size: 1rem;
-// 	text-align: left;
-// 	font-weight: normal;
-// 	width: 50%;
-// }
+
 
 // About Section
 
@@ -937,6 +805,7 @@ a {
 	padding-top: 2rem;
 }
 
+
 .about-container {
 
 	@include bp(desktop) {
@@ -944,6 +813,7 @@ a {
 		justify-content: space-between;	
 	}
 }
+
 
 .about-description {
 	
@@ -964,117 +834,92 @@ a {
 }
 
 
-.wrapper-image {
-	// display: flex;
-	// margin: 0 auto;
-	// justify-content: space-between;
-	// text-align: right;
-
-	img {
-		// height: 230px;
-	}
-
-	@include bp(desktop) {
-		// text-align: right;	
-		// width: 50%;
-		// background-color: brown;
-
-
-	}
-}
-
-
-// mack begin
+// About Slant Begin
 
 * { box-sizing:border-box; }
 
 .image-container {
-  position:relative;
-  // width:50%;
-  display: flex;
-  height: 230px;
-  text-align: right;
+	position:relative;
+	height: 230px;
+	
+	@include bp(tablet) {
+		display: flex;
+		justify-content: flex-end;
+    }
 
-  @include bp(desktop) {
-  	width: 50%;
-  }
-  // align-items: flex-end;
+	@include bp(desktop) {
+		width: 50%;
+		text-align: right;
+	}
 }
+
 
 .skew-container { 
-  position:relative;
-  width:100%;
-  margin:0 auto;
-  overflow:hidden;
+	position:relative;
+	width:100%;
+	margin:0 auto;
+	overflow:hidden;
 }
+
 
 .skew-right {
-  position:relative;
-  height:200px;
-  width:75%;
-  border-top: 5px solid $color-brand-grey-border;
+	position:relative;
+	height:230px;
+	border-top: 5px solid $color-brand-grey-border;
+	border-bottom: 5px solid $color-brand-grey-border;
+	margin: 0;
+	// right: 30px;
+
+	@include bp(tablet) {
+		margin-right: 0 !important;
+		width: 100%;
+		// text-align: right;
+		// overflow: hidden;
+    }
 }
 
-.skew-left {
-  // float:left;
-  // background-image:url("http://49.media.tumblr.com/8eba08290c3fdc1e9b9f3ab36ec9b828/tumblr_mwwadwYqkB1rmgz8no1_400.gif");
-}
-
-.skew-right {
-  float:right;
-  // background-image:url("http://batchat.podbean.com/mf/web/f5pjug/Batman_102813_1600.jpg");
-  // border: 5px solid green;
-}
 
 .slicer-right {
-  transform: skew(-25deg);
-  width:200px;
-  height:100%;
-  background: $color-brand-grey-main;
-  position:absolute;
+	transform: skew(-25deg);
+	width:200px;
+	height:100%;
+	background: $color-brand-grey-main;
+	position:absolute;
 }
+
 
 .slicer-right {
-  left:-140px;
-  top:-5px;
-  height: 105%;
-  border-right: 5px solid $color-brand-grey-border; 
+	left:-140px;
+	top:-5px;
+	height: 105%;
+	border-right: 5px solid $color-brand-grey-border; 
 
-  @include bp(desktop) {
-  	left:-65px;
-  }
+	@include bp(desktop) {
+		left:-65px;
+	}
 }
 
-.slicer-left {
-  // right:-55px;
-}
-
-// mack end
+// About Slant End
 
 .image-01 {
-	height: 230px;
-	width: inherit;
-	border-top: 5px solid $color-brand-grey-border; 
-	border-bottom: 5px solid $color-brand-grey-border;
-	border-left: 5px solid $color-brand-grey-border;
-	// text-align: right;
+	// margin: 0;
 
-	img {
-		// border: 5px solid $color-brand-grey-border;
-		// height: 100%;
-
-	}
-
+	// height: 230px;
+	// width: inherit;
 	// border-top: 5px solid $color-brand-grey-border; 
 	// border-bottom: 5px solid $color-brand-grey-border;
 	// border-left: 5px solid $color-brand-grey-border;
+	@include bp(tablet) {
+		// width: 50%;
+    }
 }
 
 
 .image-02 {
-	width: inherit;
+	// width: inherit;
 	height: 230px;
 	display: none;
+	width: 300px;
 
 	img {
 		border: 5px solid $color-brand-grey-border; 
@@ -1083,6 +928,8 @@ a {
 
 	@include bp(tablet) {
 		display: inline;
+		width: 100%;
+		text-align: left;
     }
 
 	@include bp(desktop) {
@@ -1094,8 +941,6 @@ a {
 // footer
 
 .social {
-	// display: flex;
-	// justify-content: center;
 	margin-left: 3.8rem;
 
 	@include bp(desktop) {
@@ -1107,20 +952,14 @@ a {
 
 
 .social-inner {
-	// margin-left: 3.8rem;
-	// text-align: center;
-	// margin: 0 auto;
 	color: white;
 	display: flex;
 	flex-direction: column;
-	// justify-content: center;
 
 	@include bp(desktop) {
 		flex-direction: row;
 		justify-content: space-around;
-
     }
-
 
 	a {
 		height: 30px;
@@ -1166,20 +1005,6 @@ a {
 .social-01-inner, .social-02-inner {
 	display: flex;
 	align-items: center;
-
-	a {
-		// height: 30px;
-		// text-decoration: none;
-		// font-family: $font-text;
-		// color: white;
-		// font-size: .6rem;
-		// margin-left: .5rem;
-	}	
-
-	// i {
-	// 	font-size: 1.8rem;
-	// 	margin-bottom: 1rem;
-	// }
 }
 
 
@@ -1205,9 +1030,7 @@ footer {
 	text-align: center;
 
 	@include bp(desktop) {
-		// text-align: center;
 		font-size: 0.8421rem;
-		// margin: 0 auto;
     }
 }
 
