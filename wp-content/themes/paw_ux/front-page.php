@@ -92,12 +92,12 @@ get_header(); ?>
 					</div>
 				</div>
 				
-				<ul class="skill-type-blocks">
+				<ul class="grid-4_sm-2_xs-1 skill-type-blocks">
 					<?php 
 						$query = new WP_Query( array( 'post_type' => 'skill' ) ); 
 					?>
 					<?php if($query->have_posts() ) : while($query->have_posts() ) : $query->the_post(); ?>
-					<li class="skill-type-block-wrappers">
+					<li class="skill-type-block-wrappers col">
 						<div class="skills-image">
 							<?php echo get_the_post_thumbnail(get_the_id(), 'large') ?>
 						</div>

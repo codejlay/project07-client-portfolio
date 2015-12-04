@@ -122,9 +122,9 @@ a {
 // Slant Element
 
 .title-box {
-	-webkit-transform: skew(-30deg);
-	-moz-transform: skew(-30deg);
-	-o-transform: skew(-30deg);
+	-webkit-transform: skew(-25deg);
+	-moz-transform: skew(-25deg);
+	-o-transform: skew(-25deg);
 
 	background-color: $color-brand-grey-border;
 	display: flex;
@@ -144,9 +144,9 @@ a {
 	.title-box-inner {
 		color: white;
 
-		-webkit-transform: skew(30deg);
-		-moz-transform: skew(30deg);
-		-o-transform: skew(30deg);
+		-webkit-transform: skew(25deg);
+		-moz-transform: skew(25deg);
+		-o-transform: skew(25deg);
 
 		h3 {
 			font-size: 1.5rem;
@@ -179,14 +179,17 @@ a {
 
 }
 
+
+// Menu Underline
 .current_page_ancestor:after, .current_page_item:after {
-    content: "";
-    background-color: $color-brand-orange;
-    display: block;
-    height: 5px;
-    margin-top: -1px;
-    width: 85%;
+    // content: "";
+    // background-color: $color-brand-orange;
+    // display: block;
+    // height: 5px;
+    // margin-top: -1px;
+    // width: 85%;
 }
+
 
 .logo-wrapper {
 	// width: 60%;
@@ -387,18 +390,15 @@ a {
 
 .oddpost {
 	// background-color: green;
-	height: 200px;
-	@include bp(desktop) {
-	width: 50%;
-	display: flex;
-	flex-direction: row-reverse;
+	// margin-right: -3rem;
+	// height: 200px;
 
 	.work-image-container {
-		position:relative;
-		width: 40%;
+		// position:relative;
+		// width: 100%;
 		// display: flex;
-		height: 200px;
-	}
+		// height: 200px;
+		}
 
 	.work-skew-container {
 		position:relative;
@@ -435,9 +435,66 @@ a {
 		border-bottom: 5px solid $color-brand-grey-border;
 		// max-width: 100%;
 		// max-height: 100%;
-		height: 100%;
+		// height: 100%;
 		// width: 100%;
 	}
+
+	.work-details {
+		// border-top: 5px solid $color-brand-grey-border;
+		// border-right: 5px solid $color-brand-grey-border;
+		// border-bottom: 5px solid $color-brand-grey-border;
+	}
+
+	@include bp(desktop) {
+		width: 50%;
+		display: flex;
+		flex-direction: row-reverse;
+
+		.work-image-container {
+			position:relative;
+			width: 40%;
+			// display: flex;
+			height: 200px;
+		}
+
+		.work-skew-container {
+			position:relative;
+			// width:75%;
+			// margin:0 auto;
+			margin: 0;
+			overflow:hidden;
+		}
+
+		.work-skew {
+			position:relative;
+		    height:200px;
+		    width:100%;
+		    border-top: 5px solid $color-brand-grey-border;
+		    border-bottom: 5px solid $color-brand-grey-border;
+		    float:left;
+		}
+
+		.work-slicer {
+			transform: skew(-25deg);
+			  width:115px;
+			  height:100%;
+			  background: white;
+			  position:absolute;
+			  right:-55px;
+			  top:-5px;
+			  height: 105%;
+			  border-left: 5px solid $color-brand-grey-border; 
+		}
+
+		.work-image img {
+			border-top: 5px solid $color-brand-grey-border;
+			border-right: 5px solid $color-brand-grey-border;
+			border-bottom: 5px solid $color-brand-grey-border;
+			// max-width: 100%;
+			// max-height: 100%;
+			height: 100%;
+			// width: 100%;
+		}
 
 		.work-details {
 			border-top: 5px solid $color-brand-grey-border;
@@ -449,14 +506,12 @@ a {
 
 .evenpost {
 	// background-color: red;
-	height: 200px;
-	@include bp(desktop) {
-		width: 50%;
-		display: flex;
+	// margin-left: -3rem;
+	// height: 200px;
 
 	.work-image-container {
 		position:relative;
-		width:40%;
+		width:100%;
 		// display: flex;
 		height: 200px;
 	}
@@ -499,6 +554,62 @@ a {
 		height: 100%;
 
 	}
+
+	.work-details {
+		// border-top: 5px solid $color-brand-grey-border;
+		// border-left: 5px solid $color-brand-grey-border;
+		// border-bottom: 5px solid $color-brand-grey-border;
+	}
+
+	@include bp(desktop) {
+		width: 50%;
+		display: flex;
+
+		.work-image-container {
+			position:relative;
+			width:40%;
+			// display: flex;
+			height: 200px;
+		}
+
+		.work-skew-container {
+			position:relative;
+			// width:75%;
+			// margin:0 auto;
+			margin: 0;
+			overflow:hidden;
+		}
+
+		.work-skew {
+			position:relative;
+		    height:200px;
+		    width:100%;
+		    border-top: 5px solid $color-brand-grey-border;
+		    border-bottom: 5px solid $color-brand-grey-border;
+		    float:right;
+		    margin: 0;
+		}
+
+		.work-slicer {
+			transform: skew(-25deg);
+			  width:115px;
+			  height:100%;
+			  background: white;
+			  position:absolute;
+			  left:-55px;
+			  top:-5px;
+			  height: 105%;
+			  border-right: 5px solid $color-brand-grey-border; 
+			  // margin: 0;
+		}
+
+		.work-image img {
+			border-top: 5px solid $color-brand-grey-border;
+			border-left: 5px solid $color-brand-grey-border;
+			border-bottom: 5px solid $color-brand-grey-border;
+			height: 100%;
+
+		}
 
 		.work-details {
 			border-top: 5px solid $color-brand-grey-border;
@@ -854,20 +965,24 @@ a {
 
 
 .wrapper-image {
-	display: flex;
+	// display: flex;
 	// margin: 0 auto;
 	// justify-content: space-between;
-	text-align: right;
+	// text-align: right;
 
 	img {
 		// height: 230px;
 	}
 
 	@include bp(desktop) {
-		text-align: right;	
+		// text-align: right;	
 		// width: 50%;
+		// background-color: brown;
+
+
 	}
 }
+
 
 // mack begin
 
@@ -875,10 +990,15 @@ a {
 
 .image-container {
   position:relative;
-  width:50%;
+  // width:50%;
   display: flex;
   height: 230px;
   text-align: right;
+
+  @include bp(desktop) {
+  	width: 50%;
+  }
+  // align-items: flex-end;
 }
 
 .skew-container { 
@@ -888,7 +1008,7 @@ a {
   overflow:hidden;
 }
 
-.skew-left, .skew-right {
+.skew-right {
   position:relative;
   height:200px;
   width:75%;
@@ -896,7 +1016,7 @@ a {
 }
 
 .skew-left {
-  float:left;
+  // float:left;
   // background-image:url("http://49.media.tumblr.com/8eba08290c3fdc1e9b9f3ab36ec9b828/tumblr_mwwadwYqkB1rmgz8no1_400.gif");
 }
 
@@ -906,7 +1026,7 @@ a {
   // border: 5px solid green;
 }
 
-.slicer-left, .slicer-right {
+.slicer-right {
   transform: skew(-25deg);
   width:200px;
   height:100%;
@@ -915,26 +1035,34 @@ a {
 }
 
 .slicer-right {
-  left:-65px;
+  left:-140px;
   top:-5px;
   height: 105%;
   border-right: 5px solid $color-brand-grey-border; 
+
+  @include bp(desktop) {
+  	left:-65px;
+  }
 }
 
 .slicer-left {
-  right:-55px;
+  // right:-55px;
 }
 
 // mack end
 
 .image-01 {
 	height: 230px;
-	border: 5px solid $color-brand-grey-border; 
-	text-align: right;
+	width: inherit;
+	border-top: 5px solid $color-brand-grey-border; 
+	border-bottom: 5px solid $color-brand-grey-border;
+	border-left: 5px solid $color-brand-grey-border;
+	// text-align: right;
 
 	img {
-		border: 5px solid $color-brand-grey-border;
-		height: 100%;
+		// border: 5px solid $color-brand-grey-border;
+		// height: 100%;
+
 	}
 
 	// border-top: 5px solid $color-brand-grey-border; 
@@ -944,7 +1072,7 @@ a {
 
 
 .image-02 {
-	width: 100%;
+	width: inherit;
 	height: 230px;
 	display: none;
 

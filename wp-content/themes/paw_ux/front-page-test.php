@@ -164,7 +164,7 @@ get_header(); ?>
 					<div class="wrapper-image">	
 						<div class="image-container">
 							<div class="skew-container">
-								<div class="image-01 skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
+								<div class="image-01 skew-right" style="background-image:url(<?php echo  ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
 									<!-- <?php echo get_template_directory_uri() ?>/images/pw_pic.jpg -->
 									<div class="slicer-right">
 									</div>
