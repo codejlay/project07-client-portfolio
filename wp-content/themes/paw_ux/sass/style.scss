@@ -376,7 +376,7 @@ a {
 	.work-skew {
 		position:relative;
 	    height:200px;
-	    width:100%;
+	    width:300px;
 	    border-top: 5px solid $color-brand-grey-border;
 	    border-bottom: 5px solid $color-brand-grey-border;
 	    float:left;
@@ -433,9 +433,9 @@ a {
 		}
 
 		.work-image img {
-			border-top: 5px solid $color-brand-grey-border;
-			border-right: 5px solid $color-brand-grey-border;
-			border-bottom: 5px solid $color-brand-grey-border;
+			// border-top: 5px solid $color-brand-grey-border;
+			// border-right: 5px solid $color-brand-grey-border;
+			// border-bottom: 5px solid $color-brand-grey-border;
 			height: 100%;
 		}
 
@@ -464,7 +464,7 @@ a {
 	.work-skew {
 		position:relative;
 	    height:200px;
-	    width:100%;
+	    width:300px;
 	    border-top: 5px solid $color-brand-grey-border;
 	    border-bottom: 5px solid $color-brand-grey-border;
 	    float:right;

@@ -1888,7 +1888,7 @@ a {
 .oddpost .work-skew {
   position: relative;
   height: 200px;
-  width: 100%;
+  width: 300px;
   border-top: 5px solid #8E8888;
   border-bottom: 5px solid #8E8888;
   float: left; }
@@ -1941,9 +1941,6 @@ a {
       height: 105%;
       border-left: 5px solid #8E8888; }
     .oddpost .work-image img {
-      border-top: 5px solid #8E8888;
-      border-right: 5px solid #8E8888;
-      border-bottom: 5px solid #8E8888;
       height: 100%; }
     .oddpost .work-details {
       border-top: 5px solid #8E8888;
@@ -1963,7 +1960,7 @@ a {
 .evenpost .work-skew {
   position: relative;
   height: 200px;
-  width: 100%;
+  width: 300px;
   border-top: 5px solid #8E8888;
   border-bottom: 5px solid #8E8888;
   float: right;

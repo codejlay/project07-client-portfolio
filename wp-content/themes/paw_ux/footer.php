@@ -7,11 +7,10 @@
 
 ?>
 
-	</div><!-- #content -->
-
+			</div><!-- #content -->
+			
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					
 					<div class="social">
 						<div class="social-inner">
 							<div class="social-01">
@@ -35,15 +34,12 @@
 					<div class="copyright">
 						<p>&copy; 2015. Design by Paul Anthony Wilson.</p>
 					</div>
-				</div>
-				<div class="footer-accent">
-
-				</div>
-				
-				
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-	</div><!-- #page -->
+					<!-- </div> -->
+					<div class="footer-accent">
+					</div>
+				</div><!-- .site-info -->
+			</footer><!-- #colophon -->
+		</div><!-- #page -->
 
 	<?php wp_footer(); ?>
 

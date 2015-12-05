@@ -20,3 +20,13 @@ function red_starter_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
+
+// http_redirect
+function red_archive_title( $title ) {
+	  if ( is_post_type_archive( 'products' ) ) {
+		  $title = 'front-page';
+	  }
+
+     return $title;
+ }
+ add_filter( 'get_the_archive_title', 'red_archive_title' );
