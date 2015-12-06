@@ -24,7 +24,9 @@ get_header(); ?>
 					</div>
 				
 					<div class="homepage-image">
-						<img src="<?php bloginfo('template_url'); ?>/images/image_blank_500x450.png" alt="Paul Portfolio Home Image" />
+						<!-- <div class="homepage-image-inner"> -->
+							<img src="<?php bloginfo('template_url'); ?>/images/shiba_main.jpg" alt="Paul Portfolio Home Image" />
+						<!-- </div> -->
 					</div>
 				</div>
 			</div>

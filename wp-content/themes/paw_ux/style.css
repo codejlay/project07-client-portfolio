@@ -1839,13 +1839,25 @@ a {
 
 .homepage-image {
   margin: 0;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  max-height: 450px;
+  max-width: 450px;
+  padding: 20% 8% 0;
+  overflow: hidden; }
+  .homepage-image img {
+    width: 100%; }
   @media (min-width: 1000px) {
     .homepage-image {
-      margin-bottom: 0; } }
+      margin-bottom: 0;
+      padding: 0;
+      padding-top: 6rem; } }
 
 .chevron-scroll {
-  font-size: 2rem; }
+  font-size: 2rem;
+  padding-top: 25rem; }
+  @media (min-width: 1000px) {
+    .chevron-scroll {
+      padding: 20rem; } }
   .chevron-scroll a {
     color: white;
     text-decoration: none; }
@@ -2061,8 +2073,8 @@ a {
   color: #585353; }
   @media (min-width: 1000px) {
     .skills-content {
-      padding-left: 5rem;
-      padding-right: 5rem; } }
+      padding-left: 3%;
+      padding-right: 3%; } }
   .skills-content .resume {
     margin: 0 auto;
     height: 40px;
