@@ -110,12 +110,29 @@ a {
 	outline:none;
 }
 
+img {
+	padding: 0;
+	margin: 0;
+}
+
 
 // Structure
 
 .container {
 	margin: 0 auto;
 	// max-width: 1366px;
+
+	@include bp(mobile) {
+		border: 2px solid red;
+	}
+
+	@include bp(tablet) {
+		border: 2px solid yellow;
+	}
+
+	@include bp(desktop) {
+		border: 2px solid green;
+	}
 }
 
 
@@ -267,15 +284,25 @@ a {
 
 .intro-details {
 
+	@include bp(mobile) {
+		// border: 3px solid red;
+	}
+
+	@include bp(tablet) {
+		display: flex;
+	}
+
 	@include bp(desktop) {
 		display: flex;
 		padding: 10rem 5rem 3rem 5rem;
+		// border: 3px solid green;
 	}
 }
 
 
 .intro-details-inner {
-	
+	margin: 0 auto;
+
 	@include bp(desktop) {
 			display: flex;
 			align-items: center;
@@ -307,17 +334,24 @@ a {
 
 .homepage-image {
 	margin: 0;
-	margin-bottom: 3rem;
+	padding: 0;
+	// margin-bottom: 3rem;
 	max-height: 450px;
 	max-width: 450px;
-	padding: 20% 8% 0;
-	overflow: hidden;
+	// padding: 20% 8% 3% 8%;
+	// overflow: hidden;
 
 	img {
-		width: 100%;
+		// width: 100%;
+		margin: 0;
 	}
 	// height: 450px;
 	// width: 500px;
+
+	@include bp(mobile) {
+		margin: 0;
+		// text-align: center;
+	}
 
 	@include bp(desktop) {
 		margin-bottom: 0;
@@ -335,10 +369,6 @@ a {
 	font-size: 2rem;
 	padding-top: 25rem;
 
-	@include bp(desktop) {
-		padding: 20rem;
-	}
-
 	a {
 		color: white;
 		text-decoration: none;
@@ -346,6 +376,14 @@ a {
 
 	a:hover {
 		color: $color-brand-orange;
+	}
+
+	@include bp(mobile) {
+		padding-top: 20rem;
+	}
+
+	@include bp(desktop) {
+		padding-top: 20rem;
 	}
 }
 
@@ -376,17 +414,41 @@ a {
 	color: $color-brand-grey-main;
 	margin-bottom: 2rem;
 	
-	@include bp(desktop) {
-		display: flex;
-	}
+	// @include bp(mobile) {
+	// 	display: flex;
+	// }
+
+	// @include bp(desktop) {
+	// 	display: flex;
+	// }
 }
 
 
 // Work Slant Begin
 
 .oddpost {
-	.work-image-container {
+
+	.work-details {
+		margin: 0 auto;
+		padding: 0 8%;
+
+		@include bp(mobile) {
+			width: 60%;
+			padding-left: 1rem;
+			height: 230px;
+			border-top: 5px solid $color-brand-grey-border;
+			border-right: 5px solid $color-brand-grey-border;
+			border-bottom: 5px solid $color-brand-grey-border;
 		}
+
+		@include bp(desktop) {
+			padding: 2% 5%;
+			height: 200px;
+		}
+	}
+
+	.work-image-container {
+	}
 
 	.work-skew-container {
 		position:relative;
@@ -413,6 +475,59 @@ a {
 		  top:-5px;
 		  height: 105%;
 		  border-left: 5px solid $color-brand-grey-border; 
+	}
+
+	@include bp(mobile) {
+		// width: 50%;
+		display: flex;
+		// justify-content: space-around;
+		flex-direction: row-reverse;
+
+		.work-image-container {
+			position:relative;
+			width: 50%;
+			height: 230px;
+		}
+
+		.work-skew-container {
+			position:relative;
+			margin: 0;
+			overflow:hidden;
+		}
+
+		.work-skew {
+			position:relative;
+		    height:230px;
+		    width:100%;
+		    border-top: 5px solid $color-brand-grey-border;
+		    border-bottom: 5px solid $color-brand-grey-border;
+		    float:left;
+		}
+
+		.work-slicer {
+			transform: skew(-25deg);
+			  width:115px;
+			  height:100%;
+			  background: white;
+			  position:absolute;
+			  right:-55px;
+			  top:-5px;
+			  height: 105%;
+			  border-left: 5px solid $color-brand-grey-border; 
+		}
+
+		.work-image img {
+			// border-top: 5px solid $color-brand-grey-border;
+			// border-right: 5px solid $color-brand-grey-border;
+			// border-bottom: 5px solid $color-brand-grey-border;
+			height: 100%;
+		}
+
+		.work-details {
+			border-top: 5px solid $color-brand-grey-border;
+			border-right: 5px solid $color-brand-grey-border;
+			border-bottom: 5px solid $color-brand-grey-border;
+		}
 	}
 
 	@include bp(desktop) {
@@ -461,14 +576,31 @@ a {
 		}
 
 		.work-details {
-			border-top: 5px solid $color-brand-grey-border;
-			border-right: 5px solid $color-brand-grey-border;
-			border-bottom: 5px solid $color-brand-grey-border;
+			// border-top: 5px solid $color-brand-grey-border;
+			// border-right: 5px solid $color-brand-grey-border;
+			// border-bottom: 5px solid $color-brand-grey-border;
 		}
 	}
 }
 
 .evenpost {
+
+	.work-details {
+		margin: 0 auto;
+		padding: 0 8%;
+
+		@include bp(mobile) {
+			width: 60%;
+			padding-left: 1rem;
+			height: 230px;
+		}
+
+		@include bp(desktop) {
+			// width: 60%;
+			padding: 2% 5%;
+			height: 200px;
+		}
+	}
 
 	.work-image-container {
 		position:relative;
@@ -502,6 +634,51 @@ a {
 		top:-5px;
 		height: 105%;
 		border-right: 5px solid $color-brand-grey-border; 
+	}
+
+	@include bp(mobile) {
+		// width: 50%;
+		display: flex;
+
+		.work-image-container {
+			position:relative;
+			width: 40%;
+			height: 230px;
+		}
+
+		.work-skew-container {
+			position:relative;
+			margin: 0;
+			overflow:hidden;
+		}
+
+		.work-skew {
+			position:relative;
+		    height:230px;
+		    width:100%;
+		    // border-top: 5px solid $color-brand-grey-border;
+		    // border-bottom: 5px solid $color-brand-grey-border;
+		    float:right;
+		    margin: 0;
+		}
+
+		.work-slicer {
+			transform: skew(-25deg);
+			width:115px;
+			height:100%;
+			background: white;
+			position:absolute;
+			left:-55px;
+			top:-5px;
+			height: 105%;
+			border-right: 5px solid $color-brand-grey-border; 
+		}
+
+		.work-details {
+			border-top: 5px solid $color-brand-grey-border;
+			border-left: 5px solid $color-brand-grey-border;
+			border-bottom: 5px solid $color-brand-grey-border;
+		}
 	}
 
 	@include bp(desktop) {
@@ -551,15 +728,21 @@ a {
 }
 
 
-.work-details {
-	margin: 0 auto;
-	padding: 0 8%;
+// .work-details {
+// 	margin: 0 auto;
+// 	padding: 0 8%;
 
-	@include bp(desktop) {
-		width: 60%;
-		padding: 2% 5%;
-	}
-}
+// 	@include bp(mobile) {
+// 		width: 60%;
+// 		padding-left: 1rem;
+// 		height: 200px;
+// 	}
+
+// 	@include bp(desktop) {
+// 		width: 60%;
+// 		padding: 2% 5%;
+// 	}
+// }
 
 // Work Slant End
 
@@ -866,6 +1049,11 @@ a {
 	position:relative;
 	height: 230px;
 	
+	@include bp(mobile) {
+		display: flex;
+		justify-content: flex-end;
+    }
+
 	@include bp(tablet) {
 		display: flex;
 		justify-content: flex-end;
@@ -895,7 +1083,7 @@ a {
 	// right: 30px;
 
 	@include bp(tablet) {
-		margin-right: 0 !important;
+		// margin-right: 0 !important;
 		width: 100%;
 		// text-align: right;
 		// overflow: hidden;
@@ -949,6 +1137,12 @@ a {
 		border: 5px solid $color-brand-grey-border; 
 		height: 100%;
 	}
+
+	@include bp(mobile) {
+		display: inline;
+		width: 100%;
+		text-align: left;
+    }	
 
 	@include bp(tablet) {
 		display: inline;

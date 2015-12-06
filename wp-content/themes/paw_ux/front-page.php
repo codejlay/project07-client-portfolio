@@ -10,7 +10,7 @@ get_header(); ?>
 
 <div class="site-content">
 	<div class="content-area">
-		<section class="intro">
+		<section class="intro" id="home">
 			<div class="container">
 				<div class="intro-details">
 					<div class="intro-details-inner">
@@ -24,9 +24,7 @@ get_header(); ?>
 					</div>
 				
 					<div class="homepage-image">
-						<!-- <div class="homepage-image-inner"> -->
-							<img src="<?php bloginfo('template_url'); ?>/images/shiba_main.jpg" alt="Paul Portfolio Home Image" />
-						<!-- </div> -->
+						<img src="<?php bloginfo('template_url'); ?>/images/shiba_main.jpg" alt="Paul Portfolio Home Image" />
 					</div>
 				</div>
 			</div>

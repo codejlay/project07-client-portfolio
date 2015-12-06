@@ -15,7 +15,8 @@
 
 @mixin bp($point) {
   
-  $bp-tablet: "(min-width: #{$small-screen} )";
+  $bp-mobile: "(min-width: #{$small-screen} )";
+  $bp-tablet: "(min-width: #{$medium-screen} )";
   $bp-desktop: "(min-width: #{$large-screen})";
 
   @if $point == desktop {
@@ -23,5 +24,8 @@
   }
   @else if $point == tablet {
     @media #{$bp-tablet} { @content; }
+  }
+  @else if $point == mobile {
+    @media #{$bp-mobile} { @content; }
   }
 }
