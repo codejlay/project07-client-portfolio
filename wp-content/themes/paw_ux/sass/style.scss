@@ -278,18 +278,21 @@ img {
 	color: white;
 	text-align: center;
 	height: 100vh;
-	padding-top: 3rem;
+	padding-top: 5rem;
 }
 
 
 .intro-details {
 
+	padding-top: 2rem;
+
 	@include bp(mobile) {
-		// border: 3px solid red;
 	}
 
 	@include bp(tablet) {
 		display: flex;
+		align-items: center;
+		padding: 5% 4% 0 4%;
 	}
 
 	@include bp(desktop) {
@@ -310,7 +313,7 @@ img {
 		}
 
 	.intro-name h2 {
-		padding-top: 2rem;
+		// padding-top: 2rem;
 		font-size: 1.5rem;
 
 		@include bp(desktop) {
@@ -333,13 +336,19 @@ img {
 
 
 .homepage-image {
-	margin: 0;
-	padding: 0;
+	// margin: 0;
+	// padding: 0;
+	padding-top: 2rem;
 	// margin-bottom: 3rem;
-	max-height: 450px;
-	max-width: 450px;
+	// max-height: 450px;
+	// max-width: 450px;
 	// padding: 20% 8% 3% 8%;
 	// overflow: hidden;
+
+	.homepage-inner {
+		max-width: 450px;
+
+	}
 
 	img {
 		// width: 100%;
@@ -1015,17 +1024,23 @@ img {
 
 .about-container {
 
+	@include bp(tablet) {
+		// display: flex;
+	}
+
 	@include bp(desktop) {
 		display: flex;	
-		justify-content: space-between;	
+		justify-content: space-between;
+		align-items: center;	
 	}
 }
 
 
 .about-description {
-	
+	// border: 2px blue solid;
+
 	@include bp(desktop) {
-		width: 50%;		
+		width: 40%;		
 	}
 
 	p {
@@ -1046,37 +1061,45 @@ img {
 * { box-sizing:border-box; }
 
 .image-container {
-	position:relative;
+	position: relative;
 	height: 230px;
+	// margin: 0 auto;
+	// border: 2px solid red; 
 	
 	@include bp(mobile) {
 		display: flex;
+		// flex-direction: row-reverse;
 		justify-content: flex-end;
+
+		// text-align: right;
     }
 
 	@include bp(tablet) {
-		display: flex;
+		// display: flex;
 		justify-content: flex-end;
+		// text-align: right;
+		// flex-direction: column;
     }
 
 	@include bp(desktop) {
-		width: 50%;
+		width: 60%;
 		text-align: right;
+		justify-content: flex-end;
 	}
 }
 
 
 .skew-container { 
-	position:relative;
-	width:100%;
-	margin:0 auto;
-	overflow:hidden;
+	position: relative;
+	width: 100%;
+	// margin:0 auto;
+	overflow: hidden;
 }
 
 
 .skew-right {
-	position:relative;
-	height:230px;
+	position: relative;
+	height: 230px;
 	border-top: 5px solid $color-brand-grey-border;
 	border-bottom: 5px solid $color-brand-grey-border;
 	margin: 0;
@@ -1084,7 +1107,15 @@ img {
 
 	@include bp(tablet) {
 		// margin-right: 0 !important;
-		width: 100%;
+		// width: 100%;
+		width: 370px;
+		// text-align: right;
+		// overflow: hidden;
+    }
+
+    @include bp(desktop) {
+		// margin-right: 0 !important;
+		width: 500px;
 		// text-align: right;
 		// overflow: hidden;
     }
@@ -1093,16 +1124,15 @@ img {
 
 .slicer-right {
 	transform: skew(-25deg);
-	width:200px;
-	height:100%;
+	width: 200px;
 	background: $color-brand-grey-main;
-	position:absolute;
+	position: absolute;
 }
 
 
 .slicer-right {
-	left:-140px;
-	top:-5px;
+	left: -140px;
+	top: -5px;
 	height: 105%;
 	border-right: 5px solid $color-brand-grey-border; 
 
@@ -1114,24 +1144,41 @@ img {
 // About Slant End
 
 .image-01 {
-	// margin: 0;
+	// border: 2px solid pink;
 
-	// height: 230px;
-	// width: inherit;
-	// border-top: 5px solid $color-brand-grey-border; 
-	// border-bottom: 5px solid $color-brand-grey-border;
-	// border-left: 5px solid $color-brand-grey-border;
-	@include bp(tablet) {
-		// width: 50%;
+	.image-01-inner {
+		height: 230px;
+	}
+
+	@include bp(mobile) {
+		width: 50%;
+		text-align: right;
+    }
+
+    @include bp(tablet) {
+		// display: inline;
+		width: 50%;
+		text-align: right;
+    }
+
+    @include bp(tablet) {
+		// display: inline;
+		width: 50%;
+		text-align: right;
     }
 }
 
 
 .image-02 {
 	// width: inherit;
-	height: 230px;
+	// height: 230px;
 	display: none;
-	width: 300px;
+	// width: 300px;
+	// border: 2px solid brown;
+
+	.image-02-inner {
+		height: 230px;
+	}
 
 	img {
 		border: 5px solid $color-brand-grey-border; 
@@ -1139,19 +1186,21 @@ img {
 	}
 
 	@include bp(mobile) {
-		display: inline;
-		width: 100%;
+		display: block;
+		width: 50%;
 		text-align: left;
     }	
 
 	@include bp(tablet) {
-		display: inline;
-		width: 100%;
+		display: block;
+		width: 50%;
 		text-align: left;
     }
 
 	@include bp(desktop) {
-		display: inline;
+		display: block;
+		width: 50%;
+		text-align: left;
     }
 }
 
@@ -1174,7 +1223,8 @@ img {
 	display: flex;
 	flex-direction: column;
 
-	@include bp(desktop) {
+	@include bp(mobile) {
+		margin: 0 auto;
 		flex-direction: row;
 		justify-content: space-around;
     }
@@ -1257,3 +1307,25 @@ footer {
 	height: 10px;
 	background-color: $color-brand-orange;
 }
+
+
+// ***TEST AREA***
+
+// .test-container {
+// 	display: flex;
+// 	justify-content: flex-end;
+
+// }
+
+// .test-container-l {
+// 	height: 100px;
+// 	width: 100px;
+// 	background-color: blue;
+// }
+
+// .test-container-r {
+// 	height: 100px;
+// 	width: 100px;
+// 	background-color: red;
+// }
+

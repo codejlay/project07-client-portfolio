@@ -23,11 +23,13 @@
 				<div class="container">
 					<div class="navigation-inner">
 						<div class="logo-wrapper">
-							<div class="logo">
-								<div class="logo-inner">
-									<h1>paw_ux</h1>
+							<a href="http://localhost:3000/paw_ux/">
+								<div class="logo">
+									<div class="logo-inner">
+										<h1>paw_ux</h1>
+									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 
 						<div class="nav-wrapper">
