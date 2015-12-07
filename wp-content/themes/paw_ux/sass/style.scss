@@ -461,6 +461,7 @@ img {
 		  position:absolute;
 		  right:-55px;
 		  top:-5px;
+		  bottom:-5px;
 		  height: 105%;
 		  border-left: 5px solid $color-brand-grey-border; 
 	}
@@ -498,6 +499,7 @@ img {
 			  position:absolute;
 			  right:-55px;
 			  top:-5px;
+			  bottom:-5px;
 			  height: 105%;
 			  border-left: 5px solid $color-brand-grey-border; 
 		}
@@ -545,6 +547,7 @@ img {
 			  position:absolute;
 			  right:-55px;
 			  top:-5px;
+			  bottom:-5px;
 			  height: 105%;
 		}
 
@@ -605,6 +608,7 @@ img {
 		position:absolute;
 		left:-55px;
 		top:-5px;
+		bottom:-5px;
 		height: 105%;
 		border-right: 5px solid $color-brand-grey-border; 
 	}
@@ -640,6 +644,7 @@ img {
 			position:absolute;
 			left:-55px;
 			top:-5px;
+			bottom:-5px;
 			height: 105%;
 		}
 
@@ -682,6 +687,7 @@ img {
 			position:absolute;
 			left:-55px;
 			top:-5px;
+			bottom:-5px;
 			height: 105%;
 		}
 
@@ -1164,7 +1170,7 @@ img {
 		}
 
 		@include bp(desktop) {
-			width: 40%;
+			width: 50%;
 		}
     }
 
