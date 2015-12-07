@@ -23,7 +23,7 @@
 				<div class="container">
 					<div class="navigation-inner">
 						<div class="logo-wrapper">
-							<a href="http://localhost:3000/paw_ux/">
+							<a href="<?php echo home_url(); ?>">
 								<div class="logo">
 									<div class="logo-inner">
 										<h1>paw_ux</h1>

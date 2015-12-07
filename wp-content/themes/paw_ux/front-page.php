@@ -15,18 +15,23 @@ get_header(); ?>
 				<div class="intro-details">
 					<div class="intro-details-inner">
 						<div class="intro-name">
-							<h2>Hi, my_name is Paul</h2>
+							<h2><?php echo ( CFS()->get('intro_name')); ?></h2>
+							
 						</div>
 
 						<div class="intro-description">
-							<p>I’m a User Experience Designer based out of Vancouver, Canada. Lorem ipsum dolor sit amet.</p>
+							<p><?php echo ( CFS()->get('intro_description')); ?></p>
 						</div>
 					</div>
 				
 					<div class="homepage-image">
+						<?php $intro_images = CFS()->get('intro_images');
+						foreach ($intro_images as $image) : 
+						?>
 						<div class="homepage-image-inner">
-							<img src="<?php bloginfo('template_url'); ?>/images/shiba_main.jpg" alt="Paul Portfolio Home Image" />
+							<?php echo '<img src="'.$image["intro_image"].'"/>'; ?>
 						</div>
+						<?php endforeach; ?>
 					</div>
 				</div>
 			</div>
@@ -136,7 +141,11 @@ get_header(); ?>
 				</div>
 
 				<div class="resume">
-					<a href="#" onClick="window.open('http://www.redacademy.com', '_blank')">
+					
+					<!-- <a href="#" onClick="window.open('http://www.redacademy.com', '_blank')"> -->
+					<!-- <a href="#" onClick="window.open('<?php $link = cfs()->get('resume_link'); ?>', '_blank')"> -->
+						<a href="#" onClick="window.open('<?php echo $cfs->get('resume_link'); ?>', '_blank')">
+						<!-- <?php echo $cfs->get('linkedin'); ?> -->
 						<div class="resume-inner-left">View Resume</div>
 
 						<div class="resume-inner-right">
@@ -172,9 +181,14 @@ get_header(); ?>
 							</div>
 						</div>
 						<div class="image-02">
+							<?php $about_secondary_images = CFS()->get('about_secondary_images');
+							foreach ($about_secondary_images as $image) : 
+							?>
 							<div class="image-02-inner">
-								<img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image">
+							<?php echo '<img src="'.$image["secondary_image"].'"/>'; ?>
+								<!-- <img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image"> -->
 							</div>
+							<?php endforeach; ?>
 						</div>
 					</div>
 				</div>
@@ -188,12 +202,17 @@ get_header(); ?>
 
 <!-- !!!***TEST AREA***!!! -->
 
-<div class="test-container">
+
+						
+									
+
+
+<!-- <div class="test-container">
 	<div class="test-container-l">
 	</div>	
 	<div class="test-container-r">
 	</div>	
-</div>
+</div> -->
 <!-- <div class="image-container">
 	<div class="skew-container">
 		<div class="skew-left">
@@ -210,7 +229,3 @@ get_header(); ?>
 
 
 
- <!--  $gallery_images = CFS()->get('gallery_images');
-  foreach ($gallery_images as $image) {
-    echo '<img src="'.$image["image"].'"/>';
-  } -->

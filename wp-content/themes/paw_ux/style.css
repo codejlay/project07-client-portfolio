@@ -1802,6 +1802,9 @@ img {
   font-size: 1.263rem;
   margin: 0 2rem; }
 
+.nav-selection .selected {
+  color: red; }
+
 .responsive-menu {
   padding-top: 4rem; }
 

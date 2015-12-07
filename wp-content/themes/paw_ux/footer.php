@@ -17,7 +17,8 @@
 								<i class="fa fa-envelope"></i>
 
 								<div class="social-01-inner">
-									<a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a>
+									<!-- <a href="mailto:paw.uxd@gmail.com">E-mail: paw.uxd@gmail.com</a> -->
+									<a href="mailto:paw.uxd@gmail.com">E-mail: <?php echo $cfs->get('email_address'); ?></a>
 								</div>
 							</div>
 							
@@ -25,7 +26,10 @@
 								<i class="fa fa-linkedin-square"></i>
 								
 								<div class="social-02-inner">
-									<a href="https://ca.linkedin.com/in/pawux">LinkedIn</a>	
+									<!-- <a href="https://ca.linkedin.com/in/pawux">LinkedIn</a>	 -->
+									<!-- <a href="<?php $link = CFS()->get( 'linkedin' ); ?>">LinkedIn</a> -->
+									<!-- <a href="<?php echo $cfs->get('linkedin'); ?>">LinkedIn</a> -->
+									<a href="#" onClick="window.open('<?php echo $cfs->get('linkedin'); ?>', '_blank')">LinkedIn</a>
 								</div>
 							</div>
 						</div>

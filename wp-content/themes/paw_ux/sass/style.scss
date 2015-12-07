@@ -251,6 +251,10 @@ img {
 		margin: 0 2rem;
 	}
 
+	.selected { 
+		color: red; 
+	}
+
 	@include bp(desktop) {
 			
 	}
