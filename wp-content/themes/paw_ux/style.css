@@ -1824,7 +1824,7 @@ img {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      padding: 10rem 8rem 3rem; } }
+      padding: 3rem 8rem 3rem; } }
 
 .intro-details-inner {
   margin: 0 auto; }
@@ -1887,7 +1887,7 @@ img {
       padding-top: 40%; } }
   @media (min-width: 1366px) {
     .chevron-scroll {
-      padding-top: 5%; } }
+      padding-top: 1%; } }
 
 .my-work-content {
   background-color: white;
@@ -2390,12 +2390,8 @@ img {
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
-  @media (min-width: 768px) {
-    .image-container {
-      width: 100%; } }
   @media (min-width: 1366px) {
     .image-container {
-      width: 60%;
       text-align: right; } }
 
 .skew-container {
@@ -2436,8 +2432,7 @@ img {
 
 .image-01 .image-01-inner {
   height: 230px;
-  max-width: 100%;
-  width: 100%; }
+  max-width: 100%; }
 
 @media (min-width: 500px) {
   .image-01 {

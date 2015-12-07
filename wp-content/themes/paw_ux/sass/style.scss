@@ -296,7 +296,7 @@ img {
 
 	@include bp(desktop) {
 		display: flex;
-		padding: 10rem 8rem 3rem;
+		padding: 3rem 8rem 3rem;
 	}
 }
 
@@ -379,7 +379,7 @@ img {
 	}
 
 	@include bp(desktop) {
-		padding-top: 5%;
+		padding-top: 1%;
 	}
 }
 
@@ -1009,11 +1009,11 @@ img {
     }
 
 	@include bp(tablet) {
-		width: 100%;
+		// width: 674px;
     }
 
 	@include bp(desktop) {
-		width: 60%;
+		// width: 60%;
 		text-align: right;
 	}
 }
@@ -1023,6 +1023,7 @@ img {
 	position: relative;
 	width: 100%;
 	overflow: hidden;
+	// width: 674px;
 }
 
 
@@ -1068,10 +1069,14 @@ img {
 
 .image-01 {
 
+@include bp(tablet) {
+	// width: 370px;
+}
+
 	.image-01-inner {
 		height: 230px;
 		max-width: 100%;
-		width: 100%;
+		// width: 100%;
 	}
 
 	@include bp(mobile) {
@@ -1093,6 +1098,8 @@ img {
 
 .image-02 {
 	display: none;
+
+
 
 	.image-02-inner {
 		height: 230px;
