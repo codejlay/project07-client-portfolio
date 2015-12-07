@@ -11,7 +11,7 @@
 			
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-					<div class="social">
+					<div class="social clearfix">
 						<div class="social-inner">
 							<div class="social-01">
 								<i class="fa fa-envelope"></i>
