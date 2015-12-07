@@ -165,7 +165,7 @@ get_header(); ?>
 						<p><?php echo esc_html(CFS()->get('about_description')); ?></p>
 					</div>
 					
-					<div class="image-container clearfix">
+					<div class="image-container">
 						<div class="image-01">
 							<div class="image-01-inner">
 								<div class="skew-container">
@@ -177,7 +177,7 @@ get_header(); ?>
 							</div>
 						</div>
 						
-						<div class="image-02 clearfix">
+						<div class="image-02">
 							<?php $about_secondary_images = CFS()->get('about_secondary_images');
 							foreach ($about_secondary_images as $image) : 
 							?>
@@ -203,12 +203,12 @@ get_header(); ?>
 									
 
 
-<!-- <div class="test-container">
+<div class="test-container">
 	<div class="test-container-l">
 	</div>	
 	<div class="test-container-r">
 	</div>	
-</div> -->
+</div>
 <!-- <div class="image-container">
 	<div class="skew-container">
 		<div class="skew-left">

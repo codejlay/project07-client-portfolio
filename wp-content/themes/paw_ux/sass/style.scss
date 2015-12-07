@@ -1008,19 +1008,24 @@ img {
 	position: relative;
 	height: 230px;
 	width: 100%;
+	margin: 0;
 	
 	@include bp(mobile) {
 		display: flex;
 		justify-content: flex-end;
+		width: 608px;
+		margin: 0;
     }
 
 	@include bp(tablet) {
-		// width: 674px;
+		width: 608px;
+		margin: 0;
     }
 
 	@include bp(desktop) {
-		// width: 60%;
+		width: 608px;
 		text-align: right;
+		margin: 0;
 	}
 }
 
@@ -1057,32 +1062,34 @@ img {
 	width: 200px;
 	background: $color-brand-grey-main;
 	position: absolute;
-}
-
-
-.slicer-right {
 	left: -140px;
 	top: -5px;
 	height: 105%;
 	border-right: 5px solid $color-brand-grey-border; 
 
+	@include bp(tablet) {
+		left:-140px;
+	}
+
 	@include bp(desktop) {
-		left:-65px;
+		left:-140px;
 	}
 }
+
 
 // About Slant End
 
 .image-01 {
+	width: 100%;
 
-@include bp(tablet) {
+@include bp(mobile) {
 	// width: 370px;
 }
 
 	.image-01-inner {
 		height: 230px;
 		max-width: 100%;
-		// width: 100%;
+		width: 100%;
 	}
 
 	@include bp(mobile) {
@@ -1097,15 +1104,13 @@ img {
 
     @include bp(desktop) {
 		width: 50%;
-		text-align: left;
+		text-align: right;
     }
 }
 
 
 .image-02 {
 	display: none;
-
-
 
 	.image-02-inner {
 		height: 230px;
@@ -1116,6 +1121,7 @@ img {
 	img {
 		border: 5px solid $color-brand-grey-border; 
 		height: 100%;
+		max-width: 100%;
 	}
 
 	@include bp(mobile) {
@@ -1259,6 +1265,26 @@ footer {
 
 
 // ***TEST AREA***
+
+// .test-container {
+// 	height: 300px;
+// 	width: 300px;
+// }
+
+// .test-container-l {
+// 	background-color: blue;
+// 	height: 100px;
+// 	width: 100px;
+// }
+
+// .test-container-r {
+// 	background-color: red;
+// 	position: absolute;
+// 	height: 100px;
+// 	width: 100px;
+// 	bottom: 1px;
+
+// }
 
 // .menu-main-navigation-container a {
 // 	border: 3px green solid;
