@@ -21,12 +21,24 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
-// http_redirect
-function red_archive_title( $title ) {
-	  if ( is_post_type_archive( 'products' ) ) {
-		  $title = 'front-page';
-	  }
 
-     return $title;
- }
- add_filter( 'get_the_archive_title', 'red_archive_title' );
+// http_redirect
+
+function paw_ux_redirect() {
+
+    if ( is_post_type_archive( 'skills' ) ) {
+        wp_redirect( home_url(),301);
+        exit;
+    }
+}
+add_action( 'template_redirect', 'paw_ux_redirect' );
+
+
+// function red_archive_title( $title ) {
+// 	  if ( is_post_type_archive( 'products' ) ) {
+// 		  $title = 'front-page';
+// 	  }
+
+//      return $title;
+//  }
+//  add_filter( 'get_the_archive_title', 'red_archive_title' );

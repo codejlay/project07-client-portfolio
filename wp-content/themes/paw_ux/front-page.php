@@ -141,11 +141,7 @@ get_header(); ?>
 				</div>
 
 				<div class="resume">
-					
-					<!-- <a href="#" onClick="window.open('http://www.redacademy.com', '_blank')"> -->
-					<!-- <a href="#" onClick="window.open('<?php $link = cfs()->get('resume_link'); ?>', '_blank')"> -->
-						<a href="#" onClick="window.open('<?php echo $cfs->get('resume_link'); ?>', '_blank')">
-						<!-- <?php echo $cfs->get('linkedin'); ?> -->
+					<a href="#" onClick="window.open('<?php echo $cfs->get('resume_link'); ?>', '_blank')">
 						<div class="resume-inner-left">View Resume</div>
 
 						<div class="resume-inner-right">
@@ -180,13 +176,13 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
+						
 						<div class="image-02 clearfix">
 							<?php $about_secondary_images = CFS()->get('about_secondary_images');
 							foreach ($about_secondary_images as $image) : 
 							?>
 							<div class="image-02-inner">
 							<?php echo '<img src="'.$image["secondary_image"].'"/>'; ?>
-								<!-- <img src= "<?php echo get_template_directory_uri() ?>/images/pw_bass.png" alt="Paul Profile Image"> -->
 							</div>
 							<?php endforeach; ?>
 						</div>

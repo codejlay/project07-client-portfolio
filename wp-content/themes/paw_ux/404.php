@@ -9,6 +9,8 @@
 
 get_header(); ?>
 	
+
+	
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -46,6 +48,7 @@ get_header(); ?>
 						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 					?>
 					<p>404.php</p>
+					<?php wp_redirect( home_url() ); exit; ?>
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

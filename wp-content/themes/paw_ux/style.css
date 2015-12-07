@@ -1708,15 +1708,6 @@ img {
 
 .container {
   margin: 0 auto; }
-  @media (min-width: 500px) {
-    .container {
-      border: 2px solid red; } }
-  @media (min-width: 768px) {
-    .container {
-      border: 2px solid yellow; } }
-  @media (min-width: 1366px) {
-    .container {
-      border: 2px solid green; } }
 
 .title-box {
   -webkit-transform: skew(-25deg);
@@ -1818,7 +1809,7 @@ img {
   padding-top: 5rem; }
 
 .intro-details {
-  padding-top: 2rem; }
+  padding-top: 1rem; }
   @media (min-width: 768px) {
     .intro-details {
       display: -webkit-flex;
@@ -1833,7 +1824,7 @@ img {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      padding: 10rem 5rem 3rem 5rem; } }
+      padding: 10rem 8rem 3rem; } }
 
 .intro-details-inner {
   margin: 0 auto; }
@@ -1861,37 +1852,42 @@ img {
     @media (min-width: 1366px) {
       .intro-details-inner .intro-description p {
         font-size: 1.263rem;
-        padding: 0 10rem; } }
+        padding: 0 5rem; } }
 
-.homepage-image {
-  padding-top: 2rem; }
-  .homepage-image .homepage-inner {
-    max-width: 450px; }
-  .homepage-image img {
-    margin: 0; }
-  @media (min-width: 500px) {
-    .homepage-image {
-      margin: 0; } }
-  @media (min-width: 1366px) {
-    .homepage-image {
-      margin-bottom: 0;
-      padding: 0;
-      padding-top: 6rem; } }
+.homepage-image .homepage-inner {
+  max-width: 450px; }
+
+.homepage-image img {
+  margin: 0; }
+
+@media (min-width: 500px) {
+  .homepage-image {
+    margin: 0; } }
+
+@media (min-width: 1366px) {
+  .homepage-image {
+    margin-bottom: 0;
+    padding: 0;
+    padding-top: 6rem; } }
 
 .chevron-scroll {
-  font-size: 2rem;
-  padding-top: 25rem; }
+  font-size: 1.5rem;
+  padding-top: 5%; }
   .chevron-scroll a {
     color: white;
     text-decoration: none; }
   .chevron-scroll a:hover {
-    color: #FF7703; }
+    color: #FF7703;
+    font-size: 2rem; }
   @media (min-width: 500px) {
     .chevron-scroll {
-      padding-top: 20rem; } }
+      padding-top: 30%; } }
+  @media (min-width: 768px) {
+    .chevron-scroll {
+      padding-top: 40%; } }
   @media (min-width: 1366px) {
     .chevron-scroll {
-      padding-top: 20rem; } }
+      padding-top: 5%; } }
 
 .my-work-content {
   background-color: white;
@@ -2019,8 +2015,6 @@ img {
       position: relative;
       height: 200px;
       width: 100%;
-      border-top: 5px solid #8E8888;
-      border-bottom: 5px solid #8E8888;
       float: left; }
     .oddpost .work-slicer {
       -webkit-transform: skew(-25deg);
@@ -2031,8 +2025,7 @@ img {
       position: absolute;
       right: -55px;
       top: -5px;
-      height: 105%;
-      border-left: 5px solid #8E8888; }
+      height: 105%; }
     .oddpost .work-image img {
       height: 100%; } }
 
@@ -2108,8 +2101,7 @@ img {
       position: absolute;
       left: -55px;
       top: -5px;
-      height: 105%;
-      border-right: 5px solid #8E8888; }
+      height: 105%; }
     .evenpost .work-details {
       border-top: 5px solid #8E8888;
       border-left: 5px solid #8E8888;
@@ -2133,8 +2125,6 @@ img {
       position: relative;
       height: 200px;
       width: 100%;
-      border-top: 5px solid #8E8888;
-      border-bottom: 5px solid #8E8888;
       float: right;
       margin: 0; }
     .evenpost .work-slicer {
@@ -2146,12 +2136,7 @@ img {
       position: absolute;
       left: -55px;
       top: -5px;
-      height: 105%;
-      border-right: 5px solid #8E8888; }
-    .evenpost .work-details {
-      border-top: 5px solid #8E8888;
-      border-left: 5px solid #8E8888;
-      border-bottom: 5px solid #8E8888; } }
+      height: 105%; } }
 
 .work-title {
   font-family: "Open Sans", sans-serif;
@@ -2404,21 +2389,14 @@ img {
       display: flex;
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
-              justify-content: flex-end;
-      width: 100%; } }
+              justify-content: flex-end; } }
   @media (min-width: 768px) {
     .image-container {
-      -webkit-justify-content: flex-end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
       width: 100%; } }
   @media (min-width: 1366px) {
     .image-container {
       width: 60%;
-      text-align: right;
-      -webkit-justify-content: flex-end;
-          -ms-flex-pack: end;
-              justify-content: flex-end; } }
+      text-align: right; } }
 
 .skew-container {
   position: relative;
@@ -2427,10 +2405,12 @@ img {
 
 .skew-right {
   position: relative;
+  margin-right: 0px;
   height: 230px;
   border-top: 5px solid #8E8888;
   border-bottom: 5px solid #8E8888;
-  margin: 0; }
+  max-width: 100%;
+  width: 100%; }
   @media (min-width: 768px) {
     .skew-right {
       width: 370px; } }
@@ -2455,7 +2435,9 @@ img {
       left: -65px; } }
 
 .image-01 .image-01-inner {
-  height: 230px; }
+  height: 230px;
+  max-width: 100%;
+  width: 100%; }
 
 @media (min-width: 500px) {
   .image-01 {
@@ -2465,17 +2447,19 @@ img {
 @media (min-width: 768px) {
   .image-01 {
     width: 50%;
-    text-align: left; } }
+    text-align: right; } }
 
 @media (min-width: 1366px) {
   .image-01 {
     width: 50%;
-    text-align: right; } }
+    text-align: left; } }
 
 .image-02 {
   display: none; }
   .image-02 .image-02-inner {
-    height: 230px; }
+    height: 230px;
+    max-width: 100%;
+    width: 100%; }
   .image-02 img {
     border: 5px solid #8E8888;
     height: 100%; }
@@ -2483,16 +2467,16 @@ img {
     .image-02 {
       display: block;
       width: 50%;
-      text-align: left; } }
+      text-align: right; } }
   @media (min-width: 768px) {
     .image-02 {
       width: 50%;
-      text-align: left; } }
+      text-align: right; } }
   @media (min-width: 1366px) {
     .image-02 {
       display: block;
       width: 50%;
-      text-align: left; } }
+      text-align: right; } }
 
 .social {
   margin-left: 3.8rem; }
@@ -2524,14 +2508,13 @@ img {
       -webkit-justify-content: space-around;
           -ms-flex-pack: distribute;
               justify-content: space-around;
-      border: 2px red solid;
       width: 80%; } }
+  @media (min-width: 500px) and (min-width: 768px) {
+    .social-inner {
+      width: 55%; } }
   @media (min-width: 500px) and (min-width: 1366px) {
     .social-inner {
-      width: 70%; } }
-  @media (min-width: 500px) and (min-width: 1366px) {
-    .social-inner {
-      width: 50%; } }
+      width: 40%; } }
   .social-inner a {
     height: 30px;
     text-decoration: none;

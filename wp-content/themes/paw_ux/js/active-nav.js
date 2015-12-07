@@ -14,11 +14,11 @@
 //     $(this).parent().addClass('active');
 // });
 
-$('#primary-menu a').click(function(e) {
-    e.preventDefault(); //prevent the link from being followed
-    $('#primary-menu a').removeClass('selected');
-    $(this).addClass('selected');
-});
+// $('#primary-menu a').click(function(e) {
+//     e.preventDefault(); //prevent the link from being followed
+//     $('#primary-menu a').removeClass('selected');
+//     $(this).addClass('selected');
+// });
      
 // $('#navlist a').click(function(e) {
 //     e.preventDefault(); //prevent the link from being followed
@@ -26,8 +26,21 @@ $('#primary-menu a').click(function(e) {
 //     $(this).addClass('selected');
 // });
 
-    $(".menu li").on("click", function() {
-      $(".menu li").removeClass("active");
-      $(this).addClass("active");
-    });
+    // $(".menu li").on("click", function() {
+    //   $(".menu li").removeClass("active");
+    //   $(this).addClass("active");
+    // });
 
+$(function(){
+    $('.menu a').click(function () {
+        $('.menu a').removeClass('active');
+        $(this).addClass('active');
+     });
+ });
+
+// $(function(){
+//     $('#navbar a').click(function () {
+//         $('#navbar a').removeClass('active');
+//         $(this).addClass('active');
+//      });
+//  });
