@@ -207,31 +207,31 @@ img {
 .logo-wrapper {
 
 	@include bp(desktop) {
-		text-align: left;		
+		// text-align: left;		
 	}
 }
 
 
 .logo {
-	-webkit-clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);
-	clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);	
+	// -webkit-clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);
+	// clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);	
 
-	background-color: $color-brand-orange;
-	height: 50px;
-	width: 200px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
+	// background-color: $color-brand-orange;
+	// height: 50px;
+	// width: 200px;
+	// display: flex;
+	// justify-content: center;
+	// align-items: center;
+	// margin: 0 auto;
 
-	h1 {
-		font-size: 1.5rem;
-		color: white;
-	}
+	// h1 {
+	// 	font-size: 1.5rem;
+	// 	color: white;
+	// }
 
-	@include bp(desktop) {
+	// @include bp(desktop) {
 			
-	}
+	// }
 }
 
 
@@ -296,7 +296,7 @@ img {
 
 	@include bp(desktop) {
 		display: flex;
-		padding: 3rem 8rem 3rem;
+		padding: 5% 8% 0 8%;
 	}
 }
 
@@ -333,8 +333,11 @@ img {
 
 
 .homepage-image {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
 
-	.homepage-inner {
+	.homepage-image-inner {
 		max-width: 450px;
 
 	}
@@ -358,7 +361,7 @@ img {
 .chevron-scroll {
 	
 	font-size: 1.5rem;
-	padding-top: 5%;
+	// padding-top: 1%;
 
 	a {
 		color: white;
@@ -371,11 +374,11 @@ img {
 	}
 
 	@include bp(mobile) {
-		padding-top: 30%;
+		padding-top: 15%;
 	}
 
 	@include bp(tablet) {
-		padding-top: 40%;
+		padding-top: 25%;
 	}
 
 	@include bp(desktop) {
@@ -455,14 +458,12 @@ img {
 
 	.work-slicer {
 		transform: skew(-25deg);
-		  width:115px;
-		  height:100%;
+		  width: 115px;
 		  background: white;
-		  position:absolute;
-		  right:-55px;
-		  top:-5px;
-		  bottom:-5px;
-		  height: 105%;
+		  position: absolute;
+		  right: -55px;
+		  top: -5px;
+		  height: 110%;
 		  border-left: 5px solid $color-brand-grey-border; 
 	}
 
@@ -471,21 +472,21 @@ img {
 		flex-direction: row-reverse;
 
 		.work-image-container {
-			position:relative;
+			position: relative;
 			width: 50%;
 			height: 230px;
 		}
 
 		.work-skew-container {
-			position:relative;
+			position: relative;
 			margin: 0;
-			overflow:hidden;
+			overflow: hidden;
 		}
 
 		.work-skew {
 			position:relative;
-		    height:230px;
-		    width:100%;
+		    height: 230px;
+		    width: 100%;
 		    border-top: 5px solid $color-brand-grey-border;
 		    border-bottom: 5px solid $color-brand-grey-border;
 		    float:left;
@@ -493,14 +494,12 @@ img {
 
 		.work-slicer {
 			transform: skew(-25deg);
-			  width:115px;
-			  height:100%;
+			  width: 115px;
+			  height: 110%;
 			  background: white;
 			  position:absolute;
-			  right:-55px;
-			  top:-5px;
-			  bottom:-5px;
-			  height: 105%;
+			  right: -55px;
+			  top: -5px;
 			  border-left: 5px solid $color-brand-grey-border; 
 		}
 
@@ -542,13 +541,12 @@ img {
 		.work-slicer {
 			transform: skew(-25deg);
 			  width:115px;
-			  height:100%;
+			  height:110%;
 			  background: white;
 			  position:absolute;
 			  right:-55px;
 			  top:-5px;
-			  bottom:-5px;
-			  height: 105%;
+			  border-bottom: 1px solid white;
 		}
 
 		.work-image img {
@@ -603,13 +601,11 @@ img {
 	.work-slicer {
 		transform: skew(-25deg);
 		width:115px;
-		height:100%;
+		height:110%;
 		background: white;
-		position:absolute;
+		position: absolute;
 		left:-55px;
 		top:-5px;
-		bottom:-5px;
-		height: 105%;
 		border-right: 5px solid $color-brand-grey-border; 
 	}
 
@@ -617,35 +613,34 @@ img {
 		display: flex;
 
 		.work-image-container {
-			position:relative;
+			position: relative;
 			width: 40%;
 			height: 230px;
 		}
 
 		.work-skew-container {
-			position:relative;
+			position: relative;
 			margin: 0;
-			overflow:hidden;
+			overflow: hidden;
 		}
 
 		.work-skew {
-			position:relative;
-		    height:230px;
-		    width:100%;
-		    float:right;
+			position: relative;
+		    height: 230px;
+		    width: 100%;
+		    float: right;
 		    margin: 0;
 		}
 
 		.work-slicer {
 			transform: skew(-25deg);
-			width:115px;
-			height:100%;
+			width: 115px;
+			height: 110%;
 			background: white;
-			position:absolute;
-			left:-55px;
-			top:-5px;
-			bottom:-5px;
-			height: 105%;
+			position: absolute;
+			left: -55px;
+			top: -6px;
+			// border-bottom: 5px solid white;
 		}
 
 		.work-details {
@@ -682,13 +677,13 @@ img {
 		.work-slicer {
 			transform: skew(-25deg);
 			width:115px;
-			height:100%;
+			height:110%;
 			background: white;
 			position:absolute;
 			left:-55px;
 			top:-5px;
-			bottom:-5px;
-			height: 105%;
+			bottom:-50px;
+
 		}
 
 		.work-details {
@@ -1064,7 +1059,7 @@ img {
 	position: absolute;
 	left: -140px;
 	top: -5px;
-	height: 105%;
+	height: 110%;
 	border-right: 5px solid $color-brand-grey-border; 
 
 	@include bp(tablet) {
@@ -1131,14 +1126,14 @@ img {
     }	
 
 	@include bp(tablet) {
-		width: 50%;
-		text-align: right;
+		// width: 50%;
+		// text-align: right;
     }
 
 	@include bp(desktop) {
-		display: block;
-		width: 50%;
-		text-align: right;
+		// display: block;
+		// width: 50%;
+		// text-align: right;
     }
 }
 

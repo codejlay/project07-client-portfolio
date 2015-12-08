@@ -25,9 +25,10 @@
 						<div class="logo-wrapper">
 							<a href="<?php echo home_url(); ?>">
 								<div class="logo">
-									<div class="logo-inner">
+									<img src="<?php bloginfo('template_url'); ?>/images/paw_ux_logo.png" alt="Paul UX Logo" />
+									<!-- <div class="logo-inner">
 										<h1>paw_ux</h1>
-									</div>
+									</div> -->
 								</div>
 							</a>
 						</div>
