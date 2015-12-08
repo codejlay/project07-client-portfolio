@@ -118,6 +118,13 @@ img {
 
 // Structure
 
+* { -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+
+	box-sizing: border-box;  }
+
+
 .container {
 	margin: 0 auto;
 	// max-width: 1366px;
@@ -315,7 +322,6 @@ img {
 	}
 
 	@include bp(desktop) {
-		display: flex;
 		padding: 5% 8% 0 8%;
 	}
 }
@@ -803,9 +809,11 @@ img {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	// -ms-text-align: center;
-	// -ms-padding-left: 5rem;
-	// -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0, M21=-0.7071067811865467, M22=1.4142135623730934, SizingMethod='auto expand')";
+
+	-webkit-margin: 0 auto;
+	-webkit-display: flex;
+	-webkit-flex-direction: column;
+	-webkit-justify-content: center;
 }
 
 
@@ -891,7 +899,7 @@ img {
 .about-description {
 
 	@include bp(tablet) {
-		width: 50%;
+		width: 40%;
 	}
 
 	@include bp(desktop) {
@@ -902,6 +910,10 @@ img {
 		color: $color-brand-grey-light;
 		padding: 0 8%;
 		font-size: .8rem;
+
+		@include bp(tablet) {
+			font-size: .75rem;
+	}
 
 		@include bp(desktop) {
 			font-size: 1rem;
@@ -918,10 +930,11 @@ img {
 .image-container {
 	position: relative;
 	height: 230px;
-	// width: 100%;
 	margin: 0;
 	display: flex;
 	justify-content: flex-end;
+
+	// width: 100%;
 
 	@include bp(mobile) {
 		// display: flex;
@@ -931,9 +944,10 @@ img {
     }
 
 	@include bp(mobileAbout) {
+		width: 608px;
+
 		// display: flex;
 		// justify-content: flex-end;
-		width: 608px;
 		// width: 740px;
 		// margin: 0;
     }
@@ -969,11 +983,11 @@ img {
 	width: 100%;
 
 	@include bp(tablet) {
-		width: 370px;
+		// width: 370px;
     }
 
     @include bp(desktop) {
-		width: 500px;
+		// width: 500px;
     }
 }
 
@@ -989,7 +1003,7 @@ img {
 	border-right: 5px solid $color-brand-grey-border; 
 
 	@include bp(tablet) {
-		// left: -140px;
+		left: -145px;
 	}
 
 	@include bp(desktop) {
