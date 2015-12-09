@@ -2202,12 +2202,12 @@ img {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-flex-direction: column wrap;
+      -ms-flex-direction: column wrap;
+          flex-direction: column wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-margin: 0 auto;
   -webkit-display: -webkit-flex;
   -webkit-flex-direction: column;
@@ -2216,7 +2216,8 @@ img {
 .design-wrapper, .prototyping-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 90%; }
 
 .design-wrapper {
   margin-bottom: .5rem; }
