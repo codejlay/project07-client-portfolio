@@ -197,31 +197,3 @@ get_header(); ?>
 
 
 <!-- !!!***TEST AREA***!!! -->
-
-
-						
-									
-
-
-<div class="test-container">
-	<div class="test-container-l">
-	</div>	
-	<div class="test-container-r">
-	</div>	
-</div>
-<!-- <div class="image-container">
-	<div class="skew-container">
-		<div class="skew-left">
-			<div class="slicer-left">
-			</div>
-		</div>
-		
-		<div class="skew-right" style="background-image:url(<?php echo get_template_directory_uri() ?>/images/pw_pic.jpg); background-repeat:no-repeat; background-size:cover;">
-			<div class="slicer-right">
-			</div>
-		</div>
-	</div>
-</div> -->
-
-
-

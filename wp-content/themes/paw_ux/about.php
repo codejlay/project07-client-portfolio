@@ -1,10 +1,1 @@
-<?php
-/**
- *
- *Template Name:about pages.
- * @package paw_ux_Theme
- */
-?>
-
-
-
+<?php wp_redirect(site_url(), 301); exit(); ?>
