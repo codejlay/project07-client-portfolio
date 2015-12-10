@@ -19,7 +19,7 @@
 //     $('#primary-menu a').removeClass('selected');
 //     $(this).addClass('selected');
 // });
-     
+
 // $('#navlist a').click(function(e) {
 //     e.preventDefault(); //prevent the link from being followed
 //     $('#navlist a').removeClass('selected');
@@ -31,12 +31,14 @@
     //   $(this).addClass("active");
     // });
 
-$(function(){
-    $('.menu a').click(function () {
-        $('.menu a').removeClass('active');
-        $(this).addClass('active');
-     });
- });
+// jQuery(function($){
+//   console.log('helloo');
+//     $('.menu').click(function () {
+//         console.log('click');
+//         $('.menu a').removeClass('active');
+//         $(this).addClass('active');
+//      });
+//  })
 
 // $(function(){
 //     $('#navbar a').click(function () {
@@ -44,3 +46,10 @@ $(function(){
 //         $(this).addClass('active');
 //      });
 //  });
+
+jQuery(function($){
+	 $('.menu a').click(function () {
+	         $('.menu a').removeClass('active');
+	          $(this).addClass('active');
+	       });
+})

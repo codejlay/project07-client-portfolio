@@ -2202,12 +2202,12 @@ img {
   margin: 0 auto;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-flex-direction: column wrap;
+      -ms-flex-direction: column wrap;
+          flex-direction: column wrap;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-margin: 0 auto;
   -webkit-display: -webkit-flex;
   -webkit-flex-direction: column;
@@ -2216,7 +2216,8 @@ img {
 .design-wrapper, .prototyping-wrapper {
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  width: 90%; }
 
 .design-wrapper {
   margin-bottom: .5rem; }
@@ -2257,20 +2258,36 @@ img {
   background-color: #585353;
   padding-top: 2rem; }
 
-@media (min-width: 768px) {
+@media (min-width: 626px) {
   .about-container {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .about-container .image-container {
+      -webkit-align-self: flex-end;
+          -ms-flex-item-align: end;
+              align-self: flex-end; } }
+
+@media (min-width: 768px) {
+  .about-container {
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; } }
 
 @media (min-width: 1024px) {
   .about-container {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2491,3 +2508,12 @@ footer {
 .footer-accent {
   height: 10px;
   background-color: #FF7703; }
+
+.menu {
+  list-style: none; }
+
+.menu a {
+  text-decoration: none; }
+
+.menu a.active {
+  text-decoration: underline !important; }
