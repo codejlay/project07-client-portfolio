@@ -16,7 +16,6 @@ get_header(); ?>
 					<div class="intro-details-inner">
 						<div class="intro-name">
 							<h2><?php echo ( CFS()->get('intro_name')); ?></h2>
-
 						</div>
 
 						<div class="intro-description">

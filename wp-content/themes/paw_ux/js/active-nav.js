@@ -53,3 +53,10 @@ jQuery(function($){
 	          $(this).addClass('active');
 	       });
 })
+
+// jQuery(function($){
+// 	 $('.menu li').click(function () {
+// 	         $('.menu li').removeClass('active');
+// 	          $(this).addClass('active');
+// 	       });
+// })

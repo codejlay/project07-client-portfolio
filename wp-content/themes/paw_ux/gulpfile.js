@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() {
    ];
 
     browserSync.init(files, {
-        proxy: 'localhost:8888/paw-review/',
+        proxy: 'localhost:8080/paw_ux/',
     });
 });
 
