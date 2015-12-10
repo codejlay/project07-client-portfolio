@@ -130,19 +130,19 @@ img {
 	// max-width: 1366px;
 
 	@include bp(mobile) {
-		// border: 2px solid red;
+		border: 2px solid red;
 	}
 
 	@include bp(mobileAbout) {
-		// border: 2px solid pink;
+		border: 2px solid pink;
 	}
 
 	@include bp(tablet) {
-		// border: 2px solid yellow;
+		border: 2px solid yellow;
 	}
 
 	@include bp(desktop) {
-		// border: 2px solid green;
+		border: 2px solid green;
 	}
 }
 
@@ -215,6 +215,8 @@ img {
     width: 100%;
     background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
     // margin-top: -7px;
+    // top: -7px;
+    // line-height: 100px;
 
     // background-color: $color-brand-orange;
     // padding-bottom: 7px;
@@ -849,6 +851,7 @@ img {
 	}
 }
 
+
 .software {
 	font-size: 1.684rem;
 	font-family: $font-text;
@@ -866,33 +869,51 @@ img {
 
 .software-details {
 	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+	// display: flex;
+	// flex-direction: column;
+	// align-items: center;
 
-	-webkit-margin: 0 auto;
-	-webkit-display: flex;
-	-webkit-flex-direction: column;
-	-webkit-justify-content: center;
+	// -webkit-margin: 0 auto;
+	// -webkit-display: flex;
+	// -webkit-flex-direction: column;
+	// -webkit-justify-content: center;
 
-	-moz-margin: 0 auto;
-	-moz-display: flex;
-	-moz-flex-direction: column;
-	-moz-align-items: center;
+	// -moz-margin: 0 auto;
+	// -moz-display: flex;
+	// -moz-flex-direction: column;
+	// -moz-align-items: center;
 
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	-ms-flex-align: center;
+	// display: -webkit-flex;
+	// display: -ms-flexbox;
+	// -ms-flex-align: center;
 
 
+	// display: flex;
+	// flex-direction: column;
+
+	// @include bp(mobile) {
+	// 	margin-left: 1rem;
+	// }
+
+	// @include bp(mobileAbout) {
+	// 	margin-left: 4rem;
+	// }
+
+	// @include bp(tablet) {
+	// 	margin-left: 8rem;
+	// }
+
+	// @include bp(desktop) {
+	// 	margin-left: 10rem;
+	// }
 }
 
 
 .design-wrapper, .prototyping-wrapper {
 	display: flex;
 	width: 100%;
-
 }
+
 
 .design-wrapper {
 	margin-bottom: .5rem;
