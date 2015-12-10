@@ -1761,6 +1761,13 @@ img {
   margin: 0 auto;
   padding-bottom: 1rem; }
 
+.menu li:after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 100%;
+  background: url(../../images/menu_highlight.png) no-repeat center center/cover; }
+
 .logo {
   max-width: 80%; }
   @media (min-width: 550px) {

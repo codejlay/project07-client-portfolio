@@ -207,14 +207,17 @@ img {
 
 
 // Menu Underline
-// .menu li:after {
-//     content: "";
-//     background-color: $color-brand-orange;
-//     display: block;
-//     height: 5px;
-//     margin-top: -1px;
-//     width: 85%;
-// }
+.menu li:after {
+    content: "";
+    // background-color: $color-brand-orange;
+    display: block;
+    height: 7px;
+    // margin-top: -1px;
+    width: 100%;
+    background: url(../../images/menu_highlight.png) no-repeat center center/cover;
+    // text-align: right;
+    // padding: 0 0 0 1rem;
+}
 
 
 .logo-wrapper {
@@ -586,7 +589,7 @@ img {
 	    width: 300px;
 	    border-top: 5px solid $color-brand-grey-border;
 	    border-bottom: 5px solid $color-brand-grey-border;
-	    float:right;
+	    float: right;
 	    margin: 0;
 
 	    @include bp(mobile) {
@@ -1268,4 +1271,9 @@ footer {
 // }
 // a.active{
 //    text-decoration: underline !important; 
+// }
+
+// .menu li {
+// 	text-decoration: underline;
+// 	color: orange;
 // }
