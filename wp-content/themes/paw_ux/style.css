@@ -1713,18 +1713,6 @@ img {
 
 .container {
   margin: 0 auto; }
-  @media (min-width: 550px) {
-    .container {
-      border: 2px solid red; } }
-  @media (min-width: 626px) {
-    .container {
-      border: 2px solid pink; } }
-  @media (min-width: 768px) {
-    .container {
-      border: 2px solid yellow; } }
-  @media (min-width: 1024px) {
-    .container {
-      border: 2px solid green; } }
 
 .title-box {
   -webkit-transform: skew(-25deg);

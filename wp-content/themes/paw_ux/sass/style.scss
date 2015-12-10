@@ -130,19 +130,19 @@ img {
 	// max-width: 1366px;
 
 	@include bp(mobile) {
-		border: 2px solid red;
+		// border: 2px solid red;
 	}
 
 	@include bp(mobileAbout) {
-		border: 2px solid pink;
+		// border: 2px solid pink;
 	}
 
 	@include bp(tablet) {
-		border: 2px solid yellow;
+		// border: 2px solid yellow;
 	}
 
 	@include bp(desktop) {
-		border: 2px solid green;
+		// border: 2px solid green;
 	}
 }
 
