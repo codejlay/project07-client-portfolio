@@ -23,7 +23,7 @@ get_header(); ?>
 						</div>
 					</div>
 
-					<div class="homepage-image">
+					<div class="homepage-image clearfix">
 						<?php $intro_images = CFS()->get('intro_images');
 						foreach ($intro_images as $image) :
 						?>

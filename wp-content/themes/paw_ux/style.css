@@ -1861,6 +1861,9 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (min-width: 550px) {
+    .homepage-image {
+      padding-top: 1rem; } }
   @media (min-width: 768px) {
     .homepage-image {
       width: 50%; } }
@@ -1870,7 +1873,7 @@ img {
       .homepage-image .homepage-image-inner {
         max-width: 450px; } }
   .homepage-image img {
-    margin-bottom: 1rem; }
+    padding-bottom: 1rem; }
   @media (min-width: 550px) {
     .homepage-image {
       margin: 0; } }
@@ -1890,13 +1893,13 @@ img {
     font-size: 2rem; }
   @media (min-width: 550px) {
     .chevron-scroll {
-      padding-top: 30%; } }
+      padding-top: 10%; } }
   @media (min-width: 768px) {
     .chevron-scroll {
-      padding-top: 40%; } }
+      padding-top: 30%; } }
   @media (min-width: 1024px) {
     .chevron-scroll {
-      padding-top: 5%; } }
+      padding-top: 3%; } }
 
 .my-work-content {
   background-color: white;

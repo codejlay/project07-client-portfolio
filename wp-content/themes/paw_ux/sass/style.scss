@@ -421,6 +421,10 @@ img {
 	display: flex;
 	justify-content: center;
 
+	@include bp(mobile) {
+		padding-top: 1rem;
+	}
+
 	@include bp(tablet) {
 		width: 50%;
 	}
@@ -435,7 +439,7 @@ img {
 	}
 
 	img {
-		margin-bottom: 1rem;
+		padding-bottom: 1rem;
 	}
 
 	@include bp(mobile) {
@@ -466,15 +470,15 @@ img {
 	}
 
 	@include bp(mobile) {
-		padding-top: 30%;
+		padding-top: 10%;
 	}
 
 	@include bp(tablet) {
-		padding-top: 40%;
+		padding-top: 30%;
 	}
 
 	@include bp(desktop) {
-		padding-top: 5%;
+		padding-top: 3%;
 	}
 }
 
