@@ -1896,10 +1896,10 @@ img {
       padding-top: 10%; } }
   @media (min-width: 768px) {
     .chevron-scroll {
-      padding-top: 30%; } }
+      padding-top: 10%; } }
   @media (min-width: 1024px) {
     .chevron-scroll {
-      padding-top: 3%; } }
+      padding-top: 1%; } }
 
 .my-work-content {
   background-color: white;

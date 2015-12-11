@@ -474,11 +474,11 @@ img {
 	}
 
 	@include bp(tablet) {
-		padding-top: 30%;
+		padding-top: 10%;
 	}
 
 	@include bp(desktop) {
-		padding-top: 3%;
+		padding-top: 1%;
 	}
 }
 
