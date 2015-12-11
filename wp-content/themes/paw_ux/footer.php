@@ -34,7 +34,6 @@
 					<div class="copyright">
 						<p>&copy; 2015. Design by Paul Anthony Wilson.</p>
 					</div>
-					<!-- </div> -->
 					<div class="footer-accent">
 					</div>
 				</div><!-- .site-info -->

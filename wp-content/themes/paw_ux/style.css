@@ -1808,20 +1808,19 @@ img {
   height: 100vh;
   padding-top: 5rem; }
 
-.intro-details {
-  padding-top: 1rem; }
-  @media (min-width: 768px) {
-    .intro-details {
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center;
-      padding: 5% 4% 0 4%; } }
-  @media (min-width: 1024px) {
-    .intro-details {
-      padding: 3% 8% 0 8%; } }
+@media (min-width: 768px) {
+  .intro-details {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5% 4% 0 4%; } }
+
+@media (min-width: 1024px) {
+  .intro-details {
+    padding: 3% 8% 0 8%; } }
 
 .intro-details-inner {
   margin: 0 auto; }
@@ -1871,7 +1870,7 @@ img {
       .homepage-image .homepage-image-inner {
         max-width: 450px; } }
   .homepage-image img {
-    margin: 0; }
+    margin-bottom: 1rem; }
   @media (min-width: 550px) {
     .homepage-image {
       margin: 0; } }

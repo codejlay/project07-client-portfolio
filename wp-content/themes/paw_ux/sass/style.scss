@@ -364,7 +364,7 @@ img {
 
 .intro-details {
 
-	padding-top: 1rem;
+	// padding-top: 1rem;
 
 	@include bp(mobile) {
 	}
@@ -435,7 +435,7 @@ img {
 	}
 
 	img {
-		margin: 0;
+		margin-bottom: 1rem;
 	}
 
 	@include bp(mobile) {
