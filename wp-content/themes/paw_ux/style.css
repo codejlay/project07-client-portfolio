@@ -1884,7 +1884,8 @@ img {
       padding-top: 3rem; } }
 
 .chevron-scroll {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  display: none; }
   .chevron-scroll a {
     color: white;
     text-decoration: none; }
@@ -1893,13 +1894,14 @@ img {
     font-size: 2rem; }
   @media (min-width: 550px) {
     .chevron-scroll {
+      display: block;
       padding-top: 10%; } }
   @media (min-width: 768px) {
     .chevron-scroll {
       padding-top: 10%; } }
   @media (min-width: 1024px) {
     .chevron-scroll {
-      padding-top: 1%; } }
+      padding-top: 3%; } }
 
 .my-work-content {
   background-color: white;

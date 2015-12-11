@@ -458,6 +458,7 @@ img {
 
 	font-size: 1.5rem;
 	// padding-top: 1%;
+	display: none;
 
 	a {
 		color: white;
@@ -470,6 +471,7 @@ img {
 	}
 
 	@include bp(mobile) {
+		display: block;
 		padding-top: 10%;
 	}
 
@@ -478,7 +480,7 @@ img {
 	}
 
 	@include bp(desktop) {
-		padding-top: 1%;
+		padding-top: 3%;
 	}
 }
 
