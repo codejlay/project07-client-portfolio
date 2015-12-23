@@ -202,11 +202,27 @@ img {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
-	padding-bottom: 1rem;
+	height: 70px;
+	// padding-bottom: 1rem;
 }
 
 
 // Menu Underline
+
+a:focus {
+	outline: none;
+}
+
+
+.menu a:after {
+	content: "";
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+}
+
 
 .menu a.active:after {
 	content: "";
@@ -214,59 +230,10 @@ img {
     height: 7px;
     width: 100%;
     background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
-    // margin-top: -7px;
-    // top: -7px;
-    // line-height: 100px;
-
-    // background-color: $color-brand-orange;
-    // padding-bottom: 7px;
-    // text-decoration: underline;
-     // content: "";
-    // background-color: $color-brand-orange;
-    // display: block;
-    // height: 7px;
-    // margin-top: -7px;
-    // width: 100%;
-
-    // border-bottom: 7px solid $color-brand-orange;
+    outline: 0;
+    // padding-top: 10px;
 }
 
-.current_page_ancestor:after, .current_page_item:after {
-    // content: "";
-    // background-color: $color-brand-orange;
-    // display: block;
-    // height: 3px;
-    // margin-top: -3px;
-    // width: 100%;
-}
-// .menu li a:after {
-//     content: "";
-//     display: block;
-//     height: 7px;
-//     width: 100%;
-//     background: url(../../images/menu_highlight.png) no-repeat center center/cover;
-
-//     text-align: right;
-//     padding: 0 0 0 1rem;
-//     background-color: $color-brand-orange;
-//     margin-top: -1px;
-// }
-
-// .menu li.active:after {
-// 	content: "";
-//     display: block;
-//     height: 7px;
-//     width: 100%;
-//     background: url(../../images/menu_highlight.png) no-repeat center center/cover;
-// }
-
-// .menu a.active:after {
-// 	content: "";
-//     display: block;
-//     height: 7px;
-//     width: 150%;
-//     background: url(../../images/menu_highlight.png) no-repeat center center/cover;
-// }
 
 .logo-wrapper {
 
@@ -276,8 +243,10 @@ img {
 }
 
 
-.logo {
-	max-width: 80%;
+.logo img {
+	width: 80%;
+	// height: 2.526rem;
+		// width: 192px;
 
 	@include bp(mobile) {
 		width: 85%;
@@ -288,28 +257,12 @@ img {
 	}
 
 	@include bp(desktop) {
-		max-width: 100%;
+		// width: 150%;
+		height: 60px;
+		width: 240px;
+		// height: 3.684210rem;
+		// width: 12.6315rem;
 	}
-
-	// -webkit-clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);
-	// clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);
-
-	// background-color: $color-brand-orange;
-	// height: 50px;
-	// width: 200px;
-	// display: flex;
-	// justify-content: center;
-	// align-items: center;
-	// margin: 0 auto;
-
-	// h1 {
-	// 	font-size: 1.5rem;
-	// 	color: white;
-	// }
-
-	// @include bp(desktop) {
-
-	// }
 }
 
 
@@ -359,6 +312,12 @@ img {
 	text-align: center;
 	height: 100vh;
 	padding-top: 5rem;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: center;
+	// align-items: flex-end;
+	// align-content: space-between;
+
 }
 
 
@@ -481,6 +440,7 @@ img {
 
 	@include bp(desktop) {
 		padding-top: 3%;
+		// align-self: center;
 	}
 }
 
@@ -1358,3 +1318,62 @@ footer {
 //     text-decoration: none;
 // }
 
+// .current_page_ancestor:after, .current_page_item:after {
+    // content: "";
+    // background-color: $color-brand-orange;
+    // display: block;
+    // height: 3px;
+    // margin-top: -3px;
+    // width: 100%;
+// }
+// .menu li a:after {
+//     content: "";
+//     display: block;
+//     height: 7px;
+//     width: 100%;
+//     background: url(../../images/menu_highlight.png) no-repeat center center/cover;
+
+//     text-align: right;
+//     padding: 0 0 0 1rem;
+//     background-color: $color-brand-orange;
+//     margin-top: -1px;
+// }
+
+// .menu li.active:after {
+// 	content: "";
+//     display: block;
+//     height: 7px;
+//     width: 100%;
+//     background: url(../../images/menu_highlight.png) no-repeat center center/cover;
+// }
+
+// .menu a.active:after {
+// 	content: "";
+//     display: block;
+//     height: 7px;
+//     width: 150%;
+//     background: url(../../images/menu_highlight.png) no-repeat center center/cover;
+// }
+
+// old logo
+
+// .logo {
+// -webkit-clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);
+// 	clip-path: polygon(0 1%, 100% 0, 85% 100%, 0 100%);
+
+// 	background-color: $color-brand-orange;
+// 	height: 50px;
+// 	width: 200px;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	margin: 0 auto;
+
+// 	h1 {
+// 		font-size: 1.5rem;
+// 		color: white;
+// 	}
+
+// 	@include bp(desktop) {
+// 	}
+// }

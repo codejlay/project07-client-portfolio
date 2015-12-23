@@ -17,7 +17,6 @@
 
 	<body <?php body_class(); ?>>
 
-
 		<div id="page" class="hfeed site">
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<div class="container">
@@ -26,9 +25,6 @@
 							<a href="<?php echo home_url(); ?>">
 								<div class="logo">
 									<img src="<?php bloginfo('template_url'); ?>/images/paw_ux_logo.png" alt="Paul UX Logo" />
-									<!-- <div class="logo-inner">
-										<h1>paw_ux</h1>
-									</div> -->
 								</div>
 							</a>
 						</div>

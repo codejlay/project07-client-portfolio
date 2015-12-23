@@ -1759,26 +1759,39 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  padding-bottom: 1rem; }
+  height: 70px; }
+
+a:focus {
+  outline: none; }
+
+.menu a:after {
+  content: "";
+  display: block;
+  height: 7px;
+  width: 100%;
+  background-color: transparent;
+  outline: 0; }
 
 .menu a.active:after {
   content: "";
   display: block;
   height: 7px;
   width: 100%;
-  background: url(../../images/menu_highlight03.png) no-repeat center center/cover; }
+  background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
+  outline: 0; }
 
-.logo {
-  max-width: 80%; }
+.logo img {
+  width: 80%; }
   @media (min-width: 550px) {
-    .logo {
+    .logo img {
       width: 85%; } }
   @media (min-width: 768px) {
-    .logo {
+    .logo img {
       width: 95%; } }
   @media (min-width: 1024px) {
-    .logo {
-      max-width: 100%; } }
+    .logo img {
+      height: 60px;
+      width: 240px; } }
 
 .nav-wrapper {
   display: -webkit-flex;
