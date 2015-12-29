@@ -2219,13 +2219,22 @@ a:focus {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 2rem;
   padding: 0 8%; }
   .software p {
     margin: 0 0 1rem; }
 
 .software-details {
-  margin: 0 auto; }
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
 
 .design-wrapper, .prototyping-wrapper {
   display: -webkit-flex;

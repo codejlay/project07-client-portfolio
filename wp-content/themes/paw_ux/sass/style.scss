@@ -829,6 +829,7 @@ a:focus {
 	font-weight: bold;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	margin-bottom: 2rem;
 	padding: 0 8%;
 
@@ -839,10 +840,11 @@ a:focus {
 
 
 .software-details {
-	margin: 0 auto;
-	// display: flex;
-	// flex-direction: column;
+	// margin: 0 auto;
+	display:-webkit-flex;
+	flex-direction: column;
 	// align-items: center;
+	align-self: center;
 
 	// -webkit-margin: 0 auto;
 	// -webkit-display: flex;
