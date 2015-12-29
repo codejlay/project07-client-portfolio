@@ -1965,7 +1965,7 @@ a:focus {
       border-bottom: 5px solid #8E8888; } }
   @media (min-width: 1024px) {
     .oddpost .work-details {
-      padding: 2% 5%;
+      padding: 1rem 1.5rem;
       height: 200px; } }
 
 .oddpost .work-image-container {
@@ -2035,7 +2035,7 @@ a:focus {
       border-bottom: 5px solid #8E8888; } }
   @media (min-width: 1024px) {
     .evenpost .work-details {
-      padding: 2% 5%;
+      padding: 1rem 1.5rem;
       height: 200px; } }
 
 .evenpost .work-image-container {
@@ -2088,12 +2088,11 @@ a:focus {
   font-size: 1.2rem; }
   .work-title p {
     margin: 0;
-    padding-top: .5rem;
+    padding-top: 1rem;
     padding-bottom: 1rem; }
     @media (min-width: 1024px) {
       .work-title p {
-        padding-top: 0;
-        padding-bottom: 1rem; } }
+        padding-top: 0; } }
 
 .work-description p {
   margin: 0 0 1rem 0;
