@@ -1898,23 +1898,21 @@ a:focus {
 
 .chevron-scroll {
   font-size: 1.5rem;
-  display: none; }
+  display: none;
+  margin: 0 auto; }
+  @media (min-width: 550px) {
+    .chevron-scroll {
+      position: absolute;
+      bottom: 2rem;
+      right: 48.5%;
+      text-align: center;
+      display: inline-block; } }
   .chevron-scroll a {
     color: white;
     text-decoration: none; }
   .chevron-scroll a:hover {
     color: #FF7703;
     font-size: 2rem; }
-  @media (min-width: 550px) {
-    .chevron-scroll {
-      display: block;
-      padding-top: 10%; } }
-  @media (min-width: 768px) {
-    .chevron-scroll {
-      padding-top: 10%; } }
-  @media (min-width: 1024px) {
-    .chevron-scroll {
-      padding-top: 3%; } }
 
 .my-work-content {
   background-color: white;
@@ -2435,13 +2433,7 @@ a:focus {
   margin-left: 3.8rem; }
   @media (min-width: 550px) {
     .social {
-      margin: 0;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+      margin: 0; } }
 
 .social-inner {
   color: white;

@@ -67,6 +67,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "media";
 @import "page-templates";
 
+// *viewport test*
+
+// html, body {
+// 	height: 100%;
+// }
+
+
 html {
 	// min-width: 320px;
 	// max-width: 1366px;
@@ -311,6 +318,9 @@ a:focus {
 	text-align: center;
 	height: 100vh;
 	padding-top: 5rem;
+
+	// height: 100%;
+
 	// display: flex;
 	// flex-direction: column;
 	// justify-content: center;
@@ -364,11 +374,13 @@ a:focus {
 	.intro-description p {
 		font-size: 1rem;
 		padding: 0 7.5%;
+		// padding: 0 7.5rem;
 		color: $color-brand-grey-text;
 
 		@include bp(desktop) {
 			font-size: 1.263rem;
 			padding: 0 5rem;
+			// margin: 0 5rem;
 		}
 	}
 }
@@ -413,10 +425,26 @@ a:focus {
 
 
 .chevron-scroll {
-
 	font-size: 1.5rem;
-	// padding-top: 1%;
 	display: none;
+	margin: 0 auto;
+
+	@include bp(mobile) {
+		position: absolute;
+  		bottom: 2rem;
+  		right: 48.5%;
+  		text-align: center;
+		display: inline-block;
+	}
+
+	@include bp(tablet) {
+		// padding-top: 10%;
+	}
+
+	@include bp(desktop) {
+		// padding-top: 3%;
+		// align-self: center;
+	}
 
 	a {
 		color: white;
@@ -426,20 +454,6 @@ a:focus {
 	a:hover {
 		color: $color-brand-orange;
 		font-size: 2rem;
-	}
-
-	@include bp(mobile) {
-		display: block;
-		padding-top: 10%;
-	}
-
-	@include bp(tablet) {
-		padding-top: 10%;
-	}
-
-	@include bp(desktop) {
-		padding-top: 3%;
-		// align-self: center;
 	}
 }
 
@@ -1168,8 +1182,8 @@ a:focus {
 
 	@include bp(mobile) {
 		margin: 0;
-		display: flex;
-		justify-content: center;
+		// display: flex;
+		// justify-content: center;
     }
 
 	@include bp(desktop) {
