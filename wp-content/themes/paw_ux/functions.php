@@ -120,7 +120,6 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 
-
 /**
  * Plugin Name:       Hide Default Posts
  * Plugin URI:        https://gist.github.com/mandiwise/2ea571ae0773b340af5a

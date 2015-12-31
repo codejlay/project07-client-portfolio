@@ -11,7 +11,7 @@ get_header(); ?>
 <div class="site-content">
 	<div class="content-area">
 		<section class="intro" id="home">
-			<div class="container">
+			<div class="container container-intro">
 				<div class="intro-details">
 					<div class="intro-details-inner">
 						<div class="intro-name">

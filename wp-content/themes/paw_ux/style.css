@@ -1678,6 +1678,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 html {
+  min-width: 320px;
   margin: 0 auto; }
 
 body {
@@ -1706,6 +1707,7 @@ img {
   padding: 0;
   margin: 0; }
 
+/* Structure */
 * {
   /* Safari/Chrome, other WebKit */
   /* Firefox, other Gecko */
@@ -1714,6 +1716,7 @@ img {
 .container {
   margin: 0 auto; }
 
+/* Slant Element */
 .title-box {
   -webkit-transform: skew(-25deg);
   -moz-transform: skew(-25deg);
@@ -1746,6 +1749,7 @@ img {
     .title-box .title-box-inner h3 {
       font-size: 1.5rem; }
 
+/* Header Section */
 .main-navigation {
   background-color: #585353;
   position: fixed;
@@ -1761,6 +1765,7 @@ img {
   margin: 0 auto;
   height: 70px; }
 
+/* Menu Underline */
 a:focus {
   outline: none; }
 
@@ -1815,11 +1820,23 @@ a:focus {
 .content-area {
   background-color: #585353; }
 
+/* Intro Section */
 .intro {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   text-align: center;
   height: 100vh;
   padding-top: 5rem; }
+
+.container-intro {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 @media (min-width: 768px) {
   .intro-details {
@@ -1858,6 +1875,9 @@ a:focus {
     font-size: 1rem;
     padding: 0 7.5%;
     color: #E8DCDC; }
+    @media (min-width: 768px) {
+      .intro-details-inner .intro-description p {
+        padding: 0 1.5rem; } }
     @media (min-width: 1024px) {
       .intro-details-inner .intro-description p {
         font-size: 1.263rem;
@@ -1873,25 +1893,29 @@ a:focus {
           justify-content: center; }
   @media (min-width: 550px) {
     .homepage-image {
-      padding-top: 1rem; } }
+      padding-top: 1rem;
+      margin: 0; } }
   @media (min-width: 768px) {
     .homepage-image {
       width: 50%; } }
-  .homepage-image .homepage-image-inner {
-    max-width: 225px; }
-    @media (min-width: 550px) {
-      .homepage-image .homepage-image-inner {
-        max-width: 450px; } }
-  .homepage-image img {
-    padding-bottom: 1rem; }
-  @media (min-width: 550px) {
-    .homepage-image {
-      margin: 0; } }
   @media (min-width: 1024px) {
     .homepage-image {
       margin-bottom: 0;
       padding: 0;
       padding-top: 3rem; } }
+  .homepage-image .homepage-image-inner {
+    max-width: 225px; }
+    @media (min-width: 550px) {
+      .homepage-image .homepage-image-inner {
+        max-width: 450px; } }
+    @media (min-width: 768px) {
+      .homepage-image .homepage-image-inner {
+        max-width: 325px; } }
+    @media (min-width: 1024px) {
+      .homepage-image .homepage-image-inner {
+        max-width: 450px; } }
+  .homepage-image img {
+    padding-bottom: 1rem; }
 
 .chevron-scroll {
   font-size: 1.5rem;
@@ -1911,6 +1935,7 @@ a:focus {
     color: #FF7703;
     font-size: 2rem; }
 
+/* My Work Section */
 .my-work-content {
   background-color: white;
   padding-top: 2rem;
@@ -1934,6 +1959,7 @@ a:focus {
   color: #585353;
   margin-bottom: 2rem; }
 
+/* Work Slant */
 @media (min-width: 550px) {
   .oddpost {
     display: -webkit-flex;
@@ -2104,6 +2130,7 @@ a:focus {
   padding: .25rem;
   font-family: "Cantarell", sans-serif; }
 
+/* Skills Section */
 .skills-content {
   background-color: #E8E3E3;
   padding-top: 2rem;
@@ -2272,6 +2299,7 @@ a:focus {
     .prototyping-description {
       margin-left: 3rem; } }
 
+/* About Section */
 .about-content {
   background-color: #585353;
   padding-top: 2rem; }
@@ -2333,6 +2361,7 @@ a:focus {
       font-size: 1rem;
       padding-top: 2rem; } }
 
+/* About Slant */
 * {
   box-sizing: border-box; }
 
@@ -2399,14 +2428,6 @@ a:focus {
     .image-01 {
       width: 50%;
       text-align: right; } }
-  @media (min-width: 768px) {
-    .image-01 {
-      width: 50%;
-      text-align: right; } }
-  @media (min-width: 1024px) {
-    .image-01 {
-      width: 50%;
-      text-align: right; } }
 
 .image-02 {
   display: none; }
@@ -2426,6 +2447,7 @@ a:focus {
       width: 50%;
       text-align: right; } }
 
+/* footer */
 .social {
   margin-left: 3.8rem; }
   @media (min-width: 550px) {
