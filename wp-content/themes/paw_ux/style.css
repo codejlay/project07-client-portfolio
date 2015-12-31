@@ -1302,6 +1302,23 @@ mark, ins {
 big {
   font-size: 125%; }
 
+/* paw_ux Settings */
+body {
+  font-size: 19px;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3 {
+  font-family: "Cantarell", sans-serif;
+  font-style: italic;
+  margin: 0;
+  font-weight: normal; }
+
+h1, h2 {
+  font-size: 2.143rem; }
+
+h3 {
+  font-size: 1.857rem; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -1676,26 +1693,15 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* Structure */
+* {
+  /* Safari/Chrome, other WebKit */
+  /* Firefox, other Gecko */
+  box-sizing: border-box; }
+
 html {
   min-width: 320px;
   margin: 0 auto; }
-
-body {
-  font-size: 19px;
-  font-family: "Open Sans", sans-serif; }
-
-h1, h2, h3 {
-  font-family: "Cantarell", sans-serif;
-  font-style: italic;
-  margin: 0;
-  font-weight: normal; }
-
-h1, h2 {
-  font-size: 2.143rem; }
-
-h3 {
-  font-size: 1.857rem; }
 
 a {
   outline: 0;
@@ -1706,12 +1712,6 @@ a {
 img {
   padding: 0;
   margin: 0; }
-
-/* Structure */
-* {
-  /* Safari/Chrome, other WebKit */
-  /* Firefox, other Gecko */
-  box-sizing: border-box; }
 
 .container {
   margin: 0 auto; }
@@ -1814,11 +1814,12 @@ a:focus {
   font-size: 1.263rem;
   padding: 0 2rem; }
 
-.responsive-menu {
-  padding-top: 4rem; }
-
 .content-area {
   background-color: #585353; }
+
+/* Responsive Menu */
+.responsive-menu {
+  padding-top: 4rem; }
 
 /* Intro Section */
 .intro {
@@ -2231,6 +2232,7 @@ a:focus {
         .skill-type-block-wrappers .skills-description p {
           font-size: 1rem; } }
 
+/* Software */
 .software {
   font-size: 1.684rem;
   font-family: "Open Sans", sans-serif;
