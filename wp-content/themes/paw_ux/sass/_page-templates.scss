@@ -80,29 +80,27 @@ img {
 	height: 70px;
 }
 
-/* Menu Underline */
+/* Menu Underline ---As per the designer's request, menu underline has been temporary disabled--- */
 
 a:focus {
 	outline: none;
 }
 
-.menu a:after {
-	content: "";
-    display: block;
-    height: 7px;
-    width: 100%;
-    background-color: transparent;
-    outline: 0;
-}
+// .menu a:after {
+// 	content: "";
+//     display: block;
+//     height: 7px;
+//     width: 100%;
+//     background-color: transparent;
+// }
 
-.menu a.active:after {
-	content: "";
-    display: block;
-    height: 7px;
-    width: 100%;
-    background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
-    outline: 0;
-}
+// .menu a.active:after {
+// 	content: "";
+//     display: block;
+//     height: 7px;
+//     width: 100%;
+//     background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
+// }
 
 .logo img {
 	width: 80%;
@@ -120,7 +118,6 @@ a:focus {
 		width: 240px;
 	}
 }
-
 
 .nav-wrapper {
 	display: flex;
@@ -159,8 +156,8 @@ a:focus {
 }
 
 .container-intro {
-	display: flex;
-	align-items: center;
+	align-self: center;
+	padding-bottom: 2rem;
 }
 
 .intro-details {
@@ -260,7 +257,7 @@ a:focus {
 
 	@include bp(mobile) {
 		position: absolute;
-  		bottom: 2rem;
+  		bottom: 1rem;
   		right: 48.5%;
   		text-align: center;
 		display: inline-block;
@@ -658,7 +655,6 @@ a:focus {
 	align-self: center;
 }
 
-
 .design-wrapper, .prototyping-wrapper {
 	display: flex;
 	width: 100%;
@@ -694,8 +690,12 @@ a:focus {
 }
 
 .design-description {
-	margin-left: 2.95rem;
+	margin-left: 3.8rem;
 
+	@include bp(mobile) {
+		margin-left: 2.95rem;
+	}
+	
 	@include bp(desktop) {
 		margin-left: 5.4rem;
 	}

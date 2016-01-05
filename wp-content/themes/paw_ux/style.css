@@ -1765,25 +1765,9 @@ img {
   margin: 0 auto;
   height: 70px; }
 
-/* Menu Underline */
+/* Menu Underline ---As per the designer's request, menu underline has been temporary disabled--- */
 a:focus {
   outline: none; }
-
-.menu a:after {
-  content: "";
-  display: block;
-  height: 7px;
-  width: 100%;
-  background-color: transparent;
-  outline: 0; }
-
-.menu a.active:after {
-  content: "";
-  display: block;
-  height: 7px;
-  width: 100%;
-  background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
-  outline: 0; }
 
 .logo img {
   width: 80%; }
@@ -1832,12 +1816,10 @@ a:focus {
   padding-top: 5rem; }
 
 .container-intro {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  padding-bottom: 2rem; }
 
 @media (min-width: 768px) {
   .intro-details {
@@ -1925,7 +1907,7 @@ a:focus {
   @media (min-width: 550px) {
     .chevron-scroll {
       position: absolute;
-      bottom: 2rem;
+      bottom: 1rem;
       right: 48.5%;
       text-align: center;
       display: inline-block; } }
@@ -2290,7 +2272,10 @@ a:focus {
       font-size: 1rem; } }
 
 .design-description {
-  margin-left: 2.95rem; }
+  margin-left: 3.8rem; }
+  @media (min-width: 550px) {
+    .design-description {
+      margin-left: 2.95rem; } }
   @media (min-width: 1024px) {
     .design-description {
       margin-left: 5.4rem; } }
