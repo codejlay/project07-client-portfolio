@@ -80,27 +80,27 @@ img {
 	height: 70px;
 }
 
-/* Menu Underline ---As per the designer's request, menu underline has been temporary disabled--- */
+/* Menu Underline  ---As per the designer's request, menu underline has been temporary disabled--- */
 
 a:focus {
 	outline: none;
 }
 
-// .menu a:after {
-// 	content: "";
-//     display: block;
-//     height: 7px;
-//     width: 100%;
-//     background-color: transparent;
-// }
+.menu a:after {
+	content: "";
+    display: block;
+    height: 7px;
+    width: 100%;
+    background-color: transparent;
+}
 
-// .menu a.active:after {
-// 	content: "";
-//     display: block;
-//     height: 7px;
-//     width: 100%;
-//     background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
-// }
+.menu a.active:after {
+	content: "";
+    display: block;
+    height: 7px;
+    width: 100%;
+    background: url(../../images/menu_highlight03.png) no-repeat center center/cover;
+}
 
 .logo img {
 	width: 80%;
@@ -156,8 +156,9 @@ a:focus {
 }
 
 .container-intro {
-	align-self: center;
-	padding-bottom: 2rem;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 1rem;
 }
 
 .intro-details {
