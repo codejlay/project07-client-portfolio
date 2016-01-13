@@ -33,4 +33,4 @@ I was very much looking forward to this final project as I got to use everything
 
 The toughest part of this project was the angled images and titles. I tackled this part first to give myself and the designer an idea whether this was possible within the time frame that we had. I came up with a solution the next day, but it only worked on Chrome. However, knowing that I was able to come up with a partial solution within 24 hours of receiving the design, I was confident that I would be able to tackle this angle challenge. Each side in the "My Work" section has a different angle. To accomplish this, I used an odd and even loop to separate the posts. Once that was done, I was able to assign different styling to each side. The next challenge was to have the angled underline to highlight the menu. This was done through using an image. 
 
-In the end, although it was challenging it was fun and got to experience collobrating with a UX designer and creating a unique website.
+In the end, although it was challenging it was fun and got to experience collobrating with a UX designer and creating a unique website!
