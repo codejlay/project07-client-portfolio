@@ -2232,11 +2232,19 @@ img {
           font-size: 1rem; } }
     .skill-type-block-wrappers .skills-description ul {
       margin: 0;
-      padding: 0 0 0 1rem;
+      padding: 0 0 0 2rem;
       font-size: .8rem;
-      line-height: .9; }
+      line-height: 1; }
+      @media (min-width: 550px) {
+        .skill-type-block-wrappers .skills-description ul {
+          padding-left: 7rem;
+          font-size: .9rem; } }
+      @media (min-width: 768px) {
+        .skill-type-block-wrappers .skills-description ul {
+          padding-left: 4rem; } }
       @media (min-width: 1024px) {
         .skill-type-block-wrappers .skills-description ul {
+          padding-left: 1.5rem;
           font-size: 1rem; } }
 
 /* Software */
@@ -2297,10 +2305,7 @@ img {
       font-size: 1rem; } }
 
 .design-description {
-  margin-left: 3.8rem; }
-  @media (min-width: 550px) {
-    .design-description {
-      margin-left: 2.95rem; } }
+  margin-left: 2.95rem; }
   @media (min-width: 1024px) {
     .design-description {
       margin-left: 5.4rem; } }

@@ -553,11 +553,21 @@ img {
 		
 		ul {
 			margin: 0;
-			padding: 0 0 0 1rem;
+			padding: 0 0 0 2rem;
 			font-size: .8rem;
-			line-height: .9;
+			line-height: 1;
+
+			@include bp(mobile) {
+				padding-left: 7rem;	
+				font-size: .9rem;
+			}
+
+			@include bp(tablet) {
+				padding-left: 4rem;	
+			}
 
 			@include bp(desktop) {
+				padding-left: 1.5rem;	
 				font-size: 1rem;
 			}
 		}
@@ -622,11 +632,7 @@ img {
 }
 
 .design-description {
-	margin-left: 3.8rem;
-
-	@include bp(mobile) {
-		margin-left: 2.95rem;
-	}
+	margin-left: 2.95rem;
 	
 	@include bp(desktop) {
 		margin-left: 5.4rem;
