@@ -632,8 +632,12 @@ img {
 }
 
 .design-description {
-	margin-left: 2.95rem;
+	margin-left: 3.8rem;
 	
+	@include bp(mobile) {
+		margin-left: 2.95rem;
+	}
+
 	@include bp(desktop) {
 		margin-left: 5.4rem;
 	}

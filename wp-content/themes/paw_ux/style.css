@@ -2305,7 +2305,10 @@ img {
       font-size: 1rem; } }
 
 .design-description {
-  margin-left: 2.95rem; }
+  margin-left: 3.8rem; }
+  @media (min-width: 550px) {
+    .design-description {
+      margin-left: 2.95rem; } }
   @media (min-width: 1024px) {
     .design-description {
       margin-left: 5.4rem; } }
